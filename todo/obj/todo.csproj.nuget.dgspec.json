@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\t_war\\Documents\\projects\\code\\todo\\todo\\todo.csproj": {}
+    "C:\\Users\\t_war\\Documents\\projects\\code\\todo\\ToDo\\ToDo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\t_war\\Documents\\projects\\code\\todo\\todo\\todo.csproj": {
+    "C:\\Users\\t_war\\Documents\\projects\\code\\todo\\ToDo\\ToDo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\t_war\\Documents\\projects\\code\\todo\\todo\\todo.csproj",
-        "projectName": "todo",
-        "projectPath": "C:\\Users\\t_war\\Documents\\projects\\code\\todo\\todo\\todo.csproj",
+        "projectUniqueName": "C:\\Users\\t_war\\Documents\\projects\\code\\todo\\ToDo\\ToDo.csproj",
+        "projectName": "ToDo",
+        "projectPath": "C:\\Users\\t_war\\Documents\\projects\\code\\todo\\ToDo\\ToDo.csproj",
         "packagesPath": "C:\\Users\\t_war\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\t_war\\Documents\\projects\\code\\todo\\todo\\obj\\",
+        "outputPath": "C:\\Users\\t_war\\Documents\\projects\\code\\todo\\ToDo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\t_war\\AppData\\Roaming\\NuGet\\NuGet.Config",
