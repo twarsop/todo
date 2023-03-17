@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using ToDo.Models;
+using System.Linq;
+using System.Reflection.Metadata;
 
 namespace ToDo.Controllers
 {
@@ -15,13 +16,68 @@ namespace ToDo.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            using var db = new ToDoContext();
+
+            var toDoItems = db.ToDoItems.ToList();
+
+            return View(toDoItems);
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult AddToDoItem()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View("AddEditToDoItem", new ToDoItem());
+        }
+
+        public IActionResult EditToDoItem(int id)
+        {
+            var toDoItem = new ToDoItem();
+
+            using (var db = new ToDoContext())
+            {
+                toDoItem = db.ToDoItems.Where(t => t.Id == id).FirstOrDefault();
+            }
+                
+            return View("AddEditToDoItem", toDoItem);
+        }
+
+        public IActionResult DeleteToDoItem(int id)
+        {
+            using (var db = new ToDoContext())
+            {
+                var toDoItem = db.ToDoItems.Where(t => t.Id == id).FirstOrDefault();
+                if (toDoItem != null)
+                {
+                    db.Remove(toDoItem);
+                    db.SaveChanges();
+                }
+            }
+
+            return RedirectToAction("Index", "Home");
+        }
+
+        [HttpPost]
+        public IActionResult SaveToDoItem(int id, string txtDescription)
+        {
+            using (var db = new ToDoContext())
+            {
+                if (id == default(int))
+                {
+                    var newToDoItem = new ToDoItem { Description = txtDescription };
+                    db.Add(newToDoItem);
+                }
+                else
+                {
+                    var toDoItem = db.ToDoItems.Where(t => t.Id == id).FirstOrDefault();
+                    if (toDoItem != null)
+                    {
+                        toDoItem.Description = txtDescription;
+                    }
+                }
+
+                db.SaveChanges();
+            }
+            
+            return Redirect("Index");
         }
     }
 }
