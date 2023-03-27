@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">ToDo</h1>
+</div>
+
+@Html.ActionLink("Add To Do Item", "AddToDoItem")
+
+<h2 style="margin-top:20px;">To Do Items</h2>
+
+<table>
+    @foreach (var toDoItem in Model)
+    {
+        <tr>
+            <td>@toDoItem.Description</td>
+            <td>@Html.ActionLink("Edit", "EditToDoItem", new { id = toDoItem.Id})</td>
+            <td>@Html.ActionLink("Delete", "DeleteToDoItem", new { id = toDoItem.Id})</td>
+        </tr>
+    }
+</table>
