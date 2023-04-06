@@ -14,14 +14,12 @@ namespace Infrastructure.Repositories
                 db.SaveChanges();
             }
         }
-        public ToDoItem Read(int id)
+        public ToDoItem? Read(int id)
         {
-            var toDoItem = new ToDoItem();
             using (var db = new SqlLiteContext())
             {
-                toDoItem = db.ToDoItems.Where(t => t.Id == id).FirstOrDefault();
+                return db.ToDoItems.Where(t => t.Id == id).FirstOrDefault();
             }
-            return toDoItem;
         }
 
         public List<ToDoItem> ReadAll()
@@ -35,12 +33,8 @@ namespace Infrastructure.Repositories
         {
             using (var db = new SqlLiteContext())
             {
-                var toDoItemUpdate = db.ToDoItems.Where(t => t.Id == toDoItem.Id).FirstOrDefault();
-                if (toDoItemUpdate != null)
-                {
-                    toDoItemUpdate.Description = toDoItem.Description;
-                    db.SaveChanges();
-                }
+                db.Entry(toDoItem).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                db.SaveChanges();
             }
         }
         public void Delete(int id)

@@ -1,5 +1,4 @@
 ﻿using Application.Common.Interfaces;
-using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using WebUI.Models;
@@ -36,7 +35,7 @@ namespace WebUI.Controllers
 
         public IActionResult DeleteToDoItem(int id)
         {
-            _toDoItemService?.Delete(id);
+            _toDoItemService.Delete(id);
 
             return RedirectToAction("Index", "Home");
         }
@@ -44,9 +43,8 @@ namespace WebUI.Controllers
         [HttpPost]
         public IActionResult SaveToDoItem(ToDoItemViewModel toDoItemViewModel)
         {
-            _toDoItemService.Save(new ToDoItem { 
-                Id = toDoItemViewModel.Id, 
-                Description = toDoItemViewModel.Description }
+            _toDoItemService.Save(toDoItemViewModel.Id, 
+                toDoItemViewModel.Description
             );
 
             return Redirect("Index");
