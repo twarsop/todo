@@ -1,5 +1,4 @@
 ﻿using ApplicationAPI.Models;
-using Microsoft.Extensions.Diagnostics.HealthChecks;
 
 namespace ApplicationAPI
 {
