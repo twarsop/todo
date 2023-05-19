@@ -1,22 +1,31 @@
 ﻿using Application.Common.Interfaces;
 using Domain.Models;
 using Infrastructure.Common;
+using Microsoft.Extensions.Configuration;
 
 namespace Infrastructure.Repositories
 {
     public class ToDoItemRepository : IToDoItemRepository
     {
-        public void Create(ToDoItem toDoItem)
+        private readonly IConfiguration _configuration;
+
+        public ToDoItemRepository(IConfiguration configuration) 
+        { 
+            _configuration = configuration;
+        }
+        
+        public ToDoItem Create(ToDoItem toDoItem)
         {
-            using (var db = new SqlLiteContext())
+            using (var db = new SqlLiteContext(_configuration))
             {
                 db.Add(toDoItem);
                 db.SaveChanges();
+                return toDoItem;
             }
         }
         public ToDoItem? Read(int id)
         {
-            using (var db = new SqlLiteContext())
+            using (var db = new SqlLiteContext(_configuration))
             {
                 return db.ToDoItems.Where(t => t.Id == id).FirstOrDefault();
             }
@@ -24,29 +33,25 @@ namespace Infrastructure.Repositories
 
         public List<ToDoItem> ReadAll()
         {
-            using (var db = new SqlLiteContext())
+            using (var db = new SqlLiteContext(_configuration))
             {
                 return db.ToDoItems.ToList();
             }
         }
         public void Update(ToDoItem toDoItem)
         {
-            using (var db = new SqlLiteContext())
+            using (var db = new SqlLiteContext(_configuration))
             {
                 db.Entry(toDoItem).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 db.SaveChanges();
             }
         }
-        public void Delete(int id)
+        public void Delete(ToDoItem toDoItem)
         {
-            using (var db = new SqlLiteContext())
+            using (var db = new SqlLiteContext(_configuration))
             {
-                var toDoItem = db.ToDoItems.Where(t => t.Id == id).FirstOrDefault();
-                if (toDoItem != null)
-                {
-                    db.Remove(toDoItem);
-                    db.SaveChanges();
-                }
+                db.Remove(toDoItem);
+                db.SaveChanges();
             }
         }
     }

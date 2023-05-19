@@ -12,30 +12,14 @@ namespace Application.Services
             _toDoItemRepository = toDoItemRepository;
         }
 
-        public void Save(int id, string description)
+        public ToDoItem Create(string description)
         {
-            if (id == default(int))
-            {
-                _toDoItemRepository.Create(new ToDoItem(description));
-            }
-            else
-            {
-                var toDoItem = Get(id);
-                toDoItem.UpdateDescription(description);
-                _toDoItemRepository.Update(toDoItem);
-            }
+            return _toDoItemRepository.Create(new ToDoItem(description));
         }
 
-        public ToDoItem Get(int id)
+        public ToDoItem? Get(int id)
         {
-            var toDoItem = _toDoItemRepository.Read(id);
-
-            if (toDoItem == null)
-            {
-                throw new NullReferenceException($"Could not find toDoItem with id={id}");
-            }
-
-            return toDoItem;
+            return _toDoItemRepository.Read(id);
         }
 
         public List<ToDoItem> GetAll()
@@ -43,9 +27,33 @@ namespace Application.Services
             return _toDoItemRepository.ReadAll();
         }
 
-        public void Delete(int id)
+        public bool Update(int id, string description)
         {
-            _toDoItemRepository.Delete(id);
+            var toDoItem = Get(id);
+
+            if (toDoItem == null)
+            {
+                return false;
+            }
+
+            toDoItem.UpdateDescription(description);
+            _toDoItemRepository.Update(toDoItem);
+
+            return true;
+        }
+
+        public bool Delete(int id)
+        {
+            var toDoItem = Get(id);
+
+            if (toDoItem == null)
+            {
+                return false;
+            }
+
+            _toDoItemRepository.Delete(toDoItem);
+
+            return true;
         }
     }
 }

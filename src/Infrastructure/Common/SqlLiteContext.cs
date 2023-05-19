@@ -1,5 +1,6 @@
 ﻿using Domain.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using System.Configuration;
 
 namespace Infrastructure.Common
@@ -10,9 +11,9 @@ namespace Infrastructure.Common
 
         public string DbPath { get; }
 
-        public SqlLiteContext()
+        public SqlLiteContext(IConfiguration configuration)
         {
-            DbPath = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, ConfigurationManager.AppSettings.Get("DbPath")));
+            DbPath = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, configuration["DbPath"]));
         }
 
         // The following configures EF to create a Sqlite database file in the
