@@ -1,0 +1,16 @@
+2023-05-22 21:10:20.452 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-05-22 21:10:22.408 +01:00 [DBG] Hosting starting
+2023-05-22 21:10:23.131 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 24D7086D4A581986C9118C4ED8B11A8FCD9D0DE3)
+2023-05-22 21:10:23.371 +01:00 [INF] Now listening on: https://localhost:7180
+2023-05-22 21:10:23.379 +01:00 [INF] Now listening on: http://localhost:5097
+2023-05-22 21:10:23.381 +01:00 [DBG] Loaded hosting startup assembly ApplicationAPI
+2023-05-22 21:10:23.383 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-05-22 21:10:23.387 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-05-22 21:10:23.391 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-22 21:10:23.394 +01:00 [INF] Hosting environment: Development
+2023-05-22 21:10:23.398 +01:00 [INF] Content root path: C:\Users\t_war\Documents\projects\code\todo\src\ApplicationAPI\
+2023-05-22 21:10:23.399 +01:00 [DBG] Hosting started
+2023-05-22 21:10:23.683 +01:00 [DBG] Connection id "0HMQR029OOTI8" accepted.
+2023-05-22 21:10:23.700 +01:00 [DBG] Connection id "0HMQR029OOTI8" started.
+2023-05-22 21:10:23.924 +01:00 [DBG] Connection id "0HMQR029OOTI9" accepted.
+2023-05-22 21:10:23.931 +01:00 [DBG] Connection id "0HMQR029OOTI9" started.

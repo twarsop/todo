@@ -1,4 +1,4 @@
-﻿namespace ApplicationAPI.Models
+﻿namespace ToDo.Shared.Dtos
 {
     public class ToDoItemDto
     {

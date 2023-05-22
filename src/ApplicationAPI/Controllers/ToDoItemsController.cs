@@ -1,6 +1,6 @@
 ﻿using Application.Common.Interfaces;
-using ApplicationAPI.Models;
 using Microsoft.AspNetCore.Mvc;
+using ToDo.Shared.Dtos;
 
 namespace ApplicationAPI.Controllers
 {

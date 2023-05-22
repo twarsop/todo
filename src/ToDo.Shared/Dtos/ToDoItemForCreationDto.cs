@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ApplicationAPI.Models
+namespace ToDo.Shared.Dtos
 {
-    public class ToDoItemForUpdateDto
+    public class ToDoItemForCreationDto
     {
         [Required]
         public string Description { get; set; }
