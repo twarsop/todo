@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.UnitTests", "tests\D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationAPI", "src\ApplicationAPI\ApplicationAPI.csproj", "{A6D6C186-7F8F-4895-B7B1-B7749EE8B7DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.Shared", "src\ToDo.Shared\ToDo.Shared.csproj", "{E53677E2-E0B0-4E2C-8EB7-CEB42F48471A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDo.Shared", "src\ToDo.Shared\ToDo.Shared.csproj", "{E53677E2-E0B0-4E2C-8EB7-CEB42F48471A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

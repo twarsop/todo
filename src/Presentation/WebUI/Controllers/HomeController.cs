@@ -36,9 +36,12 @@ namespace WebUI.Controllers
                         {
                             case HttpMethodEnum.Get:
                                 return await client.GetAsync(url);
+                            case HttpMethodEnum.Post:
+                                var postContent = new StringContent(jsonString, Encoding.UTF8, "application/json");
+                                return await client.PostAsync(url, postContent);
                             case HttpMethodEnum.Put:
-                                var content = new StringContent(jsonString, Encoding.UTF8, "application/json");
-                                return await client.PutAsync(url, content);
+                                var putContent = new StringContent(jsonString, Encoding.UTF8, "application/json");
+                                return await client.PutAsync(url, putContent);
                             case HttpMethodEnum.Delete:
                                 return await client.DeleteAsync(url);
                         }
@@ -70,7 +73,18 @@ namespace WebUI.Controllers
 
         public IActionResult AddToDoItem()
         {
-            return View("AddEditToDoItem", new ToDoItemViewModel());
+            return View("AddToDoItem", new ToDoItemViewModel());
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddToDoItemSubmit(ToDoItemViewModel toDoItemViewModel)
+        {
+            var putResponse = await RetryApiEndpoint(
+                HttpMethodEnum.Post,
+                BaseApiUrl,
+                JsonConvert.SerializeObject(new ToDoItemForCreationDto { Description = toDoItemViewModel.Description }));
+
+            return Redirect("Index");
         }
 
         public async Task<IActionResult> EditToDoItem(int id)
@@ -81,14 +95,14 @@ namespace WebUI.Controllers
             {
                 var data = await getResponse.Content.ReadAsStringAsync();
                 ToDoItemDto toDoItemDto = JsonConvert.DeserializeObject<ToDoItemDto>(data);
-                return View("AddEditToDoItem", new ToDoItemViewModel { Id = toDoItemDto.Id, Description = toDoItemDto.Description });
+                return View("EditToDoItem", new ToDoItemViewModel { Id = toDoItemDto.Id, Description = toDoItemDto.Description });
             }
 
-            return View("AddEditToDoItem", new ToDoItemViewModel());
+            return View("EditToDoItem", new ToDoItemViewModel());
         }
 
         [HttpPost]
-        public async Task<IActionResult> SaveToDoItem(ToDoItemViewModel toDoItemViewModel)
+        public async Task<IActionResult> EditToDoItemSubmit(ToDoItemViewModel toDoItemViewModel)
         {
             var putResponse = await RetryApiEndpoint(
                 HttpMethodEnum.Put, 

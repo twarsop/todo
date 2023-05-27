@@ -3,10 +3,8 @@
 @{
 }
 
-@using (Html.BeginForm("SaveToDoItem", "Home", FormMethod.Post))
+@using (Html.BeginForm("AddToDoItemSubmit", "Home", FormMethod.Post))
 {
-    @Html.HiddenFor(model => model.Id)
-    
     @Html.LabelFor(model => model.Description)
     @Html.TextBoxFor(model => model.Description)
 
