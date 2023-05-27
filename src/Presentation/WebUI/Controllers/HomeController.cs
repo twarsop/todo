@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using ToDo.Shared.Dtos;
+using WebUI.Enums;
 using WebUI.Models;
 
 namespace WebUI.Controllers
@@ -9,33 +11,31 @@ namespace WebUI.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private const string BaseApiUrl = "https://localhost:7180/api/todoitems";
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
 
-        public async Task<IActionResult> Index()
+        private async Task<HttpResponseMessage> RetryApiEndpoint(HttpMethodEnum httpMethodEnum, string url)
         {
-            string apiUrl = "https://localhost:7180/api/todoitems";
-            List<ToDoItemDto> toDoItemsDtos = null;
-
             for (int i = 0; i < 10; i++)
             {
                 try
                 {
                     using (HttpClient client = new HttpClient())
                     {
-                        client.BaseAddress = new Uri(apiUrl);
+                        client.BaseAddress = new Uri(url);
                         client.DefaultRequestHeaders.Accept.Clear();
                         client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
 
-                        HttpResponseMessage response = await client.GetAsync(apiUrl);
-                        if (response.IsSuccessStatusCode)
+                        switch (httpMethodEnum)
                         {
-                            var data = await response.Content.ReadAsStringAsync();
-                            toDoItemsDtos = JsonConvert.DeserializeObject<List<ToDoItemDto>>(data);
-                            break;
+                            case HttpMethodEnum.Get:
+                                return await client.GetAsync(url);
+                            case HttpMethodEnum.Delete:
+                                return await client.DeleteAsync(url);
                         }
                     }
                 }
@@ -43,6 +43,21 @@ namespace WebUI.Controllers
                 {
                     System.Threading.Thread.Sleep(1000);
                 }
+            }
+
+            return null;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            List<ToDoItemDto> toDoItemsDtos = null;
+
+            var getAllResponse = await RetryApiEndpoint(HttpMethodEnum.Get, BaseApiUrl);
+
+            if (getAllResponse != null && getAllResponse.IsSuccessStatusCode)
+            {
+                var data = await getAllResponse.Content.ReadAsStringAsync();
+                toDoItemsDtos = JsonConvert.DeserializeObject<List<ToDoItemDto>>(data);
             }
 
             return View(toDoItemsDtos?.Select(x => new ToDoItemViewModel { Id = x.Id, Description = x.Description }).ToList());
@@ -61,9 +76,9 @@ namespace WebUI.Controllers
             return View("AddEditToDoItem", new ToDoItemViewModel());
         }
 
-        public IActionResult DeleteToDoItem(int id)
+        public async Task<IActionResult> DeleteToDoItem(int id)
         {
-            // _toDoItemService.Delete(id);
+            var deleteResponse = await RetryApiEndpoint(HttpMethodEnum.Delete, $"{BaseApiUrl}/{id}");
 
             return RedirectToAction("Index", "Home");
         }
