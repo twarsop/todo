@@ -2,6 +2,8 @@
 using Newtonsoft.Json;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
+using System.Text;
+using System.Text.Json.Nodes;
 using ToDo.Shared.Dtos;
 using WebUI.Enums;
 using WebUI.Models;
@@ -18,7 +20,7 @@ namespace WebUI.Controllers
             _logger = logger;
         }
 
-        private async Task<HttpResponseMessage> RetryApiEndpoint(HttpMethodEnum httpMethodEnum, string url)
+        private async Task<HttpResponseMessage> RetryApiEndpoint(HttpMethodEnum httpMethodEnum, string url, string jsonString = null)
         {
             for (int i = 0; i < 10; i++)
             {
@@ -34,6 +36,9 @@ namespace WebUI.Controllers
                         {
                             case HttpMethodEnum.Get:
                                 return await client.GetAsync(url);
+                            case HttpMethodEnum.Put:
+                                var content = new StringContent(jsonString, Encoding.UTF8, "application/json");
+                                return await client.PutAsync(url, content);
                             case HttpMethodEnum.Delete:
                                 return await client.DeleteAsync(url);
                         }
@@ -68,12 +73,29 @@ namespace WebUI.Controllers
             return View("AddEditToDoItem", new ToDoItemViewModel());
         }
 
-        public IActionResult EditToDoItem(int id)
+        public async Task<IActionResult> EditToDoItem(int id)
         {
-            // var toDoItem = _toDoItemService.Get(id);
-            // return View("AddEditToDoItem", new ToDoItemViewModel { Id = toDoItem.Id, Description = toDoItem.Description});
+            var getResponse = await RetryApiEndpoint(HttpMethodEnum.Get, $"{BaseApiUrl}/{id}");
+
+            if (getResponse != null && getResponse.IsSuccessStatusCode)
+            {
+                var data = await getResponse.Content.ReadAsStringAsync();
+                ToDoItemDto toDoItemDto = JsonConvert.DeserializeObject<ToDoItemDto>(data);
+                return View("AddEditToDoItem", new ToDoItemViewModel { Id = toDoItemDto.Id, Description = toDoItemDto.Description });
+            }
 
             return View("AddEditToDoItem", new ToDoItemViewModel());
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> SaveToDoItem(ToDoItemViewModel toDoItemViewModel)
+        {
+            var putResponse = await RetryApiEndpoint(
+                HttpMethodEnum.Put, 
+                $"{BaseApiUrl}/{toDoItemViewModel.Id}", 
+                JsonConvert.SerializeObject(new ToDoItemForUpdateDto { Description = toDoItemViewModel.Description }));
+
+            return Redirect("Index");
         }
 
         public async Task<IActionResult> DeleteToDoItem(int id)
@@ -81,16 +103,6 @@ namespace WebUI.Controllers
             var deleteResponse = await RetryApiEndpoint(HttpMethodEnum.Delete, $"{BaseApiUrl}/{id}");
 
             return RedirectToAction("Index", "Home");
-        }
-
-        [HttpPost]
-        public IActionResult SaveToDoItem(ToDoItemViewModel toDoItemViewModel)
-        {
-            //_toDoItemService.Save(toDoItemViewModel.Id, 
-            //    toDoItemViewModel.Description
-            //);
-
-            return Redirect("Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
