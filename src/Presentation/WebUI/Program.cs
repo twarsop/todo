@@ -1,14 +1,7 @@
-using Application.Common.Interfaces;
-using Application.Services;
-using Infrastructure.Repositories;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
-builder.Services.AddScoped<IToDoItemRepository, ToDoItemRepository>();
-builder.Services.AddScoped<IToDoItemService, ToDoItemService>();
 
 var app = builder.Build();
 

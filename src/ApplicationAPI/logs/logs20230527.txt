@@ -1,0 +1,1653 @@
+2023-05-27 14:05:17.187 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-05-27 14:05:18.773 +01:00 [DBG] Hosting starting
+2023-05-27 14:05:19.915 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 24D7086D4A581986C9118C4ED8B11A8FCD9D0DE3)
+2023-05-27 14:05:20.807 +01:00 [INF] Now listening on: https://localhost:7180
+2023-05-27 14:05:20.891 +01:00 [INF] Now listening on: http://localhost:5097
+2023-05-27 14:05:20.929 +01:00 [DBG] Connection id "0HMQUMC3CP4RA" received FIN.
+2023-05-27 14:05:20.938 +01:00 [DBG] Loaded hosting startup assembly ApplicationAPI
+2023-05-27 14:05:20.946 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-05-27 14:05:20.948 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-05-27 14:05:20.958 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-27 14:05:20.990 +01:00 [DBG] Connection id "0HMQUMC3CP4RA" accepted.
+2023-05-27 14:05:20.995 +01:00 [INF] Hosting environment: Development
+2023-05-27 14:05:21.003 +01:00 [INF] Content root path: C:\Users\t_war\Documents\projects\code\todo\src\ApplicationAPI\
+2023-05-27 14:05:21.003 +01:00 [DBG] Connection id "0HMQUMC3CP4RA" started.
+2023-05-27 14:05:21.004 +01:00 [DBG] Hosting started
+2023-05-27 14:05:21.039 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:05:21.277 +01:00 [DBG] Connection id "0HMQUMC3CP4RA" stopped.
+2023-05-27 14:05:21.463 +01:00 [DBG] Connection id "0HMQUMC3CP4RA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:05:21.659 +01:00 [DBG] Connection id "0HMQUMC3CP4RB" accepted.
+2023-05-27 14:05:21.710 +01:00 [DBG] Connection id "0HMQUMC3CP4RB" started.
+2023-05-27 14:05:22.240 +01:00 [DBG] Connection 0HMQUMC3CP4RB established using the following protocol: "Tls13"
+2023-05-27 14:05:22.686 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/index.html - -
+2023-05-27 14:05:22.860 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-05-27 14:05:24.294 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-05-27 14:05:25.163 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-05-27 14:05:25.320 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 2651.9613ms
+2023-05-27 14:05:25.982 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - -
+2023-05-27 14:05:26.012 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 27.8509ms
+2023-05-27 14:05:26.436 +01:00 [DBG] Connection id "0HMQUMC3CP4RB" received FIN.
+2023-05-27 14:05:26.477 +01:00 [DBG] Connection id "0HMQUMC3CP4RB" is closed. The last processed stream ID was 3.
+2023-05-27 14:05:26.483 +01:00 [DBG] Connection id "0HMQUMC3CP4RB" sending FIN because: "The client closed the connection."
+2023-05-27 14:05:26.543 +01:00 [DBG] Connection id "0HMQUMC3CP4RB" stopped.
+2023-05-27 14:05:26.635 +01:00 [DBG] Connection id "0HMQUMC3CP4RC" accepted.
+2023-05-27 14:05:26.638 +01:00 [DBG] Connection id "0HMQUMC3CP4RC" started.
+2023-05-27 14:05:26.660 +01:00 [DBG] Connection 0HMQUMC3CP4RC established using the following protocol: "Tls13"
+2023-05-27 14:05:26.676 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_vs/browserLink - -
+2023-05-27 14:05:26.898 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 221.7270ms
+2023-05-27 14:05:27.794 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-05-27 14:05:28.422 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 628.1761ms
+2023-05-27 14:05:31.439 +01:00 [DBG] Connection id "0HMQUMC3CP4RC" received FIN.
+2023-05-27 14:05:31.443 +01:00 [DBG] Connection id "0HMQUMC3CP4RC" is closed. The last processed stream ID was 3.
+2023-05-27 14:05:31.450 +01:00 [DBG] Connection id "0HMQUMC3CP4RC" sending FIN because: "The client closed the connection."
+2023-05-27 14:05:31.457 +01:00 [DBG] Connection id "0HMQUMC3CP4RC" stopped.
+2023-05-27 14:13:00.447 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-05-27 14:13:00.757 +01:00 [DBG] Hosting starting
+2023-05-27 14:13:01.494 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 24D7086D4A581986C9118C4ED8B11A8FCD9D0DE3)
+2023-05-27 14:13:01.726 +01:00 [INF] Now listening on: https://localhost:7180
+2023-05-27 14:13:01.744 +01:00 [INF] Now listening on: http://localhost:5097
+2023-05-27 14:13:01.746 +01:00 [DBG] Loaded hosting startup assembly ApplicationAPI
+2023-05-27 14:13:01.746 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-05-27 14:13:01.747 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-05-27 14:13:01.750 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-27 14:13:01.736 +01:00 [DBG] Connection id "0HMQUMGCNCEVO" received FIN.
+2023-05-27 14:13:01.753 +01:00 [INF] Hosting environment: Development
+2023-05-27 14:13:01.777 +01:00 [DBG] Connection id "0HMQUMGCNCEVO" accepted.
+2023-05-27 14:13:01.779 +01:00 [INF] Content root path: C:\Users\t_war\Documents\projects\code\todo\src\ApplicationAPI\
+2023-05-27 14:13:01.802 +01:00 [DBG] Connection id "0HMQUMGCNCEVO" started.
+2023-05-27 14:13:01.803 +01:00 [DBG] Hosting started
+2023-05-27 14:13:02.001 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:13:02.127 +01:00 [DBG] Connection id "0HMQUMGCNCEVO" stopped.
+2023-05-27 14:13:02.173 +01:00 [DBG] Connection id "0HMQUMGCNCEVO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:13:02.376 +01:00 [DBG] Connection id "0HMQUMGCNCEVP" accepted.
+2023-05-27 14:13:02.580 +01:00 [DBG] Connection id "0HMQUMGCNCEVP" started.
+2023-05-27 14:13:02.689 +01:00 [DBG] Connection 0HMQUMGCNCEVP established using the following protocol: "Tls13"
+2023-05-27 14:13:02.857 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/index.html - -
+2023-05-27 14:13:02.960 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-05-27 14:13:03.718 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-05-27 14:13:04.349 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-05-27 14:13:04.378 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - -
+2023-05-27 14:13:04.411 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_vs/browserLink - -
+2023-05-27 14:13:04.430 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 50.7778ms
+2023-05-27 14:13:04.436 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 1579.6949ms
+2023-05-27 14:13:05.048 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 637.7900ms
+2023-05-27 14:13:05.225 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-05-27 14:13:06.441 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1215.6171ms
+2023-05-27 14:13:07.147 +01:00 [DBG] Connection id "0HMQUMGCNCEVP" received FIN.
+2023-05-27 14:13:07.207 +01:00 [DBG] Connection id "0HMQUMGCNCEVP" is closed. The last processed stream ID was 7.
+2023-05-27 14:13:07.212 +01:00 [DBG] Connection id "0HMQUMGCNCEVP" sending FIN because: "The client closed the connection."
+2023-05-27 14:13:07.226 +01:00 [DBG] Connection id "0HMQUMGCNCEVP" stopped.
+2023-05-27 14:20:42.719 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-05-27 14:20:44.127 +01:00 [DBG] Hosting starting
+2023-05-27 14:20:45.038 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 24D7086D4A581986C9118C4ED8B11A8FCD9D0DE3)
+2023-05-27 14:20:45.129 +01:00 [INF] Now listening on: https://localhost:7180
+2023-05-27 14:20:45.147 +01:00 [INF] Now listening on: http://localhost:5097
+2023-05-27 14:20:45.147 +01:00 [DBG] Loaded hosting startup assembly ApplicationAPI
+2023-05-27 14:20:45.148 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-05-27 14:20:45.148 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-05-27 14:20:45.149 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-27 14:20:45.152 +01:00 [INF] Hosting environment: Development
+2023-05-27 14:20:45.155 +01:00 [INF] Content root path: C:\Users\t_war\Documents\projects\code\todo\src\ApplicationAPI\
+2023-05-27 14:20:45.155 +01:00 [DBG] Hosting started
+2023-05-27 14:20:45.542 +01:00 [DBG] Connection id "0HMQUMKMUINSL" reset.
+2023-05-27 14:20:45.582 +01:00 [DBG] Connection id "0HMQUMKMUINSL" accepted.
+2023-05-27 14:20:45.588 +01:00 [DBG] Connection id "0HMQUMKMUINSL" started.
+2023-05-27 14:20:45.651 +01:00 [DBG] Failed to authenticate HTTPS connection.
+Microsoft.AspNetCore.Connections.ConnectionResetException: An existing connection was forcibly closed by the remote host.
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.DoReceive()
+   --- End of inner exception stack trace ---
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.ReadAsync(CancellationToken token)
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.ReadAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.DuplexPipeStream.ReadAsyncInternal(Memory`1 destination, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:20:45.841 +01:00 [DBG] Connection id "0HMQUMKMUINSL" stopped.
+2023-05-27 14:20:45.852 +01:00 [DBG] Connection id "0HMQUMKMUINSL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:20:46.067 +01:00 [DBG] Connection id "0HMQUMKMUINSM" accepted.
+2023-05-27 14:20:46.497 +01:00 [DBG] Connection id "0HMQUMKMUINSM" started.
+2023-05-27 14:20:46.714 +01:00 [DBG] Connection 0HMQUMKMUINSM established using the following protocol: "Tls13"
+2023-05-27 14:20:46.854 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/index.html - -
+2023-05-27 14:20:47.510 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-05-27 14:20:47.855 +01:00 [DBG] Connection id "0HMQUMKMUINSN" accepted.
+2023-05-27 14:20:47.859 +01:00 [DBG] Connection id "0HMQUMKMUINSN" started.
+2023-05-27 14:20:47.883 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:20:47.900 +01:00 [DBG] Connection id "0HMQUMKMUINSN" stopped.
+2023-05-27 14:20:47.908 +01:00 [DBG] Connection id "0HMQUMKMUINSN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:20:47.930 +01:00 [DBG] Connection id "0HMQUMKMUINSO" accepted.
+2023-05-27 14:20:47.934 +01:00 [DBG] Connection id "0HMQUMKMUINSO" started.
+2023-05-27 14:20:47.943 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:20:47.946 +01:00 [DBG] Connection id "0HMQUMKMUINSO" stopped.
+2023-05-27 14:20:47.947 +01:00 [DBG] Connection id "0HMQUMKMUINSO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:20:47.961 +01:00 [DBG] Connection id "0HMQUMKMUINSP" accepted.
+2023-05-27 14:20:47.962 +01:00 [DBG] Connection id "0HMQUMKMUINSP" started.
+2023-05-27 14:20:47.964 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:20:47.969 +01:00 [DBG] Connection id "0HMQUMKMUINSP" stopped.
+2023-05-27 14:20:47.972 +01:00 [DBG] Connection id "0HMQUMKMUINSP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:20:47.985 +01:00 [DBG] Connection id "0HMQUMKMUINSQ" accepted.
+2023-05-27 14:20:47.987 +01:00 [DBG] Connection id "0HMQUMKMUINSQ" started.
+2023-05-27 14:20:47.989 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:20:47.994 +01:00 [DBG] Connection id "0HMQUMKMUINSQ" stopped.
+2023-05-27 14:20:47.996 +01:00 [DBG] Connection id "0HMQUMKMUINSQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:20:48.093 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-05-27 14:20:48.425 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-05-27 14:20:48.434 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 1588.4492ms
+2023-05-27 14:20:48.477 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - -
+2023-05-27 14:20:48.487 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 9.8286ms
+2023-05-27 14:20:48.653 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_vs/browserLink - -
+2023-05-27 14:20:48.815 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 162.0974ms
+2023-05-27 14:20:49.291 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-05-27 14:20:49.502 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 210.9264ms
+2023-05-27 14:20:55.591 +01:00 [DBG] Connection id "0HMQUMKMUINSM" received FIN.
+2023-05-27 14:20:55.603 +01:00 [DBG] Connection id "0HMQUMKMUINSM" is closed. The last processed stream ID was 7.
+2023-05-27 14:20:55.607 +01:00 [DBG] Connection id "0HMQUMKMUINSM" sending FIN because: "The client closed the connection."
+2023-05-27 14:20:55.623 +01:00 [DBG] Connection id "0HMQUMKMUINSM" stopped.
+2023-05-27 14:21:52.184 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-05-27 14:21:52.509 +01:00 [DBG] Hosting starting
+2023-05-27 14:21:52.954 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 24D7086D4A581986C9118C4ED8B11A8FCD9D0DE3)
+2023-05-27 14:21:53.074 +01:00 [INF] Now listening on: https://localhost:7180
+2023-05-27 14:21:53.076 +01:00 [INF] Now listening on: http://localhost:5097
+2023-05-27 14:21:53.077 +01:00 [DBG] Loaded hosting startup assembly ApplicationAPI
+2023-05-27 14:21:53.078 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-05-27 14:21:53.079 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-05-27 14:21:53.080 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-27 14:21:53.082 +01:00 [INF] Hosting environment: Development
+2023-05-27 14:21:53.082 +01:00 [INF] Content root path: C:\Users\t_war\Documents\projects\code\todo\src\ApplicationAPI\
+2023-05-27 14:21:53.083 +01:00 [DBG] Hosting started
+2023-05-27 14:21:53.169 +01:00 [DBG] Connection id "0HMQUMLB3F48J" accepted.
+2023-05-27 14:21:53.175 +01:00 [DBG] Connection id "0HMQUMLB3F48J" started.
+2023-05-27 14:21:53.181 +01:00 [DBG] Connection id "0HMQUMLB3F48J" received FIN.
+2023-05-27 14:21:53.238 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:21:53.324 +01:00 [DBG] Connection id "0HMQUMLB3F48J" stopped.
+2023-05-27 14:21:53.334 +01:00 [DBG] Connection id "0HMQUMLB3F48J" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:21:53.608 +01:00 [DBG] Connection id "0HMQUMLB3F48K" accepted.
+2023-05-27 14:21:53.816 +01:00 [DBG] Connection id "0HMQUMLB3F48K" started.
+2023-05-27 14:21:54.084 +01:00 [DBG] Connection 0HMQUMLB3F48K established using the following protocol: "Tls13"
+2023-05-27 14:21:54.322 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/index.html - -
+2023-05-27 14:21:54.563 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-05-27 14:21:55.401 +01:00 [DBG] Connection id "0HMQUMLB3F48L" accepted.
+2023-05-27 14:21:55.413 +01:00 [DBG] Connection id "0HMQUMLB3F48L" started.
+2023-05-27 14:21:55.441 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:21:55.451 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-05-27 14:21:55.476 +01:00 [DBG] Connection id "0HMQUMLB3F48L" stopped.
+2023-05-27 14:21:55.499 +01:00 [DBG] Connection id "0HMQUMLB3F48L" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:21:55.551 +01:00 [DBG] Connection id "0HMQUMLB3F48M" accepted.
+2023-05-27 14:21:55.562 +01:00 [DBG] Connection id "0HMQUMLB3F48M" started.
+2023-05-27 14:21:55.565 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:21:55.583 +01:00 [DBG] Connection id "0HMQUMLB3F48M" stopped.
+2023-05-27 14:21:55.590 +01:00 [DBG] Connection id "0HMQUMLB3F48M" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:21:55.629 +01:00 [DBG] Connection id "0HMQUMLB3F48N" accepted.
+2023-05-27 14:21:55.634 +01:00 [DBG] Connection id "0HMQUMLB3F48N" started.
+2023-05-27 14:21:55.645 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:21:55.777 +01:00 [DBG] Connection id "0HMQUMLB3F48N" stopped.
+2023-05-27 14:21:55.805 +01:00 [DBG] Connection id "0HMQUMLB3F48N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:21:55.828 +01:00 [DBG] Connection id "0HMQUMLB3F48O" accepted.
+2023-05-27 14:21:55.829 +01:00 [DBG] Connection id "0HMQUMLB3F48O" started.
+2023-05-27 14:21:55.842 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:21:55.850 +01:00 [DBG] Connection id "0HMQUMLB3F48O" stopped.
+2023-05-27 14:21:55.851 +01:00 [DBG] Connection id "0HMQUMLB3F48O" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:22:30.973 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-05-27 14:22:30.981 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 36671.6283ms
+2023-05-27 14:22:31.004 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - -
+2023-05-27 14:22:31.032 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 28.7355ms
+2023-05-27 14:22:31.161 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_vs/browserLink - -
+2023-05-27 14:22:31.267 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 105.6846ms
+2023-05-27 14:22:31.578 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-05-27 14:22:31.962 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 384.3853ms
+2023-05-27 14:24:03.840 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-05-27 14:24:04.152 +01:00 [DBG] Hosting starting
+2023-05-27 14:24:04.613 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 24D7086D4A581986C9118C4ED8B11A8FCD9D0DE3)
+2023-05-27 14:24:04.775 +01:00 [INF] Now listening on: https://localhost:7180
+2023-05-27 14:24:04.777 +01:00 [INF] Now listening on: http://localhost:5097
+2023-05-27 14:24:04.778 +01:00 [DBG] Loaded hosting startup assembly ApplicationAPI
+2023-05-27 14:24:04.779 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-05-27 14:24:04.780 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-05-27 14:24:04.782 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-27 14:24:04.785 +01:00 [INF] Hosting environment: Development
+2023-05-27 14:24:04.786 +01:00 [INF] Content root path: C:\Users\t_war\Documents\projects\code\todo\src\ApplicationAPI\
+2023-05-27 14:24:04.787 +01:00 [DBG] Hosting started
+2023-05-27 14:24:05.384 +01:00 [DBG] Connection id "0HMQUMMIGDQ2A" received FIN.
+2023-05-27 14:24:05.385 +01:00 [DBG] Connection id "0HMQUMMIGDQ2B" received FIN.
+2023-05-27 14:24:05.390 +01:00 [DBG] Connection id "0HMQUMMIGDQ2B" accepted.
+2023-05-27 14:24:05.390 +01:00 [DBG] Connection id "0HMQUMMIGDQ2A" accepted.
+2023-05-27 14:24:05.398 +01:00 [DBG] Connection id "0HMQUMMIGDQ2B" started.
+2023-05-27 14:24:05.400 +01:00 [DBG] Connection id "0HMQUMMIGDQ2A" started.
+2023-05-27 14:24:05.485 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:05.485 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:05.834 +01:00 [DBG] Connection id "0HMQUMMIGDQ2A" stopped.
+2023-05-27 14:24:05.834 +01:00 [DBG] Connection id "0HMQUMMIGDQ2B" stopped.
+2023-05-27 14:24:05.851 +01:00 [DBG] Connection id "0HMQUMMIGDQ2B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:05.851 +01:00 [DBG] Connection id "0HMQUMMIGDQ2A" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:06.064 +01:00 [DBG] Connection id "0HMQUMMIGDQ2C" accepted.
+2023-05-27 14:24:06.146 +01:00 [DBG] Connection id "0HMQUMMIGDQ2C" started.
+2023-05-27 14:24:06.352 +01:00 [DBG] Connection 0HMQUMMIGDQ2C established using the following protocol: "Tls13"
+2023-05-27 14:24:06.515 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/index.html - -
+2023-05-27 14:24:06.617 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-05-27 14:24:07.191 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-05-27 14:24:07.688 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-05-27 14:24:07.811 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - -
+2023-05-27 14:24:07.872 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_vs/browserLink - -
+2023-05-27 14:24:08.023 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 1518.3959ms
+2023-05-27 14:24:08.022 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 207.3620ms
+2023-05-27 14:24:08.367 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 495.1387ms
+2023-05-27 14:24:08.794 +01:00 [DBG] Connection id "0HMQUMMIGDQ2D" accepted.
+2023-05-27 14:24:08.809 +01:00 [DBG] Connection id "0HMQUMMIGDQ2D" started.
+2023-05-27 14:24:08.830 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:08.838 +01:00 [DBG] Connection id "0HMQUMMIGDQ2D" stopped.
+2023-05-27 14:24:08.849 +01:00 [DBG] Connection id "0HMQUMMIGDQ2D" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:08.882 +01:00 [DBG] Connection id "0HMQUMMIGDQ2E" accepted.
+2023-05-27 14:24:08.884 +01:00 [DBG] Connection id "0HMQUMMIGDQ2E" started.
+2023-05-27 14:24:08.889 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:08.903 +01:00 [DBG] Connection id "0HMQUMMIGDQ2E" stopped.
+2023-05-27 14:24:08.911 +01:00 [DBG] Connection id "0HMQUMMIGDQ2E" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:08.952 +01:00 [DBG] Connection id "0HMQUMMIGDQ2F" accepted.
+2023-05-27 14:24:08.965 +01:00 [DBG] Connection id "0HMQUMMIGDQ2F" started.
+2023-05-27 14:24:09.000 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:09.006 +01:00 [DBG] Connection id "0HMQUMMIGDQ2F" stopped.
+2023-05-27 14:24:09.014 +01:00 [DBG] Connection id "0HMQUMMIGDQ2F" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:09.070 +01:00 [DBG] Connection id "0HMQUMMIGDQ2G" accepted.
+2023-05-27 14:24:09.079 +01:00 [DBG] Connection id "0HMQUMMIGDQ2G" started.
+2023-05-27 14:24:09.083 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:09.099 +01:00 [DBG] Connection id "0HMQUMMIGDQ2G" stopped.
+2023-05-27 14:24:09.117 +01:00 [DBG] Connection id "0HMQUMMIGDQ2G" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:10.284 +01:00 [DBG] Connection id "0HMQUMMIGDQ2H" accepted.
+2023-05-27 14:24:10.285 +01:00 [DBG] Connection id "0HMQUMMIGDQ2H" started.
+2023-05-27 14:24:10.292 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:10.301 +01:00 [DBG] Connection id "0HMQUMMIGDQ2H" stopped.
+2023-05-27 14:24:10.310 +01:00 [DBG] Connection id "0HMQUMMIGDQ2H" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:10.335 +01:00 [DBG] Connection id "0HMQUMMIGDQ2I" accepted.
+2023-05-27 14:24:10.341 +01:00 [DBG] Connection id "0HMQUMMIGDQ2I" started.
+2023-05-27 14:24:10.346 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:10.353 +01:00 [DBG] Connection id "0HMQUMMIGDQ2I" stopped.
+2023-05-27 14:24:10.361 +01:00 [DBG] Connection id "0HMQUMMIGDQ2I" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:10.392 +01:00 [DBG] Connection id "0HMQUMMIGDQ2J" accepted.
+2023-05-27 14:24:10.396 +01:00 [DBG] Connection id "0HMQUMMIGDQ2J" started.
+2023-05-27 14:24:10.402 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:10.411 +01:00 [DBG] Connection id "0HMQUMMIGDQ2J" stopped.
+2023-05-27 14:24:10.420 +01:00 [DBG] Connection id "0HMQUMMIGDQ2J" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:10.432 +01:00 [DBG] Connection id "0HMQUMMIGDQ2K" accepted.
+2023-05-27 14:24:10.440 +01:00 [DBG] Connection id "0HMQUMMIGDQ2K" started.
+2023-05-27 14:24:10.458 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:10.468 +01:00 [DBG] Connection id "0HMQUMMIGDQ2K" stopped.
+2023-05-27 14:24:10.470 +01:00 [DBG] Connection id "0HMQUMMIGDQ2K" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:10.971 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-05-27 14:24:11.586 +01:00 [DBG] Connection id "0HMQUMMIGDQ2L" accepted.
+2023-05-27 14:24:11.603 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 631.8926ms
+2023-05-27 14:24:11.620 +01:00 [DBG] Connection id "0HMQUMMIGDQ2L" started.
+2023-05-27 14:24:11.628 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:11.635 +01:00 [DBG] Connection id "0HMQUMMIGDQ2L" stopped.
+2023-05-27 14:24:11.640 +01:00 [DBG] Connection id "0HMQUMMIGDQ2L" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:11.659 +01:00 [DBG] Connection id "0HMQUMMIGDQ2M" accepted.
+2023-05-27 14:24:11.666 +01:00 [DBG] Connection id "0HMQUMMIGDQ2M" started.
+2023-05-27 14:24:11.672 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:11.681 +01:00 [DBG] Connection id "0HMQUMMIGDQ2M" stopped.
+2023-05-27 14:24:11.687 +01:00 [DBG] Connection id "0HMQUMMIGDQ2M" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:11.703 +01:00 [DBG] Connection id "0HMQUMMIGDQ2N" accepted.
+2023-05-27 14:24:11.707 +01:00 [DBG] Connection id "0HMQUMMIGDQ2N" started.
+2023-05-27 14:24:11.718 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:11.736 +01:00 [DBG] Connection id "0HMQUMMIGDQ2N" stopped.
+2023-05-27 14:24:11.768 +01:00 [DBG] Connection id "0HMQUMMIGDQ2N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:11.897 +01:00 [DBG] Connection id "0HMQUMMIGDQ2O" accepted.
+2023-05-27 14:24:11.900 +01:00 [DBG] Connection id "0HMQUMMIGDQ2O" started.
+2023-05-27 14:24:11.909 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:11.918 +01:00 [DBG] Connection id "0HMQUMMIGDQ2O" stopped.
+2023-05-27 14:24:11.923 +01:00 [DBG] Connection id "0HMQUMMIGDQ2O" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:13.119 +01:00 [DBG] Connection id "0HMQUMMIGDQ2P" accepted.
+2023-05-27 14:24:13.125 +01:00 [DBG] Connection id "0HMQUMMIGDQ2P" started.
+2023-05-27 14:24:13.132 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:13.148 +01:00 [DBG] Connection id "0HMQUMMIGDQ2P" stopped.
+2023-05-27 14:24:13.150 +01:00 [DBG] Connection id "0HMQUMMIGDQ2P" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:13.175 +01:00 [DBG] Connection id "0HMQUMMIGDQ2Q" accepted.
+2023-05-27 14:24:13.176 +01:00 [DBG] Connection id "0HMQUMMIGDQ2Q" started.
+2023-05-27 14:24:13.182 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:13.194 +01:00 [DBG] Connection id "0HMQUMMIGDQ2Q" stopped.
+2023-05-27 14:24:13.199 +01:00 [DBG] Connection id "0HMQUMMIGDQ2Q" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:13.214 +01:00 [DBG] Connection id "0HMQUMMIGDQ2R" accepted.
+2023-05-27 14:24:13.217 +01:00 [DBG] Connection id "0HMQUMMIGDQ2R" started.
+2023-05-27 14:24:13.228 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:13.238 +01:00 [DBG] Connection id "0HMQUMMIGDQ2R" stopped.
+2023-05-27 14:24:13.244 +01:00 [DBG] Connection id "0HMQUMMIGDQ2R" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:13.258 +01:00 [DBG] Connection id "0HMQUMMIGDQ2S" accepted.
+2023-05-27 14:24:13.260 +01:00 [DBG] Connection id "0HMQUMMIGDQ2S" started.
+2023-05-27 14:24:13.265 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:13.312 +01:00 [DBG] Connection id "0HMQUMMIGDQ2S" stopped.
+2023-05-27 14:24:13.320 +01:00 [DBG] Connection id "0HMQUMMIGDQ2S" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:14.496 +01:00 [DBG] Connection id "0HMQUMMIGDQ2T" accepted.
+2023-05-27 14:24:14.503 +01:00 [DBG] Connection id "0HMQUMMIGDQ2T" started.
+2023-05-27 14:24:14.508 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:14.516 +01:00 [DBG] Connection id "0HMQUMMIGDQ2T" stopped.
+2023-05-27 14:24:14.519 +01:00 [DBG] Connection id "0HMQUMMIGDQ2T" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:14.540 +01:00 [DBG] Connection id "0HMQUMMIGDQ2U" accepted.
+2023-05-27 14:24:14.544 +01:00 [DBG] Connection id "0HMQUMMIGDQ2U" started.
+2023-05-27 14:24:14.553 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:14.608 +01:00 [DBG] Connection id "0HMQUMMIGDQ2U" stopped.
+2023-05-27 14:24:14.617 +01:00 [DBG] Connection id "0HMQUMMIGDQ2U" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:14.653 +01:00 [DBG] Connection id "0HMQUMMIGDQ2V" accepted.
+2023-05-27 14:24:14.656 +01:00 [DBG] Connection id "0HMQUMMIGDQ2V" started.
+2023-05-27 14:24:14.668 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:14.677 +01:00 [DBG] Connection id "0HMQUMMIGDQ2V" stopped.
+2023-05-27 14:24:14.685 +01:00 [DBG] Connection id "0HMQUMMIGDQ2V" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:14.697 +01:00 [DBG] Connection id "0HMQUMMIGDQ30" accepted.
+2023-05-27 14:24:14.700 +01:00 [DBG] Connection id "0HMQUMMIGDQ30" started.
+2023-05-27 14:24:14.711 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:14.719 +01:00 [DBG] Connection id "0HMQUMMIGDQ30" stopped.
+2023-05-27 14:24:14.725 +01:00 [DBG] Connection id "0HMQUMMIGDQ30" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:15.895 +01:00 [DBG] Connection id "0HMQUMMIGDQ31" accepted.
+2023-05-27 14:24:15.900 +01:00 [DBG] Connection id "0HMQUMMIGDQ31" started.
+2023-05-27 14:24:15.912 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:15.915 +01:00 [DBG] Connection id "0HMQUMMIGDQ31" stopped.
+2023-05-27 14:24:15.926 +01:00 [DBG] Connection id "0HMQUMMIGDQ31" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:15.953 +01:00 [DBG] Connection id "0HMQUMMIGDQ32" accepted.
+2023-05-27 14:24:15.966 +01:00 [DBG] Connection id "0HMQUMMIGDQ32" started.
+2023-05-27 14:24:15.969 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:15.981 +01:00 [DBG] Connection id "0HMQUMMIGDQ32" stopped.
+2023-05-27 14:24:15.985 +01:00 [DBG] Connection id "0HMQUMMIGDQ32" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:15.996 +01:00 [DBG] Connection id "0HMQUMMIGDQ33" accepted.
+2023-05-27 14:24:15.997 +01:00 [DBG] Connection id "0HMQUMMIGDQ33" started.
+2023-05-27 14:24:16.002 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:16.019 +01:00 [DBG] Connection id "0HMQUMMIGDQ33" stopped.
+2023-05-27 14:24:16.020 +01:00 [DBG] Connection id "0HMQUMMIGDQ33" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:16.050 +01:00 [DBG] Connection id "0HMQUMMIGDQ34" accepted.
+2023-05-27 14:24:16.076 +01:00 [DBG] Connection id "0HMQUMMIGDQ34" started.
+2023-05-27 14:24:16.107 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:16.140 +01:00 [DBG] Connection id "0HMQUMMIGDQ34" stopped.
+2023-05-27 14:24:16.167 +01:00 [DBG] Connection id "0HMQUMMIGDQ34" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:17.288 +01:00 [DBG] Connection id "0HMQUMMIGDQ35" accepted.
+2023-05-27 14:24:17.293 +01:00 [DBG] Connection id "0HMQUMMIGDQ35" started.
+2023-05-27 14:24:17.298 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:17.310 +01:00 [DBG] Connection id "0HMQUMMIGDQ35" stopped.
+2023-05-27 14:24:17.314 +01:00 [DBG] Connection id "0HMQUMMIGDQ35" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:17.340 +01:00 [DBG] Connection id "0HMQUMMIGDQ36" accepted.
+2023-05-27 14:24:17.345 +01:00 [DBG] Connection id "0HMQUMMIGDQ36" started.
+2023-05-27 14:24:17.348 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:17.361 +01:00 [DBG] Connection id "0HMQUMMIGDQ36" stopped.
+2023-05-27 14:24:17.365 +01:00 [DBG] Connection id "0HMQUMMIGDQ36" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:17.411 +01:00 [DBG] Connection id "0HMQUMMIGDQ37" accepted.
+2023-05-27 14:24:17.429 +01:00 [DBG] Connection id "0HMQUMMIGDQ37" started.
+2023-05-27 14:24:17.445 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:17.455 +01:00 [DBG] Connection id "0HMQUMMIGDQ37" stopped.
+2023-05-27 14:24:17.458 +01:00 [DBG] Connection id "0HMQUMMIGDQ37" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:17.483 +01:00 [DBG] Connection id "0HMQUMMIGDQ38" accepted.
+2023-05-27 14:24:17.489 +01:00 [DBG] Connection id "0HMQUMMIGDQ38" started.
+2023-05-27 14:24:17.494 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:17.510 +01:00 [DBG] Connection id "0HMQUMMIGDQ38" stopped.
+2023-05-27 14:24:17.514 +01:00 [DBG] Connection id "0HMQUMMIGDQ38" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:18.666 +01:00 [DBG] Connection id "0HMQUMMIGDQ39" accepted.
+2023-05-27 14:24:18.668 +01:00 [DBG] Connection id "0HMQUMMIGDQ39" started.
+2023-05-27 14:24:18.677 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:18.689 +01:00 [DBG] Connection id "0HMQUMMIGDQ39" stopped.
+2023-05-27 14:24:18.692 +01:00 [DBG] Connection id "0HMQUMMIGDQ39" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:18.746 +01:00 [DBG] Connection id "0HMQUMMIGDQ3A" accepted.
+2023-05-27 14:24:18.760 +01:00 [DBG] Connection id "0HMQUMMIGDQ3A" started.
+2023-05-27 14:24:18.782 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:18.797 +01:00 [DBG] Connection id "0HMQUMMIGDQ3A" stopped.
+2023-05-27 14:24:18.800 +01:00 [DBG] Connection id "0HMQUMMIGDQ3A" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:18.834 +01:00 [DBG] Connection id "0HMQUMMIGDQ3B" accepted.
+2023-05-27 14:24:18.840 +01:00 [DBG] Connection id "0HMQUMMIGDQ3B" started.
+2023-05-27 14:24:18.845 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:18.851 +01:00 [DBG] Connection id "0HMQUMMIGDQ3B" stopped.
+2023-05-27 14:24:18.856 +01:00 [DBG] Connection id "0HMQUMMIGDQ3B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:18.867 +01:00 [DBG] Connection id "0HMQUMMIGDQ3C" accepted.
+2023-05-27 14:24:18.869 +01:00 [DBG] Connection id "0HMQUMMIGDQ3C" started.
+2023-05-27 14:24:18.873 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:18.886 +01:00 [DBG] Connection id "0HMQUMMIGDQ3C" stopped.
+2023-05-27 14:24:18.892 +01:00 [DBG] Connection id "0HMQUMMIGDQ3C" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:20.069 +01:00 [DBG] Connection id "0HMQUMMIGDQ3D" accepted.
+2023-05-27 14:24:20.077 +01:00 [DBG] Connection id "0HMQUMMIGDQ3D" started.
+2023-05-27 14:24:20.081 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:20.089 +01:00 [DBG] Connection id "0HMQUMMIGDQ3D" stopped.
+2023-05-27 14:24:20.092 +01:00 [DBG] Connection id "0HMQUMMIGDQ3D" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:20.110 +01:00 [DBG] Connection id "0HMQUMMIGDQ3E" accepted.
+2023-05-27 14:24:20.114 +01:00 [DBG] Connection id "0HMQUMMIGDQ3E" started.
+2023-05-27 14:24:20.117 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:20.131 +01:00 [DBG] Connection id "0HMQUMMIGDQ3E" stopped.
+2023-05-27 14:24:20.136 +01:00 [DBG] Connection id "0HMQUMMIGDQ3E" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:20.152 +01:00 [DBG] Connection id "0HMQUMMIGDQ3F" accepted.
+2023-05-27 14:24:20.153 +01:00 [DBG] Connection id "0HMQUMMIGDQ3F" started.
+2023-05-27 14:24:20.163 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:20.169 +01:00 [DBG] Connection id "0HMQUMMIGDQ3F" stopped.
+2023-05-27 14:24:20.176 +01:00 [DBG] Connection id "0HMQUMMIGDQ3F" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:20.202 +01:00 [DBG] Connection id "0HMQUMMIGDQ3G" accepted.
+2023-05-27 14:24:20.218 +01:00 [DBG] Connection id "0HMQUMMIGDQ3G" started.
+2023-05-27 14:24:20.244 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:20.286 +01:00 [DBG] Connection id "0HMQUMMIGDQ3G" stopped.
+2023-05-27 14:24:20.296 +01:00 [DBG] Connection id "0HMQUMMIGDQ3G" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:21.086 +01:00 [DBG] Connection id "0HMQUMMIGDQ2C" received FIN.
+2023-05-27 14:24:21.179 +01:00 [DBG] Connection id "0HMQUMMIGDQ2C" is closed. The last processed stream ID was 7.
+2023-05-27 14:24:21.207 +01:00 [DBG] Connection id "0HMQUMMIGDQ2C" sending FIN because: "The client closed the connection."
+2023-05-27 14:24:21.239 +01:00 [DBG] Connection id "0HMQUMMIGDQ2C" stopped.
+2023-05-27 14:24:21.406 +01:00 [DBG] Connection id "0HMQUMMIGDQ3H" accepted.
+2023-05-27 14:24:21.409 +01:00 [DBG] Connection id "0HMQUMMIGDQ3H" started.
+2023-05-27 14:24:21.417 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:21.430 +01:00 [DBG] Connection id "0HMQUMMIGDQ3H" stopped.
+2023-05-27 14:24:21.438 +01:00 [DBG] Connection id "0HMQUMMIGDQ3H" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:21.456 +01:00 [DBG] Connection id "0HMQUMMIGDQ3I" accepted.
+2023-05-27 14:24:21.462 +01:00 [DBG] Connection id "0HMQUMMIGDQ3I" started.
+2023-05-27 14:24:21.473 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:21.501 +01:00 [DBG] Connection id "0HMQUMMIGDQ3I" stopped.
+2023-05-27 14:24:21.530 +01:00 [DBG] Connection id "0HMQUMMIGDQ3I" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:21.560 +01:00 [DBG] Connection id "0HMQUMMIGDQ3J" accepted.
+2023-05-27 14:24:21.564 +01:00 [DBG] Connection id "0HMQUMMIGDQ3J" started.
+2023-05-27 14:24:21.571 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:21.593 +01:00 [DBG] Connection id "0HMQUMMIGDQ3J" stopped.
+2023-05-27 14:24:21.618 +01:00 [DBG] Connection id "0HMQUMMIGDQ3J" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:21.641 +01:00 [DBG] Connection id "0HMQUMMIGDQ3K" accepted.
+2023-05-27 14:24:21.644 +01:00 [DBG] Connection id "0HMQUMMIGDQ3K" started.
+2023-05-27 14:24:21.648 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:21.660 +01:00 [DBG] Connection id "0HMQUMMIGDQ3K" stopped.
+2023-05-27 14:24:21.664 +01:00 [DBG] Connection id "0HMQUMMIGDQ3K" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:36.631 +01:00 [DBG] Connection id "0HMQUMMIGDQ3L" accepted.
+2023-05-27 14:24:36.640 +01:00 [DBG] Connection id "0HMQUMMIGDQ3L" started.
+2023-05-27 14:24:36.658 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:36.667 +01:00 [DBG] Connection id "0HMQUMMIGDQ3L" stopped.
+2023-05-27 14:24:36.672 +01:00 [DBG] Connection id "0HMQUMMIGDQ3L" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:36.683 +01:00 [DBG] Connection id "0HMQUMMIGDQ3M" accepted.
+2023-05-27 14:24:36.686 +01:00 [DBG] Connection id "0HMQUMMIGDQ3M" started.
+2023-05-27 14:24:36.717 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:36.729 +01:00 [DBG] Connection id "0HMQUMMIGDQ3M" stopped.
+2023-05-27 14:24:36.750 +01:00 [DBG] Connection id "0HMQUMMIGDQ3M" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:36.776 +01:00 [DBG] Connection id "0HMQUMMIGDQ3N" accepted.
+2023-05-27 14:24:36.780 +01:00 [DBG] Connection id "0HMQUMMIGDQ3N" started.
+2023-05-27 14:24:36.789 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:36.796 +01:00 [DBG] Connection id "0HMQUMMIGDQ3N" stopped.
+2023-05-27 14:24:36.803 +01:00 [DBG] Connection id "0HMQUMMIGDQ3N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:36.815 +01:00 [DBG] Connection id "0HMQUMMIGDQ3O" accepted.
+2023-05-27 14:24:36.818 +01:00 [DBG] Connection id "0HMQUMMIGDQ3O" started.
+2023-05-27 14:24:36.826 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:36.834 +01:00 [DBG] Connection id "0HMQUMMIGDQ3O" stopped.
+2023-05-27 14:24:36.839 +01:00 [DBG] Connection id "0HMQUMMIGDQ3O" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:37.978 +01:00 [DBG] Connection id "0HMQUMMIGDQ3P" accepted.
+2023-05-27 14:24:37.980 +01:00 [DBG] Connection id "0HMQUMMIGDQ3P" started.
+2023-05-27 14:24:37.987 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:38.017 +01:00 [DBG] Connection id "0HMQUMMIGDQ3P" stopped.
+2023-05-27 14:24:38.024 +01:00 [DBG] Connection id "0HMQUMMIGDQ3P" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:38.060 +01:00 [DBG] Connection id "0HMQUMMIGDQ3Q" accepted.
+2023-05-27 14:24:38.063 +01:00 [DBG] Connection id "0HMQUMMIGDQ3Q" started.
+2023-05-27 14:24:38.070 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:38.078 +01:00 [DBG] Connection id "0HMQUMMIGDQ3Q" stopped.
+2023-05-27 14:24:38.086 +01:00 [DBG] Connection id "0HMQUMMIGDQ3Q" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:38.098 +01:00 [DBG] Connection id "0HMQUMMIGDQ3R" accepted.
+2023-05-27 14:24:38.100 +01:00 [DBG] Connection id "0HMQUMMIGDQ3R" started.
+2023-05-27 14:24:38.110 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:38.120 +01:00 [DBG] Connection id "0HMQUMMIGDQ3R" stopped.
+2023-05-27 14:24:38.127 +01:00 [DBG] Connection id "0HMQUMMIGDQ3R" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:38.142 +01:00 [DBG] Connection id "0HMQUMMIGDQ3S" accepted.
+2023-05-27 14:24:38.144 +01:00 [DBG] Connection id "0HMQUMMIGDQ3S" started.
+2023-05-27 14:24:38.150 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:38.160 +01:00 [DBG] Connection id "0HMQUMMIGDQ3S" stopped.
+2023-05-27 14:24:38.164 +01:00 [DBG] Connection id "0HMQUMMIGDQ3S" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:39.308 +01:00 [DBG] Connection id "0HMQUMMIGDQ3T" accepted.
+2023-05-27 14:24:39.311 +01:00 [DBG] Connection id "0HMQUMMIGDQ3T" started.
+2023-05-27 14:24:39.332 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:39.345 +01:00 [DBG] Connection id "0HMQUMMIGDQ3T" stopped.
+2023-05-27 14:24:39.350 +01:00 [DBG] Connection id "0HMQUMMIGDQ3T" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:39.363 +01:00 [DBG] Connection id "0HMQUMMIGDQ3U" accepted.
+2023-05-27 14:24:39.367 +01:00 [DBG] Connection id "0HMQUMMIGDQ3U" started.
+2023-05-27 14:24:39.373 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:39.380 +01:00 [DBG] Connection id "0HMQUMMIGDQ3U" stopped.
+2023-05-27 14:24:39.385 +01:00 [DBG] Connection id "0HMQUMMIGDQ3U" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:39.396 +01:00 [DBG] Connection id "0HMQUMMIGDQ3V" accepted.
+2023-05-27 14:24:39.398 +01:00 [DBG] Connection id "0HMQUMMIGDQ3V" started.
+2023-05-27 14:24:39.407 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:39.417 +01:00 [DBG] Connection id "0HMQUMMIGDQ3V" stopped.
+2023-05-27 14:24:39.420 +01:00 [DBG] Connection id "0HMQUMMIGDQ3V" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:39.434 +01:00 [DBG] Connection id "0HMQUMMIGDQ40" accepted.
+2023-05-27 14:24:39.435 +01:00 [DBG] Connection id "0HMQUMMIGDQ40" started.
+2023-05-27 14:24:39.442 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:39.452 +01:00 [DBG] Connection id "0HMQUMMIGDQ40" stopped.
+2023-05-27 14:24:39.481 +01:00 [DBG] Connection id "0HMQUMMIGDQ40" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:40.786 +01:00 [DBG] Connection id "0HMQUMMIGDQ41" accepted.
+2023-05-27 14:24:40.794 +01:00 [DBG] Connection id "0HMQUMMIGDQ41" started.
+2023-05-27 14:24:40.809 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:40.835 +01:00 [DBG] Connection id "0HMQUMMIGDQ41" stopped.
+2023-05-27 14:24:40.843 +01:00 [DBG] Connection id "0HMQUMMIGDQ41" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:40.855 +01:00 [DBG] Connection id "0HMQUMMIGDQ42" accepted.
+2023-05-27 14:24:40.859 +01:00 [DBG] Connection id "0HMQUMMIGDQ42" started.
+2023-05-27 14:24:40.865 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:40.870 +01:00 [DBG] Connection id "0HMQUMMIGDQ42" stopped.
+2023-05-27 14:24:40.873 +01:00 [DBG] Connection id "0HMQUMMIGDQ42" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:40.884 +01:00 [DBG] Connection id "0HMQUMMIGDQ43" accepted.
+2023-05-27 14:24:40.887 +01:00 [DBG] Connection id "0HMQUMMIGDQ43" started.
+2023-05-27 14:24:40.892 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:40.899 +01:00 [DBG] Connection id "0HMQUMMIGDQ43" stopped.
+2023-05-27 14:24:40.902 +01:00 [DBG] Connection id "0HMQUMMIGDQ43" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:40.913 +01:00 [DBG] Connection id "0HMQUMMIGDQ44" accepted.
+2023-05-27 14:24:40.916 +01:00 [DBG] Connection id "0HMQUMMIGDQ44" started.
+2023-05-27 14:24:40.922 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:40.930 +01:00 [DBG] Connection id "0HMQUMMIGDQ44" stopped.
+2023-05-27 14:24:40.935 +01:00 [DBG] Connection id "0HMQUMMIGDQ44" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:42.002 +01:00 [DBG] Connection id "0HMQUMMIGDQ45" accepted.
+2023-05-27 14:24:42.006 +01:00 [DBG] Connection id "0HMQUMMIGDQ45" started.
+2023-05-27 14:24:42.012 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:42.023 +01:00 [DBG] Connection id "0HMQUMMIGDQ45" stopped.
+2023-05-27 14:24:42.027 +01:00 [DBG] Connection id "0HMQUMMIGDQ45" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:42.043 +01:00 [DBG] Connection id "0HMQUMMIGDQ46" accepted.
+2023-05-27 14:24:42.046 +01:00 [DBG] Connection id "0HMQUMMIGDQ46" started.
+2023-05-27 14:24:42.057 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:42.079 +01:00 [DBG] Connection id "0HMQUMMIGDQ46" stopped.
+2023-05-27 14:24:42.086 +01:00 [DBG] Connection id "0HMQUMMIGDQ46" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:42.111 +01:00 [DBG] Connection id "0HMQUMMIGDQ47" accepted.
+2023-05-27 14:24:42.123 +01:00 [DBG] Connection id "0HMQUMMIGDQ47" started.
+2023-05-27 14:24:42.132 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:42.147 +01:00 [DBG] Connection id "0HMQUMMIGDQ47" stopped.
+2023-05-27 14:24:42.157 +01:00 [DBG] Connection id "0HMQUMMIGDQ47" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:42.166 +01:00 [DBG] Connection id "0HMQUMMIGDQ48" accepted.
+2023-05-27 14:24:42.169 +01:00 [DBG] Connection id "0HMQUMMIGDQ48" started.
+2023-05-27 14:24:42.178 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:42.186 +01:00 [DBG] Connection id "0HMQUMMIGDQ48" stopped.
+2023-05-27 14:24:42.191 +01:00 [DBG] Connection id "0HMQUMMIGDQ48" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:43.251 +01:00 [DBG] Connection id "0HMQUMMIGDQ49" accepted.
+2023-05-27 14:24:43.255 +01:00 [DBG] Connection id "0HMQUMMIGDQ49" started.
+2023-05-27 14:24:43.261 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:43.273 +01:00 [DBG] Connection id "0HMQUMMIGDQ49" stopped.
+2023-05-27 14:24:43.279 +01:00 [DBG] Connection id "0HMQUMMIGDQ49" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:43.294 +01:00 [DBG] Connection id "0HMQUMMIGDQ4A" accepted.
+2023-05-27 14:24:43.298 +01:00 [DBG] Connection id "0HMQUMMIGDQ4A" started.
+2023-05-27 14:24:43.308 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:43.318 +01:00 [DBG] Connection id "0HMQUMMIGDQ4A" stopped.
+2023-05-27 14:24:43.330 +01:00 [DBG] Connection id "0HMQUMMIGDQ4A" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:43.358 +01:00 [DBG] Connection id "0HMQUMMIGDQ4B" accepted.
+2023-05-27 14:24:43.366 +01:00 [DBG] Connection id "0HMQUMMIGDQ4B" started.
+2023-05-27 14:24:43.370 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:43.383 +01:00 [DBG] Connection id "0HMQUMMIGDQ4B" stopped.
+2023-05-27 14:24:43.386 +01:00 [DBG] Connection id "0HMQUMMIGDQ4B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:43.399 +01:00 [DBG] Connection id "0HMQUMMIGDQ4C" accepted.
+2023-05-27 14:24:43.403 +01:00 [DBG] Connection id "0HMQUMMIGDQ4C" started.
+2023-05-27 14:24:43.408 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:43.417 +01:00 [DBG] Connection id "0HMQUMMIGDQ4C" stopped.
+2023-05-27 14:24:43.424 +01:00 [DBG] Connection id "0HMQUMMIGDQ4C" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:44.480 +01:00 [DBG] Connection id "0HMQUMMIGDQ4D" accepted.
+2023-05-27 14:24:44.483 +01:00 [DBG] Connection id "0HMQUMMIGDQ4D" started.
+2023-05-27 14:24:44.488 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:44.496 +01:00 [DBG] Connection id "0HMQUMMIGDQ4D" stopped.
+2023-05-27 14:24:44.501 +01:00 [DBG] Connection id "0HMQUMMIGDQ4D" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:44.513 +01:00 [DBG] Connection id "0HMQUMMIGDQ4E" accepted.
+2023-05-27 14:24:44.516 +01:00 [DBG] Connection id "0HMQUMMIGDQ4E" started.
+2023-05-27 14:24:44.521 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:44.532 +01:00 [DBG] Connection id "0HMQUMMIGDQ4E" stopped.
+2023-05-27 14:24:44.541 +01:00 [DBG] Connection id "0HMQUMMIGDQ4E" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:44.555 +01:00 [DBG] Connection id "0HMQUMMIGDQ4F" accepted.
+2023-05-27 14:24:44.561 +01:00 [DBG] Connection id "0HMQUMMIGDQ4F" started.
+2023-05-27 14:24:44.617 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:44.651 +01:00 [DBG] Connection id "0HMQUMMIGDQ4F" stopped.
+2023-05-27 14:24:44.657 +01:00 [DBG] Connection id "0HMQUMMIGDQ4F" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:24:44.670 +01:00 [DBG] Connection id "0HMQUMMIGDQ4G" accepted.
+2023-05-27 14:24:44.675 +01:00 [DBG] Connection id "0HMQUMMIGDQ4G" started.
+2023-05-27 14:24:44.680 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:24:44.695 +01:00 [DBG] Connection id "0HMQUMMIGDQ4G" stopped.
+2023-05-27 14:24:44.702 +01:00 [DBG] Connection id "0HMQUMMIGDQ4G" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:27.666 +01:00 [DBG] Connection id "0HMQUMMIGDQ4H" received FIN.
+2023-05-27 14:25:27.682 +01:00 [DBG] Connection id "0HMQUMMIGDQ4H" accepted.
+2023-05-27 14:25:27.697 +01:00 [DBG] Connection id "0HMQUMMIGDQ4H" started.
+2023-05-27 14:25:27.704 +01:00 [DBG] Connection id "0HMQUMMIGDQ4I" accepted.
+2023-05-27 14:25:27.707 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:27.708 +01:00 [DBG] Connection id "0HMQUMMIGDQ4J" received FIN.
+2023-05-27 14:25:27.709 +01:00 [DBG] Connection id "0HMQUMMIGDQ4I" started.
+2023-05-27 14:25:27.725 +01:00 [DBG] Connection id "0HMQUMMIGDQ4J" accepted.
+2023-05-27 14:25:27.724 +01:00 [DBG] Connection id "0HMQUMMIGDQ4H" stopped.
+2023-05-27 14:25:27.738 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:27.745 +01:00 [DBG] Connection id "0HMQUMMIGDQ4K" accepted.
+2023-05-27 14:25:27.744 +01:00 [DBG] Connection id "0HMQUMMIGDQ4J" started.
+2023-05-27 14:25:27.755 +01:00 [DBG] Connection id "0HMQUMMIGDQ4I" stopped.
+2023-05-27 14:25:27.758 +01:00 [DBG] Connection id "0HMQUMMIGDQ4K" started.
+2023-05-27 14:25:27.763 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:27.766 +01:00 [DBG] Connection id "0HMQUMMIGDQ4I" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:27.749 +01:00 [DBG] Connection id "0HMQUMMIGDQ4H" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:27.771 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:27.777 +01:00 [DBG] Connection id "0HMQUMMIGDQ4J" stopped.
+2023-05-27 14:25:27.782 +01:00 [DBG] Connection id "0HMQUMMIGDQ4L" accepted.
+2023-05-27 14:25:27.789 +01:00 [DBG] Connection id "0HMQUMMIGDQ4K" stopped.
+2023-05-27 14:25:27.792 +01:00 [DBG] Connection id "0HMQUMMIGDQ4L" started.
+2023-05-27 14:25:27.790 +01:00 [DBG] Connection id "0HMQUMMIGDQ4J" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:27.799 +01:00 [DBG] Connection id "0HMQUMMIGDQ4K" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:27.803 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:27.812 +01:00 [DBG] Connection id "0HMQUMMIGDQ4M" accepted.
+2023-05-27 14:25:27.813 +01:00 [DBG] Connection id "0HMQUMMIGDQ4L" stopped.
+2023-05-27 14:25:27.815 +01:00 [DBG] Connection id "0HMQUMMIGDQ4M" started.
+2023-05-27 14:25:27.819 +01:00 [DBG] Connection id "0HMQUMMIGDQ4L" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:27.823 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:27.830 +01:00 [DBG] Connection id "0HMQUMMIGDQ4M" stopped.
+2023-05-27 14:25:27.831 +01:00 [DBG] Connection id "0HMQUMMIGDQ4M" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:27.842 +01:00 [DBG] Connection id "0HMQUMMIGDQ4N" accepted.
+2023-05-27 14:25:27.845 +01:00 [DBG] Connection id "0HMQUMMIGDQ4N" started.
+2023-05-27 14:25:27.856 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:27.864 +01:00 [DBG] Connection id "0HMQUMMIGDQ4N" stopped.
+2023-05-27 14:25:27.885 +01:00 [DBG] Connection id "0HMQUMMIGDQ4N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:27.897 +01:00 [DBG] Connection id "0HMQUMMIGDQ4O" accepted.
+2023-05-27 14:25:27.898 +01:00 [DBG] Connection id "0HMQUMMIGDQ4O" started.
+2023-05-27 14:25:27.901 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:27.904 +01:00 [DBG] Connection id "0HMQUMMIGDQ4O" stopped.
+2023-05-27 14:25:27.909 +01:00 [DBG] Connection id "0HMQUMMIGDQ4O" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:33.934 +01:00 [DBG] Connection id "0HMQUMMIGDQ4P" received FIN.
+2023-05-27 14:25:33.941 +01:00 [DBG] Connection id "0HMQUMMIGDQ4P" accepted.
+2023-05-27 14:25:33.946 +01:00 [DBG] Connection id "0HMQUMMIGDQ4P" started.
+2023-05-27 14:25:33.947 +01:00 [DBG] Connection id "0HMQUMMIGDQ4Q" accepted.
+2023-05-27 14:25:33.948 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:33.949 +01:00 [DBG] Connection id "0HMQUMMIGDQ4Q" started.
+2023-05-27 14:25:33.950 +01:00 [DBG] Connection id "0HMQUMMIGDQ4R" accepted.
+2023-05-27 14:25:33.954 +01:00 [DBG] Connection id "0HMQUMMIGDQ4P" stopped.
+2023-05-27 14:25:33.961 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:33.968 +01:00 [DBG] Connection id "0HMQUMMIGDQ4P" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:33.964 +01:00 [DBG] Connection id "0HMQUMMIGDQ4R" started.
+2023-05-27 14:25:33.979 +01:00 [DBG] Connection id "0HMQUMMIGDQ4Q" stopped.
+2023-05-27 14:25:33.983 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:33.985 +01:00 [DBG] Connection id "0HMQUMMIGDQ4Q" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:33.994 +01:00 [DBG] Connection id "0HMQUMMIGDQ4R" stopped.
+2023-05-27 14:25:34.000 +01:00 [DBG] Connection id "0HMQUMMIGDQ4S" accepted.
+2023-05-27 14:25:34.000 +01:00 [DBG] Connection id "0HMQUMMIGDQ4R" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:34.002 +01:00 [DBG] Connection id "0HMQUMMIGDQ4S" started.
+2023-05-27 14:25:34.007 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:34.009 +01:00 [DBG] Connection id "0HMQUMMIGDQ4T" accepted.
+2023-05-27 14:25:34.015 +01:00 [DBG] Connection id "0HMQUMMIGDQ4S" stopped.
+2023-05-27 14:25:34.018 +01:00 [DBG] Connection id "0HMQUMMIGDQ4T" started.
+2023-05-27 14:25:34.020 +01:00 [DBG] Connection id "0HMQUMMIGDQ4S" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:34.027 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:34.035 +01:00 [DBG] Connection id "0HMQUMMIGDQ4T" stopped.
+2023-05-27 14:25:34.038 +01:00 [DBG] Connection id "0HMQUMMIGDQ4T" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:34.055 +01:00 [DBG] Connection id "0HMQUMMIGDQ4U" accepted.
+2023-05-27 14:25:34.059 +01:00 [DBG] Connection id "0HMQUMMIGDQ4U" started.
+2023-05-27 14:25:34.066 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:34.077 +01:00 [DBG] Connection id "0HMQUMMIGDQ4U" stopped.
+2023-05-27 14:25:34.082 +01:00 [DBG] Connection id "0HMQUMMIGDQ4U" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:34.092 +01:00 [DBG] Connection id "0HMQUMMIGDQ4V" accepted.
+2023-05-27 14:25:34.097 +01:00 [DBG] Connection id "0HMQUMMIGDQ4V" started.
+2023-05-27 14:25:34.102 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:34.111 +01:00 [DBG] Connection id "0HMQUMMIGDQ4V" stopped.
+2023-05-27 14:25:34.116 +01:00 [DBG] Connection id "0HMQUMMIGDQ4V" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:36.046 +01:00 [DBG] Connection id "0HMQUMMIGDQ50" accepted.
+2023-05-27 14:25:36.048 +01:00 [DBG] Connection id "0HMQUMMIGDQ50" started.
+2023-05-27 14:25:36.053 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:36.060 +01:00 [DBG] Connection id "0HMQUMMIGDQ50" stopped.
+2023-05-27 14:25:36.063 +01:00 [DBG] Connection id "0HMQUMMIGDQ50" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:36.072 +01:00 [DBG] Connection id "0HMQUMMIGDQ51" accepted.
+2023-05-27 14:25:36.077 +01:00 [DBG] Connection id "0HMQUMMIGDQ51" started.
+2023-05-27 14:25:36.084 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:36.086 +01:00 [DBG] Connection id "0HMQUMMIGDQ51" stopped.
+2023-05-27 14:25:36.087 +01:00 [DBG] Connection id "0HMQUMMIGDQ51" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:36.097 +01:00 [DBG] Connection id "0HMQUMMIGDQ52" accepted.
+2023-05-27 14:25:36.100 +01:00 [DBG] Connection id "0HMQUMMIGDQ52" started.
+2023-05-27 14:25:36.104 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:36.111 +01:00 [DBG] Connection id "0HMQUMMIGDQ52" stopped.
+2023-05-27 14:25:36.114 +01:00 [DBG] Connection id "0HMQUMMIGDQ52" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:36.120 +01:00 [DBG] Connection id "0HMQUMMIGDQ53" accepted.
+2023-05-27 14:25:36.121 +01:00 [DBG] Connection id "0HMQUMMIGDQ53" started.
+2023-05-27 14:25:36.126 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:36.133 +01:00 [DBG] Connection id "0HMQUMMIGDQ53" stopped.
+2023-05-27 14:25:36.136 +01:00 [DBG] Connection id "0HMQUMMIGDQ53" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:39.079 +01:00 [DBG] Connection id "0HMQUMMIGDQ54" accepted.
+2023-05-27 14:25:39.084 +01:00 [DBG] Connection id "0HMQUMMIGDQ54" started.
+2023-05-27 14:25:39.084 +01:00 [DBG] Connection id "0HMQUMMIGDQ55" accepted.
+2023-05-27 14:25:39.092 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:39.093 +01:00 [DBG] Connection id "0HMQUMMIGDQ55" started.
+2023-05-27 14:25:39.100 +01:00 [DBG] Connection id "0HMQUMMIGDQ54" stopped.
+2023-05-27 14:25:39.104 +01:00 [DBG] Connection id "0HMQUMMIGDQ54" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:39.125 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:39.130 +01:00 [DBG] Connection id "0HMQUMMIGDQ55" stopped.
+2023-05-27 14:25:39.134 +01:00 [DBG] Connection id "0HMQUMMIGDQ55" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:39.151 +01:00 [DBG] Connection id "0HMQUMMIGDQ56" accepted.
+2023-05-27 14:25:39.166 +01:00 [DBG] Connection id "0HMQUMMIGDQ56" started.
+2023-05-27 14:25:39.180 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:39.185 +01:00 [DBG] Connection id "0HMQUMMIGDQ56" stopped.
+2023-05-27 14:25:39.195 +01:00 [DBG] Connection id "0HMQUMMIGDQ56" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:50.032 +01:00 [DBG] Connection id "0HMQUMMIGDQ57" accepted.
+2023-05-27 14:25:50.034 +01:00 [DBG] Connection id "0HMQUMMIGDQ57" started.
+2023-05-27 14:25:50.047 +01:00 [DBG] Connection id "0HMQUMMIGDQ58" accepted.
+2023-05-27 14:25:50.054 +01:00 [DBG] Connection id "0HMQUMMIGDQ58" started.
+2023-05-27 14:25:50.061 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:50.068 +01:00 [DBG] Connection id "0HMQUMMIGDQ58" stopped.
+2023-05-27 14:25:50.077 +01:00 [DBG] Connection id "0HMQUMMIGDQ58" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:50.087 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:50.098 +01:00 [DBG] Connection id "0HMQUMMIGDQ57" stopped.
+2023-05-27 14:25:50.115 +01:00 [DBG] Connection id "0HMQUMMIGDQ57" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:25:50.120 +01:00 [DBG] Connection id "0HMQUMMIGDQ59" accepted.
+2023-05-27 14:25:50.123 +01:00 [DBG] Connection id "0HMQUMMIGDQ59" started.
+2023-05-27 14:25:50.127 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:25:50.137 +01:00 [DBG] Connection id "0HMQUMMIGDQ59" stopped.
+2023-05-27 14:25:50.144 +01:00 [DBG] Connection id "0HMQUMMIGDQ59" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:26:16.042 +01:00 [DBG] Connection id "0HMQUMMIGDQ5A" accepted.
+2023-05-27 14:26:16.054 +01:00 [DBG] Connection id "0HMQUMMIGDQ5A" started.
+2023-05-27 14:26:16.079 +01:00 [DBG] Connection 0HMQUMMIGDQ5A established using the following protocol: "Tls13"
+2023-05-27 14:26:16.085 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/api/todoitems - -
+2023-05-27 14:26:16.098 +01:00 [DBG] The request path  does not match the path filter
+2023-05-27 14:26:16.219 +01:00 [DBG] 1 candidate(s) found for the request path '/api/todoitems'
+2023-05-27 14:26:16.248 +01:00 [DBG] Endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)' with route pattern 'api/todoitems' is valid for the request path '/api/todoitems'
+2023-05-27 14:26:16.263 +01:00 [DBG] Request matched endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:26:16.279 +01:00 [INF] Executing endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:26:16.416 +01:00 [INF] Route matched with {action = "Get", controller = "ToDoItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ToDo.Shared.Dtos.ToDoItemDto]] Get() on controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI).
+2023-05-27 14:26:16.430 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-27 14:26:16.438 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-27 14:26:16.451 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-27 14:26:16.460 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-27 14:26:16.466 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-27 14:26:16.476 +01:00 [DBG] Executing controller factory for controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI)
+2023-05-27 14:26:16.482 +01:00 [DBG] Executed controller factory for controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI)
+2023-05-27 14:26:22.050 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-05-27 14:26:22.071 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2023-05-27 14:26:22.078 +01:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2023-05-27 14:26:22.082 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-05-27 14:26:22.085 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-05-27 14:26:22.090 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-05-27 14:26:22.093 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDo.Shared.Dtos.ToDoItemDto, ToDo.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-27 14:26:22.153 +01:00 [INF] Executed action ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI) in 5671.9745ms
+2023-05-27 14:26:22.159 +01:00 [INF] Executed endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:26:22.163 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/api/todoitems - - - 200 - application/json;+charset=utf-8 6078.9116ms
+2023-05-27 14:26:34.965 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/api/todoitems - -
+2023-05-27 14:26:34.972 +01:00 [DBG] The request path  does not match the path filter
+2023-05-27 14:26:34.975 +01:00 [DBG] 1 candidate(s) found for the request path '/api/todoitems'
+2023-05-27 14:26:34.979 +01:00 [DBG] Endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)' with route pattern 'api/todoitems' is valid for the request path '/api/todoitems'
+2023-05-27 14:26:34.984 +01:00 [DBG] Request matched endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:26:34.989 +01:00 [INF] Executing endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:26:34.995 +01:00 [INF] Route matched with {action = "Get", controller = "ToDoItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ToDo.Shared.Dtos.ToDoItemDto]] Get() on controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI).
+2023-05-27 14:26:35.003 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-27 14:26:35.019 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-27 14:26:35.024 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-27 14:26:35.033 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-27 14:26:35.039 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-27 14:26:35.051 +01:00 [DBG] Executing controller factory for controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI)
+2023-05-27 14:26:35.057 +01:00 [DBG] Executed controller factory for controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI)
+2023-05-27 14:26:35.107 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-05-27 14:26:35.118 +01:00 [DBG] No information found on request to perform content negotiation.
+2023-05-27 14:26:35.121 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-05-27 14:26:35.124 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-05-27 14:26:35.127 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-05-27 14:26:35.131 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDo.Shared.Dtos.ToDoItemDto, ToDo.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-27 14:26:35.137 +01:00 [INF] Executed action ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI) in 85.8513ms
+2023-05-27 14:26:35.149 +01:00 [INF] Executed endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:26:35.150 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/api/todoitems - - - 200 - application/json;+charset=utf-8 184.6705ms
+2023-05-27 14:26:35.281 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/favicon.ico - -
+2023-05-27 14:26:35.283 +01:00 [DBG] The request path  does not match the path filter
+2023-05-27 14:26:35.285 +01:00 [DBG] No candidates found for the request path '/favicon.ico'
+2023-05-27 14:26:35.288 +01:00 [DBG] Request did not match any endpoints
+2023-05-27 14:26:35.291 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/favicon.ico - - - 404 0 - 10.2365ms
+2023-05-27 14:27:00.968 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-05-27 14:27:04.267 +01:00 [DBG] Hosting starting
+2023-05-27 14:27:04.896 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 24D7086D4A581986C9118C4ED8B11A8FCD9D0DE3)
+2023-05-27 14:27:05.015 +01:00 [INF] Now listening on: https://localhost:7180
+2023-05-27 14:27:05.016 +01:00 [INF] Now listening on: http://localhost:5097
+2023-05-27 14:27:05.016 +01:00 [DBG] Loaded hosting startup assembly ApplicationAPI
+2023-05-27 14:27:05.017 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-05-27 14:27:05.018 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-05-27 14:27:05.019 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-27 14:27:05.021 +01:00 [INF] Hosting environment: Development
+2023-05-27 14:27:05.024 +01:00 [INF] Content root path: C:\Users\t_war\Documents\projects\code\todo\src\ApplicationAPI\
+2023-05-27 14:27:05.025 +01:00 [DBG] Hosting started
+2023-05-27 14:27:05.230 +01:00 [DBG] Connection id "0HMQUMO83IBRD" received FIN.
+2023-05-27 14:27:05.288 +01:00 [DBG] Connection id "0HMQUMO83IBRD" accepted.
+2023-05-27 14:27:05.321 +01:00 [DBG] Connection id "0HMQUMO83IBRD" started.
+2023-05-27 14:27:05.377 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:27:05.486 +01:00 [DBG] Connection id "0HMQUMO83IBRD" stopped.
+2023-05-27 14:27:05.517 +01:00 [DBG] Connection id "0HMQUMO83IBRD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:27:05.803 +01:00 [DBG] Connection id "0HMQUMO83IBRE" accepted.
+2023-05-27 14:27:05.884 +01:00 [DBG] Connection id "0HMQUMO83IBRE" started.
+2023-05-27 14:27:06.006 +01:00 [DBG] Connection 0HMQUMO83IBRE established using the following protocol: "Tls13"
+2023-05-27 14:27:06.124 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/index.html - -
+2023-05-27 14:27:06.221 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-05-27 14:27:06.837 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-05-27 14:27:07.283 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - -
+2023-05-27 14:27:07.301 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_vs/browserLink - -
+2023-05-27 14:27:07.307 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-05-27 14:27:07.324 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 38.2694ms
+2023-05-27 14:27:07.329 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 1214.7066ms
+2023-05-27 14:27:07.495 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 195.4250ms
+2023-05-27 14:27:07.737 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-05-27 14:27:08.112 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 374.0291ms
+2023-05-27 14:27:10.219 +01:00 [DBG] Connection id "0HMQUMO83IBRF" accepted.
+2023-05-27 14:27:10.221 +01:00 [DBG] Connection id "0HMQUMO83IBRF" started.
+2023-05-27 14:27:10.241 +01:00 [DBG] Connection 0HMQUMO83IBRF established using the following protocol: "Tls13"
+2023-05-27 14:27:10.293 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/api/todoitems - -
+2023-05-27 14:27:10.370 +01:00 [DBG] The request path  does not match the path filter
+2023-05-27 14:27:10.474 +01:00 [DBG] 1 candidate(s) found for the request path '/api/todoitems'
+2023-05-27 14:27:10.504 +01:00 [DBG] Endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)' with route pattern 'api/todoitems' is valid for the request path '/api/todoitems'
+2023-05-27 14:27:10.513 +01:00 [DBG] Request matched endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:27:10.527 +01:00 [INF] Executing endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:27:10.626 +01:00 [INF] Route matched with {action = "Get", controller = "ToDoItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ToDo.Shared.Dtos.ToDoItemDto]] Get() on controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI).
+2023-05-27 14:27:10.660 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-27 14:27:10.663 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-27 14:27:10.671 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-27 14:27:10.676 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-27 14:27:10.680 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-27 14:27:10.691 +01:00 [DBG] Executing controller factory for controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI)
+2023-05-27 14:27:10.702 +01:00 [DBG] Executed controller factory for controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI)
+2023-05-27 14:27:16.249 +01:00 [DBG] Connection id "0HMQUMO83IBRE" received FIN.
+2023-05-27 14:27:16.275 +01:00 [DBG] Connection id "0HMQUMO83IBRE" is closed. The last processed stream ID was 7.
+2023-05-27 14:27:16.279 +01:00 [DBG] Connection id "0HMQUMO83IBRE" sending FIN because: "The client closed the connection."
+2023-05-27 14:27:16.292 +01:00 [DBG] Connection id "0HMQUMO83IBRE" stopped.
+2023-05-27 14:27:18.093 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-05-27 14:27:18.161 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-05-27 14:27:18.204 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-05-27 14:27:18.214 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDo.Shared.Dtos.ToDoItemDto, ToDo.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-27 14:27:18.317 +01:00 [INF] Executed action ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI) in 7611.4102ms
+2023-05-27 14:27:18.357 +01:00 [INF] Executed endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:27:18.367 +01:00 [DBG] Connection id "0HMQUMO83IBRF" completed keep alive response.
+2023-05-27 14:27:18.437 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/api/todoitems - - - 200 - application/json;+charset=utf-8 8143.8340ms
+2023-05-27 14:27:43.235 +01:00 [DBG] Connection id "0HMQUMO83IBRF" received FIN.
+2023-05-27 14:27:43.239 +01:00 [DBG] Connection id "0HMQUMO83IBRF" sending FIN because: "The client closed the connection."
+2023-05-27 14:27:43.266 +01:00 [DBG] Connection id "0HMQUMO83IBRF" disconnecting.
+2023-05-27 14:27:43.268 +01:00 [DBG] Connection id "0HMQUMO83IBRF" stopped.
+2023-05-27 14:27:43.284 +01:00 [DBG] Connection id "0HMQUMO83IBRG" accepted.
+2023-05-27 14:27:43.288 +01:00 [DBG] Connection id "0HMQUMO83IBRG" started.
+2023-05-27 14:27:43.301 +01:00 [DBG] Connection 0HMQUMO83IBRG established using the following protocol: "Tls13"
+2023-05-27 14:27:43.306 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/api/todoitems - -
+2023-05-27 14:27:43.311 +01:00 [DBG] The request path  does not match the path filter
+2023-05-27 14:27:43.314 +01:00 [DBG] 1 candidate(s) found for the request path '/api/todoitems'
+2023-05-27 14:27:43.317 +01:00 [DBG] Endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)' with route pattern 'api/todoitems' is valid for the request path '/api/todoitems'
+2023-05-27 14:27:43.321 +01:00 [DBG] Request matched endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:27:43.336 +01:00 [INF] Executing endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:27:43.339 +01:00 [INF] Route matched with {action = "Get", controller = "ToDoItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ToDo.Shared.Dtos.ToDoItemDto]] Get() on controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI).
+2023-05-27 14:27:43.344 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-27 14:27:43.349 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-27 14:27:43.353 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-27 14:27:43.359 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-27 14:27:43.363 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-27 14:27:43.366 +01:00 [DBG] Executing controller factory for controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI)
+2023-05-27 14:27:43.370 +01:00 [DBG] Executed controller factory for controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI)
+2023-05-27 14:27:43.421 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-05-27 14:27:43.431 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-05-27 14:27:43.435 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-05-27 14:27:43.438 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDo.Shared.Dtos.ToDoItemDto, ToDo.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-27 14:27:43.447 +01:00 [INF] Executed action ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI) in 80.3774ms
+2023-05-27 14:27:43.450 +01:00 [INF] Executed endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:27:43.453 +01:00 [DBG] Connection id "0HMQUMO83IBRG" completed keep alive response.
+2023-05-27 14:27:43.455 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/api/todoitems - - - 200 - application/json;+charset=utf-8 149.2777ms
+2023-05-27 14:27:46.453 +01:00 [DBG] Connection id "0HMQUMO83IBRG" received FIN.
+2023-05-27 14:27:46.460 +01:00 [DBG] Connection id "0HMQUMO83IBRH" accepted.
+2023-05-27 14:27:46.462 +01:00 [DBG] Connection id "0HMQUMO83IBRG" sending FIN because: "The client closed the connection."
+2023-05-27 14:27:46.467 +01:00 [DBG] Connection id "0HMQUMO83IBRG" disconnecting.
+2023-05-27 14:27:46.465 +01:00 [DBG] Connection id "0HMQUMO83IBRH" started.
+2023-05-27 14:27:46.469 +01:00 [DBG] Connection id "0HMQUMO83IBRG" stopped.
+2023-05-27 14:27:46.479 +01:00 [DBG] Connection 0HMQUMO83IBRH established using the following protocol: "Tls13"
+2023-05-27 14:27:46.487 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/api/todoitems - -
+2023-05-27 14:27:46.491 +01:00 [DBG] The request path  does not match the path filter
+2023-05-27 14:27:46.493 +01:00 [DBG] 1 candidate(s) found for the request path '/api/todoitems'
+2023-05-27 14:27:46.497 +01:00 [DBG] Endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)' with route pattern 'api/todoitems' is valid for the request path '/api/todoitems'
+2023-05-27 14:27:46.504 +01:00 [DBG] Request matched endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:27:46.507 +01:00 [INF] Executing endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:27:46.515 +01:00 [INF] Route matched with {action = "Get", controller = "ToDoItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ToDo.Shared.Dtos.ToDoItemDto]] Get() on controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI).
+2023-05-27 14:27:46.522 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-27 14:27:46.532 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-27 14:27:46.538 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-27 14:27:46.545 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-27 14:27:46.550 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-27 14:27:46.559 +01:00 [DBG] Executing controller factory for controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI)
+2023-05-27 14:27:46.567 +01:00 [DBG] Executed controller factory for controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI)
+2023-05-27 14:27:46.734 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-05-27 14:27:46.741 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-05-27 14:27:46.744 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-05-27 14:27:46.749 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDo.Shared.Dtos.ToDoItemDto, ToDo.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-27 14:27:46.757 +01:00 [INF] Executed action ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI) in 198.2367ms
+2023-05-27 14:27:46.761 +01:00 [INF] Executed endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:27:46.766 +01:00 [DBG] Connection id "0HMQUMO83IBRH" completed keep alive response.
+2023-05-27 14:27:46.768 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/api/todoitems - - - 200 - application/json;+charset=utf-8 281.3787ms
+2023-05-27 14:27:47.218 +01:00 [DBG] Connection id "0HMQUMO83IBRH" received FIN.
+2023-05-27 14:27:47.218 +01:00 [DBG] Connection id "0HMQUMO83IBRI" accepted.
+2023-05-27 14:27:47.221 +01:00 [DBG] Connection id "0HMQUMO83IBRH" sending FIN because: "The client closed the connection."
+2023-05-27 14:27:47.225 +01:00 [DBG] Connection id "0HMQUMO83IBRI" started.
+2023-05-27 14:27:47.233 +01:00 [DBG] Connection id "0HMQUMO83IBRH" disconnecting.
+2023-05-27 14:27:47.246 +01:00 [DBG] Connection id "0HMQUMO83IBRH" stopped.
+2023-05-27 14:27:47.248 +01:00 [DBG] Connection 0HMQUMO83IBRI established using the following protocol: "Tls13"
+2023-05-27 14:27:47.252 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/api/todoitems - -
+2023-05-27 14:27:47.256 +01:00 [DBG] The request path  does not match the path filter
+2023-05-27 14:27:47.263 +01:00 [DBG] 1 candidate(s) found for the request path '/api/todoitems'
+2023-05-27 14:27:47.267 +01:00 [DBG] Endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)' with route pattern 'api/todoitems' is valid for the request path '/api/todoitems'
+2023-05-27 14:27:47.272 +01:00 [DBG] Request matched endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:27:47.280 +01:00 [INF] Executing endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:27:47.283 +01:00 [INF] Route matched with {action = "Get", controller = "ToDoItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ToDo.Shared.Dtos.ToDoItemDto]] Get() on controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI).
+2023-05-27 14:27:47.303 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-27 14:27:47.306 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-27 14:27:47.312 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-27 14:27:47.318 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-27 14:27:47.321 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-27 14:27:47.327 +01:00 [DBG] Executing controller factory for controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI)
+2023-05-27 14:27:47.332 +01:00 [DBG] Executed controller factory for controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI)
+2023-05-27 14:27:47.343 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-05-27 14:27:47.351 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-05-27 14:27:47.360 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-05-27 14:27:47.366 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDo.Shared.Dtos.ToDoItemDto, ToDo.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-27 14:27:47.371 +01:00 [INF] Executed action ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI) in 44.2142ms
+2023-05-27 14:27:47.377 +01:00 [INF] Executed endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:27:47.381 +01:00 [DBG] Connection id "0HMQUMO83IBRI" completed keep alive response.
+2023-05-27 14:27:47.385 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/api/todoitems - - - 200 - application/json;+charset=utf-8 133.2170ms
+2023-05-27 14:28:19.462 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-05-27 14:28:19.770 +01:00 [DBG] Hosting starting
+2023-05-27 14:28:20.403 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 24D7086D4A581986C9118C4ED8B11A8FCD9D0DE3)
+2023-05-27 14:28:20.841 +01:00 [DBG] Connection id "0HMQUMOUKETSD" received FIN.
+2023-05-27 14:28:20.841 +01:00 [INF] Now listening on: https://localhost:7180
+2023-05-27 14:28:20.855 +01:00 [INF] Now listening on: http://localhost:5097
+2023-05-27 14:28:20.884 +01:00 [DBG] Connection id "0HMQUMOUKETSD" accepted.
+2023-05-27 14:28:20.888 +01:00 [DBG] Loaded hosting startup assembly ApplicationAPI
+2023-05-27 14:28:20.899 +01:00 [DBG] Connection id "0HMQUMOUKETSD" started.
+2023-05-27 14:28:20.917 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-05-27 14:28:20.996 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:28:21.156 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-05-27 14:28:21.789 +01:00 [DBG] Connection id "0HMQUMOUKETSE" accepted.
+2023-05-27 14:28:21.996 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-27 14:28:21.996 +01:00 [DBG] Connection id "0HMQUMOUKETSE" started.
+2023-05-27 14:28:22.001 +01:00 [DBG] Connection id "0HMQUMOUKETSD" stopped.
+2023-05-27 14:28:22.019 +01:00 [INF] Hosting environment: Development
+2023-05-27 14:28:22.217 +01:00 [DBG] Connection id "0HMQUMOUKETSD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:28:22.219 +01:00 [INF] Content root path: C:\Users\t_war\Documents\projects\code\todo\src\ApplicationAPI\
+2023-05-27 14:28:22.230 +01:00 [DBG] Hosting started
+2023-05-27 14:28:22.234 +01:00 [DBG] Connection 0HMQUMOUKETSE established using the following protocol: "Tls13"
+2023-05-27 14:28:22.383 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/index.html - -
+2023-05-27 14:28:22.537 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-05-27 14:28:23.202 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-05-27 14:28:24.125 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-05-27 14:28:24.144 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 1765.4879ms
+2023-05-27 14:28:24.246 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - -
+2023-05-27 14:28:24.256 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 10.3943ms
+2023-05-27 14:28:24.398 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_vs/browserLink - -
+2023-05-27 14:28:24.522 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 124.4705ms
+2023-05-27 14:28:24.627 +01:00 [DBG] Connection id "0HMQUMOUKETSF" accepted.
+2023-05-27 14:28:24.659 +01:00 [DBG] Connection id "0HMQUMOUKETSF" started.
+2023-05-27 14:28:24.682 +01:00 [DBG] Connection 0HMQUMOUKETSF established using the following protocol: "Tls13"
+2023-05-27 14:28:24.784 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/api/todoitems - -
+2023-05-27 14:28:24.809 +01:00 [DBG] The request path  does not match the path filter
+2023-05-27 14:28:24.966 +01:00 [DBG] 1 candidate(s) found for the request path '/api/todoitems'
+2023-05-27 14:28:25.003 +01:00 [DBG] Endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)' with route pattern 'api/todoitems' is valid for the request path '/api/todoitems'
+2023-05-27 14:28:25.012 +01:00 [DBG] Request matched endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:28:25.027 +01:00 [INF] Executing endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:28:25.127 +01:00 [INF] Route matched with {action = "Get", controller = "ToDoItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ToDo.Shared.Dtos.ToDoItemDto]] Get() on controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI).
+2023-05-27 14:28:25.140 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-27 14:28:25.149 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-27 14:28:25.153 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-27 14:28:25.156 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-27 14:28:25.170 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-27 14:28:25.203 +01:00 [DBG] Executing controller factory for controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI)
+2023-05-27 14:28:25.215 +01:00 [DBG] Executed controller factory for controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI)
+2023-05-27 14:28:26.022 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-05-27 14:28:26.553 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 530.8773ms
+2023-05-27 14:28:26.560 +01:00 [DBG] Connection id "0HMQUMOUKETSE" received FIN.
+2023-05-27 14:28:26.585 +01:00 [DBG] Connection id "0HMQUMOUKETSE" is closed. The last processed stream ID was 7.
+2023-05-27 14:28:26.594 +01:00 [DBG] Connection id "0HMQUMOUKETSE" sending FIN because: "The client closed the connection."
+2023-05-27 14:28:26.599 +01:00 [DBG] Connection id "0HMQUMOUKETSE" stopped.
+2023-05-27 14:28:31.630 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-05-27 14:28:31.653 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-05-27 14:28:31.665 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-05-27 14:28:31.670 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDo.Shared.Dtos.ToDoItemDto, ToDo.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-27 14:28:31.845 +01:00 [INF] Executed action ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI) in 6628.3818ms
+2023-05-27 14:28:31.852 +01:00 [INF] Executed endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:28:31.855 +01:00 [DBG] Connection id "0HMQUMOUKETSF" completed keep alive response.
+2023-05-27 14:28:31.860 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/api/todoitems - - - 200 - application/json;+charset=utf-8 7075.7512ms
+2023-05-27 14:36:52.091 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-05-27 14:36:53.832 +01:00 [DBG] Hosting starting
+2023-05-27 14:36:54.364 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 24D7086D4A581986C9118C4ED8B11A8FCD9D0DE3)
+2023-05-27 14:36:54.466 +01:00 [INF] Now listening on: https://localhost:7180
+2023-05-27 14:36:54.471 +01:00 [INF] Now listening on: http://localhost:5097
+2023-05-27 14:36:54.474 +01:00 [DBG] Loaded hosting startup assembly ApplicationAPI
+2023-05-27 14:36:54.476 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-05-27 14:36:54.481 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-05-27 14:36:54.484 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-27 14:36:54.486 +01:00 [INF] Hosting environment: Development
+2023-05-27 14:36:54.490 +01:00 [INF] Content root path: C:\Users\t_war\Documents\projects\code\todo\src\ApplicationAPI\
+2023-05-27 14:36:54.491 +01:00 [DBG] Hosting started
+2023-05-27 14:36:54.506 +01:00 [DBG] Connection id "0HMQUMTNN8TLT" accepted.
+2023-05-27 14:36:54.513 +01:00 [DBG] Connection id "0HMQUMTNN8TLT" started.
+2023-05-27 14:36:54.515 +01:00 [DBG] Connection id "0HMQUMTNN8TLT" received FIN.
+2023-05-27 14:36:54.567 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:36:54.721 +01:00 [DBG] Connection id "0HMQUMTNN8TLT" stopped.
+2023-05-27 14:36:54.730 +01:00 [DBG] Connection id "0HMQUMTNN8TLT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:36:55.213 +01:00 [DBG] Connection id "0HMQUMTNN8TLU" accepted.
+2023-05-27 14:36:55.316 +01:00 [DBG] Connection id "0HMQUMTNN8TLU" started.
+2023-05-27 14:36:56.085 +01:00 [DBG] Connection 0HMQUMTNN8TLU established using the following protocol: "Tls13"
+2023-05-27 14:36:56.781 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/index.html - -
+2023-05-27 14:36:56.923 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-05-27 14:36:57.582 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-05-27 14:36:58.056 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - -
+2023-05-27 14:36:58.068 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_vs/browserLink - -
+2023-05-27 14:36:58.072 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-05-27 14:36:58.076 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 17.8952ms
+2023-05-27 14:36:58.114 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 1349.7097ms
+2023-05-27 14:36:58.383 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 325.4064ms
+2023-05-27 14:36:58.633 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-05-27 14:36:59.328 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 695.2265ms
+2023-05-27 14:37:00.140 +01:00 [DBG] Connection id "0HMQUMTNN8TLV" accepted.
+2023-05-27 14:37:00.148 +01:00 [DBG] Connection id "0HMQUMTNN8TLV" started.
+2023-05-27 14:37:00.339 +01:00 [DBG] Connection 0HMQUMTNN8TLV established using the following protocol: "Tls13"
+2023-05-27 14:37:00.430 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/api/todoitems - -
+2023-05-27 14:37:00.513 +01:00 [DBG] The request path  does not match the path filter
+2023-05-27 14:37:00.627 +01:00 [DBG] 1 candidate(s) found for the request path '/api/todoitems'
+2023-05-27 14:37:00.685 +01:00 [DBG] Endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)' with route pattern 'api/todoitems' is valid for the request path '/api/todoitems'
+2023-05-27 14:37:00.710 +01:00 [DBG] Request matched endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:37:00.742 +01:00 [INF] Executing endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:37:00.828 +01:00 [INF] Route matched with {action = "Get", controller = "ToDoItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ToDo.Shared.Dtos.ToDoItemDto]] Get() on controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI).
+2023-05-27 14:37:00.882 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-27 14:37:00.889 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-27 14:37:00.995 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-27 14:37:00.998 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-27 14:37:01.006 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-27 14:37:01.013 +01:00 [DBG] Executing controller factory for controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI)
+2023-05-27 14:37:01.025 +01:00 [DBG] Executed controller factory for controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI)
+2023-05-27 14:37:01.427 +01:00 [DBG] Connection id "0HMQUMTNN8TLU" received FIN.
+2023-05-27 14:37:01.493 +01:00 [DBG] Connection id "0HMQUMTNN8TLU" is closed. The last processed stream ID was 7.
+2023-05-27 14:37:01.508 +01:00 [DBG] Connection id "0HMQUMTNN8TLU" sending FIN because: "The client closed the connection."
+2023-05-27 14:37:01.513 +01:00 [DBG] Connection id "0HMQUMTNN8TLU" stopped.
+2023-05-27 14:37:08.817 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-05-27 14:37:08.850 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-05-27 14:37:08.863 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-05-27 14:37:08.866 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDo.Shared.Dtos.ToDoItemDto, ToDo.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-27 14:37:09.037 +01:00 [INF] Executed action ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI) in 8002.4977ms
+2023-05-27 14:37:09.080 +01:00 [INF] Executed endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:37:09.082 +01:00 [DBG] Connection id "0HMQUMTNN8TLV" completed keep alive response.
+2023-05-27 14:37:09.084 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/api/todoitems - - - 200 - application/json;+charset=utf-8 8656.3623ms
+2023-05-27 14:37:09.926 +01:00 [DBG] Connection id "0HMQUMTNN8TLV" received FIN.
+2023-05-27 14:37:09.963 +01:00 [DBG] Connection id "0HMQUMTNN8TLV" disconnecting.
+2023-05-27 14:37:10.015 +01:00 [DBG] Connection id "0HMQUMTNN8TLV" sending FIN because: "The client closed the connection."
+2023-05-27 14:37:10.019 +01:00 [DBG] Connection id "0HMQUMTNN8TLV" stopped.
+2023-05-27 14:41:50.357 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-05-27 14:41:51.261 +01:00 [DBG] Hosting starting
+2023-05-27 14:41:51.726 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 24D7086D4A581986C9118C4ED8B11A8FCD9D0DE3)
+2023-05-27 14:41:51.863 +01:00 [INF] Now listening on: https://localhost:7180
+2023-05-27 14:41:51.865 +01:00 [INF] Now listening on: http://localhost:5097
+2023-05-27 14:41:51.866 +01:00 [DBG] Loaded hosting startup assembly ApplicationAPI
+2023-05-27 14:41:51.868 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-05-27 14:41:51.868 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-05-27 14:41:51.870 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-27 14:41:51.872 +01:00 [INF] Hosting environment: Development
+2023-05-27 14:41:51.873 +01:00 [INF] Content root path: C:\Users\t_war\Documents\projects\code\todo\src\ApplicationAPI\
+2023-05-27 14:41:51.873 +01:00 [DBG] Hosting started
+2023-05-27 14:41:52.307 +01:00 [DBG] Connection id "0HMQUN0GFD14F" received FIN.
+2023-05-27 14:41:52.307 +01:00 [DBG] Connection id "0HMQUN0GFD14E" received FIN.
+2023-05-27 14:41:52.336 +01:00 [DBG] Connection id "0HMQUN0GFD14F" accepted.
+2023-05-27 14:41:52.336 +01:00 [DBG] Connection id "0HMQUN0GFD14E" accepted.
+2023-05-27 14:41:52.340 +01:00 [DBG] Connection id "0HMQUN0GFD14E" started.
+2023-05-27 14:41:52.340 +01:00 [DBG] Connection id "0HMQUN0GFD14F" started.
+2023-05-27 14:41:52.549 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:41:52.548 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-05-27 14:41:52.986 +01:00 [DBG] Connection id "0HMQUN0GFD14E" stopped.
+2023-05-27 14:41:52.986 +01:00 [DBG] Connection id "0HMQUN0GFD14F" stopped.
+2023-05-27 14:41:53.000 +01:00 [DBG] Connection id "0HMQUN0GFD14E" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:41:53.000 +01:00 [DBG] Connection id "0HMQUN0GFD14F" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-05-27 14:41:53.131 +01:00 [DBG] Connection id "0HMQUN0GFD14G" accepted.
+2023-05-27 14:41:53.252 +01:00 [DBG] Connection id "0HMQUN0GFD14G" started.
+2023-05-27 14:41:53.466 +01:00 [DBG] Connection 0HMQUN0GFD14G established using the following protocol: "Tls13"
+2023-05-27 14:41:53.605 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/index.html - -
+2023-05-27 14:41:53.716 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-05-27 14:41:54.343 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-05-27 14:41:54.772 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_vs/browserLink - -
+2023-05-27 14:41:54.773 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - -
+2023-05-27 14:41:54.789 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-05-27 14:41:54.820 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - - - 200 11998 application/javascript;+charset=utf-8 45.7261ms
+2023-05-27 14:41:54.835 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 1241.0003ms
+2023-05-27 14:41:55.103 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 331.1403ms
+2023-05-27 14:41:55.236 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-05-27 14:41:56.020 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 784.9237ms
+2023-05-27 14:41:56.637 +01:00 [DBG] Connection id "0HMQUN0GFD14H" accepted.
+2023-05-27 14:41:56.650 +01:00 [DBG] Connection id "0HMQUN0GFD14H" started.
+2023-05-27 14:41:56.670 +01:00 [DBG] Connection 0HMQUN0GFD14H established using the following protocol: "Tls13"
+2023-05-27 14:41:56.925 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/api/todoitems - -
+2023-05-27 14:41:56.937 +01:00 [DBG] The request path  does not match the path filter
+2023-05-27 14:41:57.035 +01:00 [DBG] 1 candidate(s) found for the request path '/api/todoitems'
+2023-05-27 14:41:57.065 +01:00 [DBG] Endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)' with route pattern 'api/todoitems' is valid for the request path '/api/todoitems'
+2023-05-27 14:41:57.072 +01:00 [DBG] Request matched endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:41:57.100 +01:00 [INF] Executing endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:41:57.176 +01:00 [INF] Route matched with {action = "Get", controller = "ToDoItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ToDo.Shared.Dtos.ToDoItemDto]] Get() on controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI).
+2023-05-27 14:41:57.181 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-27 14:41:57.185 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-27 14:41:57.189 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-27 14:41:57.199 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-27 14:41:57.202 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-27 14:41:57.207 +01:00 [DBG] Executing controller factory for controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI)
+2023-05-27 14:41:57.220 +01:00 [DBG] Executed controller factory for controller ApplicationAPI.Controllers.ToDoItemsController (ApplicationAPI)
+2023-05-27 14:41:59.211 +01:00 [DBG] Connection id "0HMQUN0GFD14G" received FIN.
+2023-05-27 14:41:59.250 +01:00 [DBG] Connection id "0HMQUN0GFD14G" is closed. The last processed stream ID was 7.
+2023-05-27 14:41:59.264 +01:00 [DBG] Connection id "0HMQUN0GFD14G" sending FIN because: "The client closed the connection."
+2023-05-27 14:41:59.275 +01:00 [DBG] Connection id "0HMQUN0GFD14G" stopped.
+2023-05-27 14:42:04.127 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-05-27 14:42:04.152 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-05-27 14:42:04.162 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-05-27 14:42:04.167 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDo.Shared.Dtos.ToDoItemDto, ToDo.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-27 14:42:04.335 +01:00 [INF] Executed action ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI) in 7114.5674ms
+2023-05-27 14:42:04.340 +01:00 [INF] Executed endpoint 'ApplicationAPI.Controllers.ToDoItemsController.Get (ApplicationAPI)'
+2023-05-27 14:42:04.342 +01:00 [DBG] Connection id "0HMQUN0GFD14H" completed keep alive response.
+2023-05-27 14:42:04.348 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/api/todoitems - - - 200 - application/json;+charset=utf-8 7422.8798ms
+2023-05-27 14:42:04.806 +01:00 [DBG] Connection id "0HMQUN0GFD14H" received FIN.
+2023-05-27 14:42:04.808 +01:00 [DBG] Connection id "0HMQUN0GFD14H" disconnecting.
+2023-05-27 14:42:04.812 +01:00 [DBG] Connection id "0HMQUN0GFD14H" sending FIN because: "The client closed the connection."
+2023-05-27 14:42:04.824 +01:00 [DBG] Connection id "0HMQUN0GFD14H" stopped.

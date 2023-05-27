@@ -11,12 +11,15 @@
 <h2 style="margin-top:20px;">To Do Items</h2>
 
 <table>
-    @foreach (var toDoItem in Model)
+    @if (Model != null)
     {
-        <tr>
-            <td>@toDoItem.Description</td>
-            <td>@Html.ActionLink("Edit", "EditToDoItem", new { id = toDoItem.Id})</td>
-            <td>@Html.ActionLink("Delete", "DeleteToDoItem", new { id = toDoItem.Id})</td>
-        </tr>
+        @foreach (var toDoItem in Model)
+        {
+            <tr>
+                <td>@toDoItem.Description</td>
+                <td>@Html.ActionLink("Edit", "EditToDoItem", new { id = toDoItem.Id})</td>
+                <td>@Html.ActionLink("Delete", "DeleteToDoItem", new { id = toDoItem.Id})</td>
+            </tr>
+        }
     }
 </table>
