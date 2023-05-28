@@ -1,6 +1,6 @@
 using Domain.Models;
 
-namespace Domain.UnitTests
+namespace ToDo.Domain.UnitTests
 {
     public class Tests
     {
