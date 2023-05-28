@@ -1,4 +1,4 @@
-using Domain.Models;
+using ToDo.Domain.Entities;
 
 namespace ToDo.Domain.UnitTests
 {
