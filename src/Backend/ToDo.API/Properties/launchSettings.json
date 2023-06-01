@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "ApplicationAPI": {
+    "ToDo.API": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
