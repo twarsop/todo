@@ -16,7 +16,7 @@ namespace ToDo.Infrastructure.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Description = table.Column<string>(type: "TEXT", nullable: false)
+                    Description = table.Column<string>(type: "TEXT", maxLength: 2000, nullable: false)
                 },
                 constraints: table =>
                 {

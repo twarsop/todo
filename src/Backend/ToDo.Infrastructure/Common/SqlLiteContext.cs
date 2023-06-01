@@ -1,19 +1,19 @@
-﻿using ToDo.Domain.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using System.Configuration;
+using ToDo.Infrastructure.DbItems;
 
 namespace ToDo.Infrastructure.Common
 {
     public class SqlLiteContext : DbContext
     {
-        public DbSet<ToDoItem> ToDoItems { get; set; }
+        public DbSet<ToDoItemDbItem> ToDoItems { get; set; }
 
         public string DbPath { get; }
 
-        public SqlLiteContext(IConfiguration configuration)
+        public SqlLiteContext()
         {
-            DbPath = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, configuration["DbPath"]));
+            var configDbPath = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build()["DbPath"];
+            DbPath = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, configDbPath));
         }
 
         // The following configures EF to create a Sqlite database file in the

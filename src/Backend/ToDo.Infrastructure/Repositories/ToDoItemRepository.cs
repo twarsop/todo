@@ -2,55 +2,60 @@
 using ToDo.Domain.Entities;
 using ToDo.Infrastructure.Common;
 using Microsoft.Extensions.Configuration;
+using ToDo.Infrastructure.DbItems;
 
 namespace ToDo.Infrastructure.Repositories
 {
     public class ToDoItemRepository : IToDoItemRepository
     {
-        private readonly IConfiguration _configuration;
-
-        public ToDoItemRepository(IConfiguration configuration) 
+        public ToDoItemRepository() 
         { 
-            _configuration = configuration;
+
         }
         
         public ToDoItem Create(ToDoItem toDoItem)
         {
-            using (var db = new SqlLiteContext(_configuration))
+            using (var db = new SqlLiteContext())
             {
-                db.Add(toDoItem);
+                var toDoItemDbItem = new ToDoItemDbItem(toDoItem.Description);
+
+                db.Add(toDoItemDbItem);
                 db.SaveChanges();
-                return toDoItem;
+                return new ToDoItem(toDoItemDbItem.Id, toDoItemDbItem.Description);
             }
         }
         public ToDoItem? Read(int id)
         {
-            using (var db = new SqlLiteContext(_configuration))
+            using (var db = new SqlLiteContext())
             {
-                return db.ToDoItems.Where(t => t.Id == id).FirstOrDefault();
+                var toDoItemDbItem = db.ToDoItems.Where(t => t.Id == id).FirstOrDefault();
+
+                return toDoItemDbItem == null ? null : new ToDoItem(toDoItemDbItem.Id, toDoItemDbItem.Description);
             }
         }
 
         public List<ToDoItem> ReadAll()
         {
-            using (var db = new SqlLiteContext(_configuration))
+            using (var db = new SqlLiteContext())
             {
-                return db.ToDoItems.ToList();
+                return db.ToDoItems.Select(x => new ToDoItem(x.Id, x.Description)).ToList();
             }
         }
         public void Update(ToDoItem toDoItem)
         {
-            using (var db = new SqlLiteContext(_configuration))
+            using (var db = new SqlLiteContext())
             {
-                db.Entry(toDoItem).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                var toDoItemDbItem = new ToDoItemDbItem(toDoItem.Id, toDoItem.Description);
+                db.Entry(toDoItemDbItem).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
                 db.SaveChanges();
             }
         }
         public void Delete(ToDoItem toDoItem)
         {
-            using (var db = new SqlLiteContext(_configuration))
+            using (var db = new SqlLiteContext())
             {
-                db.Remove(toDoItem);
+                var toDoItemDbItem = new ToDoItemDbItem(toDoItem.Id, toDoItem.Description);
+                db.Remove(toDoItemDbItem);
                 db.SaveChanges();
             }
         }

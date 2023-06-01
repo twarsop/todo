@@ -11,6 +11,12 @@
             Description = description;
         }
 
+        public ToDoItem(int id, string description)
+            : this(description)
+        {
+            Id = id;
+        }
+
         public void UpdateDescription(string description)
         {
             Validate(description);
