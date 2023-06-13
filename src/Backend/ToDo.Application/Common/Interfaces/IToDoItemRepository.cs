@@ -4,10 +4,10 @@ namespace ToDo.Application.Common.Interfaces
 {
     public interface IToDoItemRepository
     {
-        ToDoItem Create(ToDoItem toDoItem);
-        ToDoItem? Read(int id);
-        List<ToDoItem> ReadAll();
-        void Update(ToDoItem toDoItem);
-        void Delete(ToDoItem toDoItem);
+        Task<ToDoItem> Create(ToDoItem toDoItem);
+        Task<ToDoItem?> Read(int id);
+        Task<IEnumerable<ToDoItem>> ReadAll();
+        Task Update(ToDoItem toDoItem);
+        void Delete(int id);
     }
 }

@@ -2,6 +2,9 @@ using ToDo.Application.Common.Interfaces;
 using ToDo.Application.Services;
 using ToDo.Infrastructure.Repositories;
 using Serilog;
+using ToDo.Infrastructure.Common;
+using AutoMapper;
+using ToDo.API;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,8 +21,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddDbContext<SqlLiteContext>();
 builder.Services.AddScoped<IToDoItemRepository, ToDoItemRepository>();
 builder.Services.AddScoped<IToDoItemService, ToDoItemService>();
+
+builder.Services.AddScoped<IMapper>(provider => new Mapper(AutoMapperConfig.Configure()));
 
 builder.Host.UseSerilog();
 

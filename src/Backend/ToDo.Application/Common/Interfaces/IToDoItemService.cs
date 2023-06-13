@@ -4,10 +4,10 @@ namespace ToDo.Application.Common.Interfaces
 {
     public interface IToDoItemService
     {
-        public ToDoItem Create(string description);
-        public ToDoItem? Get(int id);
-        public List<ToDoItem> GetAll();
-        public bool Update(int id, string description);
-        public bool Delete(int id);
+        public Task<ToDoItem> Create(string description);
+        public Task<ToDoItem?> Read(int id);
+        public Task<IEnumerable<ToDoItem>> ReadAll();
+        public Task<bool> Update(int id, string description);
+        public Task<bool> Delete(int id);
     }
 }

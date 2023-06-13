@@ -3,61 +3,65 @@ using ToDo.Domain.Entities;
 using ToDo.Infrastructure.Common;
 using Microsoft.Extensions.Configuration;
 using ToDo.Infrastructure.DbItems;
+using Microsoft.EntityFrameworkCore;
+using AutoMapper;
 
 namespace ToDo.Infrastructure.Repositories
 {
     public class ToDoItemRepository : IToDoItemRepository
     {
-        public ToDoItemRepository() 
-        { 
+        private readonly SqlLiteContext _context;
+        private readonly IMapper _mapper;
 
+        public ToDoItemRepository(SqlLiteContext context, IMapper mapper) 
+        { 
+            _context = context ?? throw new ArgumentNullException(nameof(context));
+            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
         
-        public ToDoItem Create(ToDoItem toDoItem)
+        public async Task<ToDoItem> Create(ToDoItem toDoItem)
         {
-            using (var db = new SqlLiteContext())
-            {
-                var toDoItemDbItem = new ToDoItemDbItem(toDoItem.Description);
+            var toDoItemDbItem = new ToDoItemDbItem(toDoItem.Description);
+            await _context.AddAsync(toDoItemDbItem);
+            await _context.SaveChangesAsync();
+            return _mapper.Map<ToDoItem>(toDoItemDbItem);
 
-                db.Add(toDoItemDbItem);
-                db.SaveChanges();
-                return new ToDoItem(toDoItemDbItem.Id, toDoItemDbItem.Description);
-            }
         }
-        public ToDoItem? Read(int id)
+        public async Task<ToDoItem?> Read(int id)
         {
-            using (var db = new SqlLiteContext())
-            {
-                var toDoItemDbItem = db.ToDoItems.Where(t => t.Id == id).FirstOrDefault();
-
-                return toDoItemDbItem == null ? null : new ToDoItem(toDoItemDbItem.Id, toDoItemDbItem.Description);
-            }
+            var toDoItemDbItem = await ReadDbItem(id);
+            return toDoItemDbItem == null ? null : _mapper.Map<ToDoItem>(toDoItemDbItem);            
         }
 
-        public List<ToDoItem> ReadAll()
+        public async Task<IEnumerable<ToDoItem>> ReadAll()
         {
-            using (var db = new SqlLiteContext())
+            var toDoItemDbItems = await _context.ToDoItems.ToListAsync();
+            return _mapper.Map<IEnumerable<ToDoItem>>(toDoItemDbItems);
+        }
+
+        public async Task Update(ToDoItem toDoItem)
+        {
+            var toDoItemDbItem = await ReadDbItem(toDoItem.Id);
+            if (toDoItemDbItem != null)
             {
-                return db.ToDoItems.Select(x => new ToDoItem(x.Id, x.Description)).ToList();
+                _mapper.Map(toDoItem, toDoItemDbItem);
+                await _context.SaveChangesAsync();
             }
         }
-        public void Update(ToDoItem toDoItem)
+
+        public async void Delete(int id)
         {
-            using (var db = new SqlLiteContext())
+            var toDoItemDbItem = await ReadDbItem(id);
+            if (toDoItemDbItem != null)
             {
-                var toDoItemDbItem = new ToDoItemDbItem(toDoItem.Id, toDoItem.Description);
-                db.Entry(toDoItemDbItem).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-                db.SaveChanges();
+                _context.Remove(toDoItemDbItem);
+                await _context.SaveChangesAsync();
             }
         }
-        public void Delete(ToDoItem toDoItem)
+
+        private async Task<ToDoItemDbItem?> ReadDbItem(int id)
         {
-            using (var db = new SqlLiteContext())
-            {
-                var toDoItemDbItem = new ToDoItemDbItem(toDoItem.Id, toDoItem.Description);
-                db.Remove(toDoItemDbItem);
-                db.SaveChanges();
-            }
+            return await _context.ToDoItems.Where(t => t.Id == id).FirstOrDefaultAsync();
         }
     }
 }

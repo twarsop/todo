@@ -7,16 +7,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />
     <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
     <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\ToDo.Shared\ToDo.Shared.csproj" />
-    <ProjectReference Include="..\ToDo.Application\ToDo.Application.csproj" />
-    <ProjectReference Include="..\ToDo.Infrastructure\ToDo.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\ToDo.Shared\ToDo.Shared.csproj">
+      <Private></Private>
+    </ProjectReference>
+    <ProjectReference Include="..\ToDo.Application\ToDo.Application.csproj">
+      <Private></Private>
+    </ProjectReference>
+    <ProjectReference Include="..\ToDo.Infrastructure\ToDo.Infrastructure.csproj">
+      <Private></Private>
+    </ProjectReference>
   </ItemGroup>
 
   <ItemGroup>

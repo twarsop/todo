@@ -12,24 +12,24 @@ namespace ToDo.Application.Services
             _toDoItemRepository = toDoItemRepository;
         }
 
-        public ToDoItem Create(string description)
+        public async Task<ToDoItem> Create(string description)
         {
-            return _toDoItemRepository.Create(new ToDoItem(description));
+            return await _toDoItemRepository.Create(new ToDoItem(description));
         }
 
-        public ToDoItem? Get(int id)
+        public async Task<ToDoItem?> Read(int id)
         {
-            return _toDoItemRepository.Read(id);
+            return await _toDoItemRepository.Read(id);
         }
 
-        public List<ToDoItem> GetAll()
+        public async Task<IEnumerable<ToDoItem>> ReadAll()
         {
-            return _toDoItemRepository.ReadAll();
+            return await _toDoItemRepository.ReadAll();
         }
 
-        public bool Update(int id, string description)
+        public async Task<bool> Update(int id, string description)
         {
-            var toDoItem = Get(id);
+            var toDoItem = await Read(id);
 
             if (toDoItem == null)
             {
@@ -37,21 +37,21 @@ namespace ToDo.Application.Services
             }
 
             toDoItem.UpdateDescription(description);
-            _toDoItemRepository.Update(toDoItem);
+            await _toDoItemRepository.Update(toDoItem);
 
             return true;
         }
 
-        public bool Delete(int id)
+        public async Task<bool> Delete(int id)
         {
-            var toDoItem = Get(id);
+            var toDoItem = await Read(id);
 
             if (toDoItem == null)
             {
                 return false;
             }
 
-            _toDoItemRepository.Delete(toDoItem);
+            _toDoItemRepository.Delete(id);
 
             return true;
         }

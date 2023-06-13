@@ -1,6 +1,8 @@
 ﻿using ToDo.Application.Common.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using ToDo.Shared.Dtos;
+using AutoMapper;
+using ToDo.Domain.Entities;
 
 namespace ToDo.API.Controllers
 {
@@ -10,31 +12,28 @@ namespace ToDo.API.Controllers
     {
         private readonly ILogger<ToDoItemsController> _logger;
         private readonly IToDoItemService _toDoItemService;
+        private readonly IMapper _mapper;
 
-        public ToDoItemsController(ILogger<ToDoItemsController> logger, IToDoItemService toDoItemService)
+        public ToDoItemsController(ILogger<ToDoItemsController> logger, IToDoItemService toDoItemService, IMapper mapper)
         {
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
             _toDoItemService = toDoItemService ?? throw new ArgumentNullException(nameof(toDoItemService));
+            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
 
         [HttpGet()]
-        public ActionResult<IEnumerable<ToDoItemDto>> Get()
+        public async Task<ActionResult<IEnumerable<ToDoItemDto>>> Get()
         {
-            return Ok(_toDoItemService.GetAll().Select(x => 
-                new ToDoItemDto
-                {
-                    Id = x.Id,
-                    Description = x.Description
-                })
-                .ToList());
+            var toDoItems = await _toDoItemService.ReadAll();
+            return Ok(_mapper.Map<IEnumerable<ToDoItemDto>>(toDoItems));
         }
 
         [HttpGet("{id}", Name = "GetToDoItem")]
-        public ActionResult<ToDoItemDto> GetToDoItem(int id)
+        public async Task<ActionResult<ToDoItemDto>> GetToDoItem(int id)
         {
             try
             {
-                var toDoItem = _toDoItemService.Get(id);
+                var toDoItem = await _toDoItemService.Read(id);
 
                 if (toDoItem == null)
                 {
@@ -42,11 +41,7 @@ namespace ToDo.API.Controllers
                     return NotFound();
                 }
 
-                return Ok(new ToDoItemDto
-                    {
-                        Id = toDoItem.Id,
-                        Description = toDoItem.Description
-                    });
+                return Ok(_mapper.Map<ToDoItemDto>(toDoItem));
             }
             catch (Exception ex) 
             {
@@ -56,23 +51,19 @@ namespace ToDo.API.Controllers
         }
 
         [HttpPost]
-        public ActionResult<ToDoItemDto> CreateToDoItem(ToDoItemForCreationDto toDoItemForCreation)
+        public async Task<ActionResult<ToDoItemDto>> CreateToDoItem(ToDoItemForCreationDto toDoItemForCreation)
         {
-            var createdToDoItem = _toDoItemService.Create(toDoItemForCreation.Description);
+            var createdToDoItem = await _toDoItemService.Create(toDoItemForCreation.Description);
 
             return CreatedAtRoute("GetToDoItem", 
                 new { id = createdToDoItem.Id },
-                new ToDoItemDto
-                {
-                    Id = createdToDoItem.Id,
-                    Description = createdToDoItem.Description
-                });
+                _mapper.Map<ToDoItemDto>(createdToDoItem));
         }
 
         [HttpPut("{id}")]
-        public ActionResult UpdateToDoItem(int id, ToDoItemForUpdateDto toDoItemForUpdate)
+        public async Task<ActionResult> UpdateToDoItem(int id, ToDoItemForUpdateDto toDoItemForUpdate)
         {
-            if (!_toDoItemService.Update(id, toDoItemForUpdate.Description))
+            if (!await _toDoItemService.Update(id, toDoItemForUpdate.Description))
             {
                 return NotFound();
             }
@@ -81,9 +72,9 @@ namespace ToDo.API.Controllers
         }
 
         [HttpDelete("{id}")]
-        public ActionResult DeleteToDoItem(int id) 
+        public async Task<ActionResult> DeleteToDoItem(int id) 
         {
-            if (!_toDoItemService.Delete(id))
+            if (!await _toDoItemService.Delete(id))
             {
                 return NotFound();
             }
