@@ -22,9 +22,9 @@ namespace ToDo.Application.Services
             return await _toDoItemRepository.Read(id);
         }
 
-        public async Task<IEnumerable<ToDoItem>> ReadAll()
+        public async Task<IEnumerable<ToDoItem>> ReadAll(int pageNumber = 1, int pageSize = 10)
         {
-            return await _toDoItemRepository.ReadAll();
+            return await _toDoItemRepository.ReadAll(pageNumber, pageSize);
         }
 
         public async Task<bool> Update(int id, string description)
@@ -54,6 +54,11 @@ namespace ToDo.Application.Services
             _toDoItemRepository.Delete(id);
 
             return true;
+        }
+
+        public async Task<int> Count()
+        {
+            return await _toDoItemRepository.Count();
         }
     }
 }

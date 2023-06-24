@@ -33,9 +33,16 @@ namespace ToDo.Infrastructure.Repositories
             return toDoItemDbItem == null ? null : _mapper.Map<ToDoItem>(toDoItemDbItem);            
         }
 
-        public async Task<IEnumerable<ToDoItem>> ReadAll()
+        public async Task<IEnumerable<ToDoItem>> ReadAll(int pageNumber, int pageSize)
         {
-            var toDoItemDbItems = await _context.ToDoItems.ToListAsync();
+            var toDoItemDbItems = 
+                await _context
+                .ToDoItems
+                .OrderBy(x => x.Id)
+                .Skip(pageSize * (pageNumber - 1))
+                .Take(pageSize)
+                .ToListAsync();
+
             return _mapper.Map<IEnumerable<ToDoItem>>(toDoItemDbItems);
         }
 
@@ -57,6 +64,11 @@ namespace ToDo.Infrastructure.Repositories
                 _context.Remove(toDoItemDbItem);
                 await _context.SaveChangesAsync();
             }
+        }
+
+        public async Task<int> Count()
+        {
+            return await _context.ToDoItems.CountAsync();
         }
 
         private async Task<ToDoItemDbItem?> ReadDbItem(int id)
