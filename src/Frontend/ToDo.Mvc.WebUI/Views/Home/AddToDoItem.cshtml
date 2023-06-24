@@ -1,0 +1,12 @@
+﻿@page
+@model ToDo.Mvc.WebUI.Models.ToDoItemViewModel
+@{
+}
+
+@using (Html.BeginForm("AddToDoItemSubmit", "Home", FormMethod.Post))
+{
+    @Html.LabelFor(model => model.Description)
+    @Html.TextBoxFor(model => model.Description)
+
+    <input type="submit" value="Save" />
+}

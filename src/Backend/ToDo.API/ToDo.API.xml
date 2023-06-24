@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ToDo.API</name>
+    </assembly>
+    <members>
+        <member name="M:ToDo.API.Controllers.ToDoItemsController.Get(System.Int32,System.Int32)">
+            <summary>
+            Get all to do items, implements paging.
+            </summary>
+            <param name="pageNumber">The page to return (starts at 1).</param>
+            <param name="pageSize">The page size to use for paging.</param>
+            <returns>IEnumerable&lt;ToDoItemDto&gt;</returns>
+        </member>
+        <member name="M:ToDo.API.Controllers.ToDoItemsController.GetToDoItem(System.Int32)">
+            <summary>
+            Get a specific to do item by id.
+            </summary>
+            <param name="id">the id of the to do item to return.</param>
+            <returns>ToDoItemDto</returns>
+        </member>
+        <member name="M:ToDo.API.Controllers.ToDoItemsController.CreateToDoItem(ToDo.Shared.Dtos.ToDoItemForCreationDto)">
+            <summary>
+            Create a new to do item.
+            </summary>
+            <param name="toDoItemForCreation">The Dto for creating the new to do item.</param>
+            <returns>ToDoItemDto - the newly created to do item</returns>
+        </member>
+        <member name="M:ToDo.API.Controllers.ToDoItemsController.UpdateToDoItem(System.Int32,ToDo.Shared.Dtos.ToDoItemForUpdateDto)">
+            <summary>
+            Update an existing to do item.
+            </summary>
+            <param name="id">The id of the to do item to update</param>
+            <param name="toDoItemForUpdate">The Dto containing the updated information.</param>
+            <returns>NotFound if the to do item doesn't exist (by id), or NoContent if successful.</returns>
+        </member>
+        <member name="M:ToDo.API.Controllers.ToDoItemsController.DeleteToDoItem(System.Int32)">
+            <summary>
+            Delete an existing to do item.
+            </summary>
+            <param name="id">The id of the to do item to delete</param>
+            <returns>NotFound if the to do item doesn't exist (by id), or NoContent if successful.</returns>
+        </member>
+    </members>
+</doc>
