@@ -18,4 +18,4 @@ I done this implementation in the context of a to do list app.
 
 To run locally via Visual Studio, right-click on the solution and select Properties. Then you need to select Multiple startup projects and select `ToDo.API` and `ToDo.Mvc.WebUI` as the startup projects. Then select Start.
 
-![Alt text](image.png)
+![image](https://github.com/twarsop/todo/assets/68218278/3c04df74-96cd-4c20-a0e9-056ae87ebd1a)
