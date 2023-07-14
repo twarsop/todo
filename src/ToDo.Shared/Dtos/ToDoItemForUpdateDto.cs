@@ -2,9 +2,8 @@
 
 namespace ToDo.Shared.Dtos
 {
-    public class ToDoItemForUpdateDto
+    public record class ToDoItemForUpdateDto(string Description)
     {
-        [Required]
-        public string Description { get; set; }
+        
     }
 }

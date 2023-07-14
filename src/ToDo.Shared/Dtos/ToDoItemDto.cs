@@ -1,8 +1,7 @@
 ﻿namespace ToDo.Shared.Dtos
 {
-    public class ToDoItemDto
+    public record class ToDoItemDto(int Id, string Description)
     {
-        public int Id { get; set; }
-        public string Description { get; set; }
+
     }
 }
