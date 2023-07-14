@@ -82,7 +82,7 @@ namespace ToDo.Mvc.WebUI.Controllers
             var putResponse = await RetryApiEndpoint(
                 HttpMethodEnum.Post,
                 BaseApiUrl,
-                JsonConvert.SerializeObject(new ToDoItemForCreationDto { Description = toDoItemViewModel.Description }));
+                JsonConvert.SerializeObject(new ToDoItemForCreationDto(toDoItemViewModel.Description)));
 
             return Redirect("Index");
         }
@@ -107,7 +107,7 @@ namespace ToDo.Mvc.WebUI.Controllers
             var putResponse = await RetryApiEndpoint(
                 HttpMethodEnum.Put, 
                 $"{BaseApiUrl}/{toDoItemViewModel.Id}", 
-                JsonConvert.SerializeObject(new ToDoItemForUpdateDto { Description = toDoItemViewModel.Description }));
+                JsonConvert.SerializeObject(new ToDoItemForUpdateDto(toDoItemViewModel.Description)));
 
             return Redirect("Index");
         }
