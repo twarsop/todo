@@ -1,34 +1,33 @@
-﻿namespace ToDo.Domain.Entities
+﻿namespace ToDo.Domain.Entities;
+
+public class ToDoItem
 {
-    public class ToDoItem
+    public int Id { get; set; }
+    public string Description { get; private set; }
+
+    public ToDoItem(string description)
     {
-        public int Id { get; set; }
-        public string Description { get; private set; }
+        Validate(description);
+        Description = description;
+    }
 
-        public ToDoItem(string description)
-        {
-            Validate(description);
-            Description = description;
-        }
+    public ToDoItem(int id, string description)
+        : this(description)
+    {
+        Id = id;
+    }
 
-        public ToDoItem(int id, string description)
-            : this(description)
-        {
-            Id = id;
-        }
+    public void UpdateDescription(string description)
+    {
+        Validate(description);
+        Description = description;
+    }
 
-        public void UpdateDescription(string description)
+    private void Validate(string description)
+    {
+        if (description == string.Empty)
         {
-            Validate(description);
-            Description = description;
-        }
-
-        private void Validate(string description)
-        {
-            if (description == string.Empty)
-            {
-                throw new ArgumentException("ToDoItem.Description cannot be empty.");
-            }
+            throw new ArgumentException("ToDoItem.Description cannot be empty.");
         }
     }
 }

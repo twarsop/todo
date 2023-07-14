@@ -1,8 +1,7 @@
-﻿namespace ToDo.Mvc.WebUI.Models
+﻿namespace ToDo.Mvc.WebUI.Models;
+
+public class ToDoItemViewModel
 {
-    public class ToDoItemViewModel
-    {
-        public int Id { get; set; }
-        public string Description { get; set; }
-    }
+    public int Id { get; set; }
+    public string Description { get; set; }
 }

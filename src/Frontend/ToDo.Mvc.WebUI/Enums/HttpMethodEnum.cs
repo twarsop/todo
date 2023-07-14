@@ -1,10 +1,9 @@
-﻿namespace ToDo.Mvc.WebUI.Enums
+﻿namespace ToDo.Mvc.WebUI.Enums;
+
+public enum HttpMethodEnum : byte
 {
-    public enum HttpMethodEnum : byte
-    {
-        Get = 0,
-        Post,
-        Put,
-        Delete
-    }
+    Get = 0,
+    Post,
+    Put,
+    Delete
 }
