@@ -1,9 +1,8 @@
-namespace ToDo.Mvc.WebUI.Models
-{
-    public class ErrorViewModel
-    {
-        public string? RequestId { get; set; }
+namespace ToDo.Mvc.WebUI.Models;
 
-        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
-    }
+public class ErrorViewModel
+{
+    public string? RequestId { get; set; }
+
+    public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 }

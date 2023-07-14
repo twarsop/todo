@@ -1,9 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿namespace ToDo.Shared.Dtos;
 
-namespace ToDo.Shared.Dtos
+public record class ToDoItemForUpdateDto(string Description)
 {
-    public record class ToDoItemForUpdateDto(string Description)
-    {
-        
-    }
+
 }

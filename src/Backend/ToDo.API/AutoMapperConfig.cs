@@ -2,21 +2,20 @@
 using ToDo.Domain.Entities;
 using ToDo.Shared.Dtos;
 
-namespace ToDo.API
+namespace ToDo.API;
+
+public static class AutoMapperConfig
 {
-    public static class AutoMapperConfig
+    public static MapperConfiguration Configure()
     {
-        public static MapperConfiguration Configure()
+        var configuration = new MapperConfiguration(config =>
         {
-            var configuration = new MapperConfiguration(config =>
-            {
-                config.CreateMap<ToDoItem, ToDoItemDto>();
-                Infrastructure.AutoMapperConfig.SetupDbItemMappings(config);
-            });
+            config.CreateMap<ToDoItem, ToDoItemDto>();
+            Infrastructure.AutoMapperConfig.SetupDbItemMappings(config);
+        });
 
-            configuration.AssertConfigurationIsValid();
+        configuration.AssertConfigurationIsValid();
 
-            return configuration;
-        }
+        return configuration;
     }
 }
