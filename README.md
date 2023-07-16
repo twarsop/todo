@@ -1,6 +1,6 @@
 # To Do
 
-![Build](https://github.com/twarsop/todo/actions/workflows/build/badge.svg)
+![Build](https://github.com/twarsop/todo/actions/workflows/build.yml/badge.svg)
 
 This repo is me trying my hand at implementing the clean architecture idea as described by Jason Taylor in this [article](https://jasontaylor.dev/clean-architecture-getting-started/) and this [github repo](https://github.com/jasontaylordev/CleanArchitecture). I recommend reading both as they are excellent resources.
 
