@@ -33,5 +33,7 @@ public class Tests
         var newToDoItem = new ToDoItem("A description");
 
         Assert.Throws<ArgumentException>(() => newToDoItem.UpdateDescription(""));
+
+        Assert.AreEqual(false, true);
     }
 }
