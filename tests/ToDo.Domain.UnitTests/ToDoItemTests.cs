@@ -1,37 +1,47 @@
+using AutoFixture.NUnit3;
+using FluentAssertions;
 using ToDo.Domain.Entities;
 
-namespace ToDo.Domain.UnitTests;
+namespace ToDo.Domain.Tests;
 
 public class Tests
 {
-    [SetUp]
-    public void Setup()
+    [Test]
+    [AutoData]
+    public void UpdatingDescription_CorrectlyUpdates(ToDoItem toDoItem, string updatedDescription)
     {
+        toDoItem.UpdateDescription(updatedDescription);
+
+        toDoItem.Description.Should().Be(updatedDescription);
     }
 
     [Test]
-    public void UpdatingDescriptionCorrectlyUpdates()
+    public void ProvidingNullDescriptionInConstructor_ThrowsArgumentNullException()
     {
-        var newToDoItem = new ToDoItem("A description");
-
-        var updatedDescription = "An updated description";
-
-        newToDoItem.UpdateDescription("An updated description");
-
-        Assert.AreEqual(updatedDescription, newToDoItem.Description);
+        var toDoItemCtor = () => new ToDoItem(null);
+        toDoItemCtor.Should().Throw<ArgumentNullException>();
     }
 
     [Test]
-    public void ProvidingEmptyDescriptionInConstructorThrowsException()
+    public void ProvidingEmptyDescriptionInConstructor_ThrowsArgumentException()
     {
-        Assert.Throws<ArgumentException>(() => new ToDoItem(""));
+        var toDoItemCtor = () => new ToDoItem("");
+        toDoItemCtor.Should().Throw<ArgumentException>();
     }
 
     [Test]
-    public void ProvidingEmptyDescriptionInUpdateThrowsException()
+    [AutoData]
+    public void ProvidingNullDescriptionInUpdate_ThrowsArgumentNullException(ToDoItem toDoItem)
     {
-        var newToDoItem = new ToDoItem("A description");
+        var toDoItemUpdateDescription = () => toDoItem.UpdateDescription(null);
+        toDoItemUpdateDescription.Should().Throw<ArgumentNullException>();
+    }
 
-        Assert.Throws<ArgumentException>(() => newToDoItem.UpdateDescription(""));
+    [Test]
+    [AutoData]
+    public void ProvidingEmptyDescriptionInUpdate_ThrowsArgumentException(ToDoItem toDoItem)
+    {
+        var toDoItemUpdateDescription = () => toDoItem.UpdateDescription("");
+        toDoItemUpdateDescription.Should().Throw<ArgumentException>();
     }
 }

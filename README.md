@@ -14,6 +14,8 @@ I done this implementation in the context of a to do list app.
 - [Entity Framework Core 7](https://learn.microsoft.com/en-us/ef/core/)
 - [AutoMapper](https://automapper.org/)
 - [NUnit](https://nunit.org/)
+- [NSubstitute](https://nsubstitute.github.io/)
+- [Fluent Assertions](https://fluentassertions.com/)
 - [Serilog](https://serilog.net/)
 
 ## Run Locally

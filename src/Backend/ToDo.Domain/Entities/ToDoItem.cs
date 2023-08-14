@@ -25,6 +25,11 @@ public class ToDoItem
 
     private void Validate(string description)
     {
+        if (description == null)
+        {
+            throw new ArgumentNullException("ToDoItem.Description cannot be null.");
+        }
+
         if (description == string.Empty)
         {
             throw new ArgumentException("ToDoItem.Description cannot be empty.");
