@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using System.Text.Json;
 using ToDo.Application.Common.Interfaces;
 using ToDo.Shared.Dtos;
 
@@ -40,10 +39,6 @@ public class ToDoItemsController : ControllerBase
 
         var toDoItems = await _toDoItemService.ReadAll(pageNumber, pageSize);
 
-        var paginationMetadata = new PaginationMetadata(await _toDoItemService.Count(), pageSize, pageNumber);
-
-        Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(paginationMetadata));
-
         return Ok(_mapper.Map<IEnumerable<ToDoItemDto>>(toDoItems));
     }
 
@@ -67,7 +62,7 @@ public class ToDoItemsController : ControllerBase
                 _logger.LogInformation($"To Do Item with id {id} wasn't found");
                 return NotFound();
             }
-
+            var foo = _mapper.Map<ToDoItemDto>(toDoItem);
             return Ok(_mapper.Map<ToDoItemDto>(toDoItem));
         }
         catch (Exception ex)
@@ -87,6 +82,11 @@ public class ToDoItemsController : ControllerBase
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<ToDoItemDto>> CreateToDoItem(ToDoItemForCreationDto toDoItemForCreation)
     {
+        if (string.IsNullOrEmpty(toDoItemForCreation.Description))
+        {
+            return BadRequest();
+        }
+
         var createdToDoItem = await _toDoItemService.Create(toDoItemForCreation.Description);
 
         return CreatedAtRoute("GetToDoItem",
@@ -106,6 +106,11 @@ public class ToDoItemsController : ControllerBase
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult> UpdateToDoItem(int id, ToDoItemForUpdateDto toDoItemForUpdate)
     {
+        if (string.IsNullOrEmpty(toDoItemForUpdate.Description))
+        {
+            return BadRequest();
+        }
+
         if (!await _toDoItemService.Update(id, toDoItemForUpdate.Description))
         {
             return NotFound();
@@ -121,7 +126,6 @@ public class ToDoItemsController : ControllerBase
     /// <returns>NotFound if the to do item doesn't exist (by id), or NoContent if successful.</returns>
     [HttpDelete("{id}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
-    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult> DeleteToDoItem(int id)
     {
