@@ -2,7 +2,7 @@
 
 public class ToDoItem
 {
-    public int Id { get; set; }
+    public Guid Id { get; set; }
     public string Description { get; private set; }
 
     public ToDoItem(string description)
@@ -11,7 +11,7 @@ public class ToDoItem
         Description = description;
     }
 
-    public ToDoItem(int id, string description)
+    public ToDoItem(Guid id, string description)
         : this(description)
     {
         Id = id;

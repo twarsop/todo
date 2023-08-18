@@ -7,7 +7,7 @@ public class ToDoItemDbItem
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int Id { get; set; }
+    public Guid Id { get; set; }
 
     [Required]
     [MaxLength(2000)]
@@ -18,7 +18,7 @@ public class ToDoItemDbItem
         Description = description;
     }
 
-    public ToDoItemDbItem(int id, string description)
+    public ToDoItemDbItem(Guid id, string description)
         : this(description)
     {
         Id = id;

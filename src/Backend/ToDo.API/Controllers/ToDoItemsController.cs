@@ -51,7 +51,7 @@ public class ToDoItemsController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<ToDoItemDto>> GetToDoItem(int id)
+    public async Task<ActionResult<ToDoItemDto>> GetToDoItem(Guid id)
     {
         try
         {
@@ -104,7 +104,7 @@ public class ToDoItemsController : ControllerBase
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<ActionResult> UpdateToDoItem(int id, ToDoItemForUpdateDto toDoItemForUpdate)
+    public async Task<ActionResult> UpdateToDoItem(Guid id, ToDoItemForUpdateDto toDoItemForUpdate)
     {
         if (string.IsNullOrEmpty(toDoItemForUpdate.Description))
         {
@@ -127,7 +127,7 @@ public class ToDoItemsController : ControllerBase
     [HttpDelete("{id}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<ActionResult> DeleteToDoItem(int id)
+    public async Task<ActionResult> DeleteToDoItem(Guid id)
     {
         if (!await _toDoItemService.Delete(id))
         {

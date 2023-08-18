@@ -85,7 +85,7 @@ public class HomeController : Controller
         return Redirect("Index");
     }
 
-    public async Task<IActionResult> EditToDoItem(int id)
+    public async Task<IActionResult> EditToDoItem(Guid id)
     {
         var getResponse = await RetryApiEndpoint(HttpMethodEnum.Get, $"{BaseApiUrl}/{id}");
 
@@ -110,7 +110,7 @@ public class HomeController : Controller
         return Redirect("Index");
     }
 
-    public async Task<IActionResult> DeleteToDoItem(int id)
+    public async Task<IActionResult> DeleteToDoItem(Guid id)
     {
         var deleteResponse = await RetryApiEndpoint(HttpMethodEnum.Delete, $"{BaseApiUrl}/{id}");
 

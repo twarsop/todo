@@ -17,7 +17,7 @@ public class ToDoItemService : IToDoItemService
         return await _toDoItemRepository.Create(new ToDoItem(description));
     }
 
-    public async Task<ToDoItem?> Read(int id)
+    public async Task<ToDoItem?> Read(Guid id)
     {
         return await _toDoItemRepository.Read(id);
     }
@@ -27,7 +27,7 @@ public class ToDoItemService : IToDoItemService
         return await _toDoItemRepository.ReadAll(pageNumber, pageSize);
     }
 
-    public async Task<bool> Update(int id, string description)
+    public async Task<bool> Update(Guid id, string description)
     {
         var toDoItem = await Read(id);
 
@@ -42,7 +42,7 @@ public class ToDoItemService : IToDoItemService
         return true;
     }
 
-    public async Task<bool> Delete(int id)
+    public async Task<bool> Delete(Guid id)
     {
         var toDoItem = await Read(id);
 

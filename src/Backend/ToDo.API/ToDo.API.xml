@@ -12,7 +12,7 @@
             <param name="pageSize">The page size to use for paging.</param>
             <returns>IEnumerable&lt;ToDoItemDto&gt;</returns>
         </member>
-        <member name="M:ToDo.API.Controllers.ToDoItemsController.GetToDoItem(System.Int32)">
+        <member name="M:ToDo.API.Controllers.ToDoItemsController.GetToDoItem(System.Guid)">
             <summary>
             Get a specific to do item by id.
             </summary>
@@ -26,7 +26,7 @@
             <param name="toDoItemForCreation">The Dto for creating the new to do item.</param>
             <returns>ToDoItemDto - the newly created to do item</returns>
         </member>
-        <member name="M:ToDo.API.Controllers.ToDoItemsController.UpdateToDoItem(System.Int32,ToDo.Shared.Dtos.ToDoItemForUpdateDto)">
+        <member name="M:ToDo.API.Controllers.ToDoItemsController.UpdateToDoItem(System.Guid,ToDo.Shared.Dtos.ToDoItemForUpdateDto)">
             <summary>
             Update an existing to do item.
             </summary>
@@ -34,7 +34,7 @@
             <param name="toDoItemForUpdate">The Dto containing the updated information.</param>
             <returns>NotFound if the to do item doesn't exist (by id), or NoContent if successful.</returns>
         </member>
-        <member name="M:ToDo.API.Controllers.ToDoItemsController.DeleteToDoItem(System.Int32)">
+        <member name="M:ToDo.API.Controllers.ToDoItemsController.DeleteToDoItem(System.Guid)">
             <summary>
             Delete an existing to do item.
             </summary>
