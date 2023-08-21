@@ -16,6 +16,7 @@
         @foreach (var toDoItem in Model)
         {
             <tr>
+                <td>@toDoItem.CreatedAt</td>
                 <td>@toDoItem.Description</td>
                 <td>@Html.ActionLink("Edit", "EditToDoItem", new { id = toDoItem.Id})</td>
                 <td>@Html.ActionLink("Delete", "DeleteToDoItem", new { id = toDoItem.Id})</td>

@@ -34,7 +34,7 @@ public class ToDoItemsControllerTests
 
         response.Result.Should().BeOfType<OkObjectResult>();
 
-        await _service.Received().ReadAll(1, 10);
+        await _service.Received().ReadAll();
     }
 
     [Test]

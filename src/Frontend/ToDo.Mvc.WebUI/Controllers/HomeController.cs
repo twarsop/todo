@@ -66,7 +66,9 @@ public class HomeController : Controller
             toDoItemsDtos = JsonConvert.DeserializeObject<List<ToDoItemDto>>(data);
         }
 
-        return View(toDoItemsDtos?.Select(x => new ToDoItemViewModel { Id = x.Id, Description = x.Description }).ToList());
+        return View(toDoItemsDtos?
+            .OrderBy(x => x.CreatedAt)
+            .Select(x => new ToDoItemViewModel { Id = x.Id, CreatedAt = x.CreatedAt, Description = x.Description }).ToList());
     }
 
     public IActionResult AddToDoItem()
