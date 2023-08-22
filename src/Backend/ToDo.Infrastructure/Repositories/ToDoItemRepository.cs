@@ -26,7 +26,7 @@ public class ToDoItemRepository : IToDoItemRepository
         return _mapper.Map<ToDoItem>(toDoItemDbItem);
 
     }
-    public async Task<ToDoItem?> Read(int id)
+    public async Task<ToDoItem?> Read(Guid id)
     {
         var toDoItemDbItem = await ReadDbItem(id);
         return toDoItemDbItem == null ? null : _mapper.Map<ToDoItem>(toDoItemDbItem);
@@ -55,7 +55,7 @@ public class ToDoItemRepository : IToDoItemRepository
         }
     }
 
-    public async void Delete(int id)
+    public async void Delete(Guid id)
     {
         var toDoItemDbItem = await ReadDbItem(id);
         if (toDoItemDbItem != null)
@@ -70,7 +70,7 @@ public class ToDoItemRepository : IToDoItemRepository
         return await _context.ToDoItems.CountAsync();
     }
 
-    private async Task<ToDoItemDbItem?> ReadDbItem(int id)
+    private async Task<ToDoItemDbItem?> ReadDbItem(Guid id)
     {
         return await _context.ToDoItems.Where(t => t.Id == id).FirstOrDefaultAsync();
     }

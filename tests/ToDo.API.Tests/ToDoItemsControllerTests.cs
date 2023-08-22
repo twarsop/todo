@@ -39,9 +39,9 @@ public class ToDoItemsControllerTests
 
     [Test]
     [AutoData]
-    public async Task GetToDoItem_ToDoItemDoesNotExist_ReturnsNotFoundResult(int id)
+    public async Task GetToDoItem_ToDoItemDoesNotExist_ReturnsNotFoundResult(Guid id)
     {
-        _service.Read(Arg.Any<int>()).Returns(Task.FromResult<ToDoItem?>(null));
+        _service.Read(Arg.Any<Guid>()).Returns(Task.FromResult<ToDoItem?>(null));
 
         var response = await _controller.GetToDoItem(id);
 
@@ -54,7 +54,7 @@ public class ToDoItemsControllerTests
     [AutoData]
     public async Task GetToDoItem_ToDoItemExists_ReturnsOkObjectResultAndToDoItem(ToDoItem toDoItem)
     {
-        _service.Read(Arg.Any<int>()).Returns(Task.FromResult<ToDoItem?>(toDoItem));
+        _service.Read(Arg.Any<Guid>()).Returns(Task.FromResult<ToDoItem?>(toDoItem));
 
         var response = await _controller.GetToDoItem(toDoItem.Id);
 
@@ -82,7 +82,7 @@ public class ToDoItemsControllerTests
 
     [Test]
     [AutoData]
-    public async Task CreateToDoItem_DescriptionProvided_ReturnsCreatedAtRouteResultAndCreatedToDoItem(int id, string description)
+    public async Task CreateToDoItem_DescriptionProvided_ReturnsCreatedAtRouteResultAndCreatedToDoItem(Guid id, string description)
     {
         _service.Create(description).Returns(Task.FromResult(new ToDoItem(id, description)));
 
@@ -104,14 +104,14 @@ public class ToDoItemsControllerTests
     [TestCase("")]
     public async Task UpdateToDoItem_NullOrEmptyDescriptionProvided_ReturnsBadRequestResult(string description)
     {
-        var response = await _controller.UpdateToDoItem(0, new ToDoItemForUpdateDto(description));
+        var response = await _controller.UpdateToDoItem(Guid.Empty, new ToDoItemForUpdateDto(description));
 
         response.Should().BeOfType<BadRequestResult>();
     }
 
     [Test]
     [AutoData]
-    public async Task UpdateToDoItem_ToDoItemNotFound_ReturnsNotFoundResult(int id, string description)
+    public async Task UpdateToDoItem_ToDoItemNotFound_ReturnsNotFoundResult(Guid id, string description)
     {
         _service.Update(id, description).Returns(Task.FromResult(false));
 
@@ -124,7 +124,7 @@ public class ToDoItemsControllerTests
 
     [Test]
     [AutoData]
-    public async Task UpdateToDoItem_ToDoItemFoundAndUpdated_ReturnsNoContentResult(int id, string description)
+    public async Task UpdateToDoItem_ToDoItemFoundAndUpdated_ReturnsNoContentResult(Guid id, string description)
     {
         _service.Update(id, description).Returns(Task.FromResult(true));
 
@@ -137,7 +137,7 @@ public class ToDoItemsControllerTests
 
     [Test]
     [AutoData]
-    public async Task DeleteToDoItem_ToDoItemNotFound_ReturnsNotFoundResult(int id)
+    public async Task DeleteToDoItem_ToDoItemNotFound_ReturnsNotFoundResult(Guid id)
     {
         _service.Delete(id).Returns(Task.FromResult(false));
 
@@ -150,7 +150,7 @@ public class ToDoItemsControllerTests
 
     [Test]
     [AutoData]
-    public async Task DeleteToDoItem_ToDoItemFoundAndDeleted_ReturnsNoContentResult(int id)
+    public async Task DeleteToDoItem_ToDoItemFoundAndDeleted_ReturnsNoContentResult(Guid id)
     {
         _service.Delete(id).Returns(Task.FromResult(true));
 
