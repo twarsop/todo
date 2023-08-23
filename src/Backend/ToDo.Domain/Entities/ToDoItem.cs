@@ -3,6 +3,7 @@
 public class ToDoItem
 {
     public Guid Id { get; set; }
+    public DateTime CreatedAt { get; private set; }
     public string Description { get; private set; }
 
     public ToDoItem(string description)

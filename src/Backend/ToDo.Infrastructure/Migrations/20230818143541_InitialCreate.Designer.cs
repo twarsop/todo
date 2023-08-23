@@ -11,7 +11,7 @@ using ToDo.Infrastructure.Common;
 namespace ToDo.Infrastructure.Migrations
 {
     [DbContext(typeof(SqlLiteContext))]
-    [Migration("20230818111112_InitialCreate")]
+    [Migration("20230818143541_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -24,6 +24,9 @@ namespace ToDo.Infrastructure.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreatedAt")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Description")

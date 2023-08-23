@@ -22,9 +22,9 @@ public class ToDoItemService : IToDoItemService
         return await _toDoItemRepository.Read(id);
     }
 
-    public async Task<IEnumerable<ToDoItem>> ReadAll(int pageNumber = 1, int pageSize = 10)
+    public async Task<IEnumerable<ToDoItem>> ReadAll()
     {
-        return await _toDoItemRepository.ReadAll(pageNumber, pageSize);
+        return await _toDoItemRepository.ReadAll();
     }
 
     public async Task<bool> Update(Guid id, string description)

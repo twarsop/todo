@@ -23,21 +23,14 @@ public class ToDoItemsController : ControllerBase
     }
 
     /// <summary>
-    /// Get all to do items, implements paging.
-    /// </summary>
-    /// <param name="pageNumber">The page to return (starts at 1).</param>
-    /// <param name="pageSize">The page size to use for paging.</param>
+    /// Get all to do items.
+    /// </summary>#
     /// <returns>IEnumerable&lt;ToDoItemDto&gt;</returns>
     [HttpGet()]
     [ProducesResponseType(StatusCodes.Status200OK)]
-    public async Task<ActionResult<IEnumerable<ToDoItemDto>>> Get(int pageNumber = 1, int pageSize = 10)
+    public async Task<ActionResult<IEnumerable<ToDoItemDto>>> Get()
     {
-        if (pageSize > MaxToDoItemPageSize)
-        {
-            pageSize = MaxToDoItemPageSize;
-        }
-
-        var toDoItems = await _toDoItemService.ReadAll(pageNumber, pageSize);
+        var toDoItems = await _toDoItemService.ReadAll();
 
         return Ok(_mapper.Map<IEnumerable<ToDoItemDto>>(toDoItems));
     }
@@ -62,7 +55,7 @@ public class ToDoItemsController : ControllerBase
                 _logger.LogInformation($"To Do Item with id {id} wasn't found");
                 return NotFound();
             }
-            var foo = _mapper.Map<ToDoItemDto>(toDoItem);
+
             return Ok(_mapper.Map<ToDoItemDto>(toDoItem));
         }
         catch (Exception ex)

@@ -4,12 +4,10 @@
         <name>ToDo.API</name>
     </assembly>
     <members>
-        <member name="M:ToDo.API.Controllers.ToDoItemsController.Get(System.Int32,System.Int32)">
+        <member name="M:ToDo.API.Controllers.ToDoItemsController.Get">
             <summary>
-            Get all to do items, implements paging.
-            </summary>
-            <param name="pageNumber">The page to return (starts at 1).</param>
-            <param name="pageSize">The page size to use for paging.</param>
+            Get all to do items.
+            </summary>#
             <returns>IEnumerable&lt;ToDoItemDto&gt;</returns>
         </member>
         <member name="M:ToDo.API.Controllers.ToDoItemsController.GetToDoItem(System.Guid)">

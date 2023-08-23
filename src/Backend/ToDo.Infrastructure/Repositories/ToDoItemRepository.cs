@@ -32,15 +32,9 @@ public class ToDoItemRepository : IToDoItemRepository
         return toDoItemDbItem == null ? null : _mapper.Map<ToDoItem>(toDoItemDbItem);
     }
 
-    public async Task<IEnumerable<ToDoItem>> ReadAll(int pageNumber, int pageSize)
+    public async Task<IEnumerable<ToDoItem>> ReadAll()
     {
-        var toDoItemDbItems =
-            await _context
-            .ToDoItems
-            .OrderBy(x => x.Id)
-            .Skip(pageSize * (pageNumber - 1))
-            .Take(pageSize)
-            .ToListAsync();
+        var toDoItemDbItems = await _context.ToDoItems.ToListAsync();
 
         return _mapper.Map<IEnumerable<ToDoItem>>(toDoItemDbItems);
     }

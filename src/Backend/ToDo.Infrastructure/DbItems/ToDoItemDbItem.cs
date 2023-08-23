@@ -9,12 +9,15 @@ public class ToDoItemDbItem
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public Guid Id { get; set; }
 
+    public DateTime CreatedAt { get; init; }
+
     [Required]
     [MaxLength(2000)]
     public string Description { get; set; }
 
     public ToDoItemDbItem(string description)
     {
+        CreatedAt = DateTime.Now;
         Description = description;
     }
 
