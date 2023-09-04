@@ -8,9 +8,13 @@
     </div>
 </div>
 
-<h2 style="margin-top:20px;">To Do Items</h2>
-
-<table>
+<table class="table"style="color: #fff;">
+    <tr>
+        <th>Created At</th>
+        <th>Decsription</th>
+        <th class="text-center">Edit</th>
+        <th class="text-center">Delete</th>
+    </tr>
     @if (Model != null)
     {
         @foreach (var toDoItem in Model)
@@ -18,8 +22,16 @@
             <tr>
                 <td>@toDoItem.CreatedAt</td>
                 <td>@toDoItem.Description</td>
-                <td>@Html.ActionLink("Edit", "EditToDoItem", new { id = toDoItem.Id})</td>
-                <td>@Html.ActionLink("Delete", "DeleteToDoItem", new { id = toDoItem.Id})</td>
+                <td class="text-center">
+                    <a href="@Url.Action("EditToDoItem", new { id = toDoItem.Id})">
+                        <i class="bi bi-pencil-fill"></i>
+                    </a>
+                </td>
+                <td class="text-center">
+                    <a href="@Url.Action("DeleteToDoItem", new { id = toDoItem.Id})">
+                        <i class="bi bi-trash-fill"></i>
+                    </a>
+                </td>
             </tr>
         }
     }
