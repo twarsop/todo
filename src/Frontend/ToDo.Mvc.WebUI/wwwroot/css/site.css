@@ -18,3 +18,7 @@ body {
     background-color: #333 !important;
     color: #fff !important;
 }
+
+.w-200 {
+    width: 200px;
+}

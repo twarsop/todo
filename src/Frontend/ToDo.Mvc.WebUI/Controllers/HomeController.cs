@@ -95,7 +95,12 @@ public class HomeController : Controller
         {
             var data = await getResponse.Content.ReadAsStringAsync();
             ToDoItemDto toDoItemDto = JsonConvert.DeserializeObject<ToDoItemDto>(data);
-            return View("EditToDoItem", new ToDoItemViewModel { Id = toDoItemDto.Id, Description = toDoItemDto.Description });
+            return View("EditToDoItem", new ToDoItemViewModel
+            {
+                Id = toDoItemDto.Id,
+                Description = toDoItemDto.Description,
+                CreatedAt = toDoItemDto.CreatedAt
+            });
         }
 
         return View("EditToDoItem", new ToDoItemViewModel());

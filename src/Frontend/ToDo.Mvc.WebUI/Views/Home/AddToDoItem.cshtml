@@ -3,10 +3,26 @@
 @{
 }
 
-@using (Html.BeginForm("AddToDoItemSubmit", "Home", FormMethod.Post))
-{
-    @Html.LabelFor(model => model.Description)
-    @Html.TextBoxFor(model => model.Description)
+<div class="row">
+    <div class="col text-center bg-secondary">
+        <h3>Add</h3>
+    </div>
+</div>
 
-    <input type="submit" value="Save" />
-}
+<div class="row mt-3">
+    <div class="col">
+        @using (Html.BeginForm("AddToDoItemSubmit", "Home", FormMethod.Post))
+        {
+            <div class="row">
+                @Html.LabelFor(model => model.Description, new { @class="col-6" })
+                @Html.TextBoxFor(model => model.Description, new { @class="col-6" })
+            </div>
+
+            <div class="row text-center mt-3">
+                <div class="col">
+                    <button class="btn btn-primary w-200" type="submit">Add</button>            
+                </div>
+            </div>
+        }
+    </div>
+</div>

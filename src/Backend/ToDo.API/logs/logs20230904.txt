@@ -2044,3 +2044,558 @@ System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport
 2023-09-04 14:33:45.512 +01:00 [DBG] Connection id "0HMTD9E4I0607" is closed. The last processed stream ID was 7.
 2023-09-04 14:33:45.516 +01:00 [DBG] Connection id "0HMTD9E4I0607" sending FIN because: "The client closed the connection."
 2023-09-04 14:33:45.525 +01:00 [DBG] Connection id "0HMTD9E4I0607" stopped.
+2023-09-04 14:34:29.855 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-09-04 14:34:30.773 +01:00 [DBG] Hosting starting
+2023-09-04 14:34:31.297 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 24D7086D4A581986C9118C4ED8B11A8FCD9D0DE3)
+2023-09-04 14:34:31.370 +01:00 [INF] Now listening on: https://localhost:7180
+2023-09-04 14:34:31.371 +01:00 [INF] Now listening on: http://localhost:5097
+2023-09-04 14:34:31.372 +01:00 [DBG] Loaded hosting startup assembly ToDo.API
+2023-09-04 14:34:31.373 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-09-04 14:34:31.376 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-09-04 14:34:31.378 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-04 14:34:31.381 +01:00 [INF] Hosting environment: Development
+2023-09-04 14:34:31.382 +01:00 [INF] Content root path: C:\Users\t_war\Documents\projects\code\todo\src\Backend\ToDo.API\
+2023-09-04 14:34:31.383 +01:00 [DBG] Hosting started
+2023-09-04 14:34:31.796 +01:00 [DBG] Connection id "0HMTD9ELR9ILR" received FIN.
+2023-09-04 14:34:31.811 +01:00 [DBG] Connection id "0HMTD9ELR9ILR" accepted.
+2023-09-04 14:34:31.814 +01:00 [DBG] Connection id "0HMTD9ELR9ILR" started.
+2023-09-04 14:34:31.848 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-04 14:34:31.923 +01:00 [DBG] Connection id "0HMTD9ELR9ILR" stopped.
+2023-09-04 14:34:31.928 +01:00 [DBG] Connection id "0HMTD9ELR9ILR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-04 14:34:32.490 +01:00 [DBG] Connection id "0HMTD9ELR9ILS" accepted.
+2023-09-04 14:34:32.871 +01:00 [DBG] Connection id "0HMTD9ELR9ILS" started.
+2023-09-04 14:34:32.957 +01:00 [DBG] Connection 0HMTD9ELR9ILS established using the following protocol: "Tls13"
+2023-09-04 14:34:33.149 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/index.html - -
+2023-09-04 14:34:33.228 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-09-04 14:34:33.436 +01:00 [DBG] Connection id "0HMTD9ELR9ILT" accepted.
+2023-09-04 14:34:33.446 +01:00 [DBG] Connection id "0HMTD9ELR9ILT" started.
+2023-09-04 14:34:33.498 +01:00 [DBG] Connection 0HMTD9ELR9ILT established using the following protocol: "Tls13"
+2023-09-04 14:34:33.582 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/api/v1/todoitems - -
+2023-09-04 14:34:33.587 +01:00 [DBG] The request path  does not match the path filter
+2023-09-04 14:34:33.661 +01:00 [DBG] 1 candidate(s) found for the request path '/api/v1/todoitems'
+2023-09-04 14:34:33.677 +01:00 [DBG] Endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)' with route pattern 'api/v{version:apiVersion}/todoitems' is valid for the request path '/api/v1/todoitems'
+2023-09-04 14:34:33.700 +01:00 [DBG] Request matched endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)'
+2023-09-04 14:34:33.715 +01:00 [INF] Executing endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)'
+2023-09-04 14:34:33.766 +01:00 [INF] Route matched with {action = "Get", controller = "ToDoItems"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ToDo.Shared.Dtos.ToDoItemDto]]] Get() on controller ToDo.API.Controllers.ToDoItemsController (ToDo.API).
+2023-09-04 14:34:33.774 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-09-04 14:34:33.776 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-09-04 14:34:33.778 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-09-04 14:34:33.780 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-09-04 14:34:33.782 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-09-04 14:34:33.785 +01:00 [DBG] Executing controller factory for controller ToDo.API.Controllers.ToDoItemsController (ToDo.API)
+2023-09-04 14:34:33.888 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-09-04 14:34:34.177 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-09-04 14:34:34.196 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - -
+2023-09-04 14:34:34.196 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_vs/browserLink - -
+2023-09-04 14:34:34.217 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 20.1170ms
+2023-09-04 14:34:34.213 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 1070.5722ms
+2023-09-04 14:34:34.419 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 222.6838ms
+2023-09-04 14:34:34.427 +01:00 [DBG] Executed controller factory for controller ToDo.API.Controllers.ToDoItemsController (ToDo.API)
+2023-09-04 14:34:34.709 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-09-04 14:34:35.249 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 540.0136ms
+2023-09-04 14:34:35.552 +01:00 [DBG] Connection id "0HMTD9ELR9ILS" received FIN.
+2023-09-04 14:34:35.571 +01:00 [DBG] Connection id "0HMTD9ELR9ILS" is closed. The last processed stream ID was 7.
+2023-09-04 14:34:35.576 +01:00 [DBG] Connection id "0HMTD9ELR9ILS" sending FIN because: "The client closed the connection."
+2023-09-04 14:34:35.595 +01:00 [DBG] Connection id "0HMTD9ELR9ILS" stopped.
+2023-09-04 14:34:38.625 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-09-04 14:34:38.646 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-09-04 14:34:38.656 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-09-04 14:34:38.658 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDo.Shared.Dtos.ToDoItemDto, ToDo.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-04 14:34:38.856 +01:00 [INF] Executed action ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API) in 5057.5572ms
+2023-09-04 14:34:38.861 +01:00 [INF] Executed endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)'
+2023-09-04 14:34:38.863 +01:00 [DBG] Connection id "0HMTD9ELR9ILT" completed keep alive response.
+2023-09-04 14:34:38.874 +01:00 [DBG] Connection id "0HMTD9ELR9ILT" received FIN.
+2023-09-04 14:34:38.877 +01:00 [DBG] Connection id "0HMTD9ELR9ILT" sending FIN because: "The client closed the connection."
+2023-09-04 14:34:38.881 +01:00 [DBG] Connection id "0HMTD9ELR9ILT" disconnecting.
+2023-09-04 14:34:38.925 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/api/v1/todoitems - - - 200 - application/json;+charset=utf-8 5343.4472ms
+2023-09-04 14:34:38.930 +01:00 [DBG] Connection id "0HMTD9ELR9ILT" stopped.
+2023-09-04 14:36:28.383 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-09-04 14:36:29.275 +01:00 [DBG] Hosting starting
+2023-09-04 14:36:30.378 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 24D7086D4A581986C9118C4ED8B11A8FCD9D0DE3)
+2023-09-04 14:36:30.453 +01:00 [INF] Now listening on: https://localhost:7180
+2023-09-04 14:36:30.465 +01:00 [INF] Now listening on: http://localhost:5097
+2023-09-04 14:36:30.468 +01:00 [DBG] Loaded hosting startup assembly ToDo.API
+2023-09-04 14:36:30.469 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-09-04 14:36:30.470 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-09-04 14:36:30.472 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-04 14:36:30.474 +01:00 [INF] Hosting environment: Development
+2023-09-04 14:36:30.478 +01:00 [INF] Content root path: C:\Users\t_war\Documents\projects\code\todo\src\Backend\ToDo.API\
+2023-09-04 14:36:30.479 +01:00 [DBG] Hosting started
+2023-09-04 14:36:30.757 +01:00 [DBG] Connection id "0HMTD9FP9P7KV" received FIN.
+2023-09-04 14:36:30.758 +01:00 [DBG] Connection id "0HMTD9FP9P7KU" received FIN.
+2023-09-04 14:36:30.762 +01:00 [DBG] Connection id "0HMTD9FP9P7KU" accepted.
+2023-09-04 14:36:30.762 +01:00 [DBG] Connection id "0HMTD9FP9P7KV" accepted.
+2023-09-04 14:36:30.770 +01:00 [DBG] Connection id "0HMTD9FP9P7KV" started.
+2023-09-04 14:36:30.770 +01:00 [DBG] Connection id "0HMTD9FP9P7KU" started.
+2023-09-04 14:36:30.809 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-04 14:36:30.809 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-04 14:36:30.910 +01:00 [DBG] Connection id "0HMTD9FP9P7KV" stopped.
+2023-09-04 14:36:30.910 +01:00 [DBG] Connection id "0HMTD9FP9P7KU" stopped.
+2023-09-04 14:36:30.921 +01:00 [DBG] Connection id "0HMTD9FP9P7KU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-04 14:36:30.921 +01:00 [DBG] Connection id "0HMTD9FP9P7KV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-04 14:36:31.374 +01:00 [DBG] Connection id "0HMTD9FP9P7L0" accepted.
+2023-09-04 14:36:31.401 +01:00 [DBG] Connection id "0HMTD9FP9P7L0" started.
+2023-09-04 14:36:31.610 +01:00 [DBG] Connection 0HMTD9FP9P7L0 established using the following protocol: "Tls13"
+2023-09-04 14:36:31.768 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/index.html - -
+2023-09-04 14:36:31.838 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-09-04 14:36:32.459 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-09-04 14:36:32.852 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - -
+2023-09-04 14:36:32.857 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-09-04 14:36:32.895 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 42.7075ms
+2023-09-04 14:36:32.895 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 1114.3472ms
+2023-09-04 14:36:32.947 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_vs/browserLink - -
+2023-09-04 14:36:33.250 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 302.5646ms
+2023-09-04 14:36:33.663 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-09-04 14:36:34.161 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 498.2743ms
+2023-09-04 14:36:34.417 +01:00 [DBG] Connection id "0HMTD9FP9P7L1" accepted.
+2023-09-04 14:36:34.418 +01:00 [DBG] Connection id "0HMTD9FP9P7L1" started.
+2023-09-04 14:36:34.433 +01:00 [DBG] Connection 0HMTD9FP9P7L1 established using the following protocol: "Tls13"
+2023-09-04 14:36:34.482 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/api/v1/todoitems - -
+2023-09-04 14:36:34.491 +01:00 [DBG] The request path  does not match the path filter
+2023-09-04 14:36:34.573 +01:00 [DBG] 1 candidate(s) found for the request path '/api/v1/todoitems'
+2023-09-04 14:36:34.604 +01:00 [DBG] Endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)' with route pattern 'api/v{version:apiVersion}/todoitems' is valid for the request path '/api/v1/todoitems'
+2023-09-04 14:36:34.632 +01:00 [DBG] Request matched endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)'
+2023-09-04 14:36:34.642 +01:00 [INF] Executing endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)'
+2023-09-04 14:36:34.742 +01:00 [INF] Route matched with {action = "Get", controller = "ToDoItems"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ToDo.Shared.Dtos.ToDoItemDto]]] Get() on controller ToDo.API.Controllers.ToDoItemsController (ToDo.API).
+2023-09-04 14:36:34.758 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-09-04 14:36:34.763 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-09-04 14:36:34.767 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-09-04 14:36:34.771 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-09-04 14:36:34.773 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-09-04 14:36:34.779 +01:00 [DBG] Executing controller factory for controller ToDo.API.Controllers.ToDoItemsController (ToDo.API)
+2023-09-04 14:36:35.572 +01:00 [DBG] Executed controller factory for controller ToDo.API.Controllers.ToDoItemsController (ToDo.API)
+2023-09-04 14:36:35.732 +01:00 [DBG] Connection id "0HMTD9FP9P7L0" received FIN.
+2023-09-04 14:36:35.753 +01:00 [DBG] Connection id "0HMTD9FP9P7L0" is closed. The last processed stream ID was 7.
+2023-09-04 14:36:35.756 +01:00 [DBG] Connection id "0HMTD9FP9P7L0" sending FIN because: "The client closed the connection."
+2023-09-04 14:36:35.765 +01:00 [DBG] Connection id "0HMTD9FP9P7L0" stopped.
+2023-09-04 14:36:40.328 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-09-04 14:36:40.355 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-09-04 14:36:40.365 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-09-04 14:36:40.373 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDo.Shared.Dtos.ToDoItemDto, ToDo.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-04 14:36:40.574 +01:00 [INF] Executed action ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API) in 5782.1722ms
+2023-09-04 14:36:40.578 +01:00 [INF] Executed endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)'
+2023-09-04 14:36:40.582 +01:00 [DBG] Connection id "0HMTD9FP9P7L1" completed keep alive response.
+2023-09-04 14:36:40.622 +01:00 [DBG] Connection id "0HMTD9FP9P7L1" received FIN.
+2023-09-04 14:36:40.633 +01:00 [DBG] Connection id "0HMTD9FP9P7L1" sending FIN because: "The client closed the connection."
+2023-09-04 14:36:40.655 +01:00 [DBG] Connection id "0HMTD9FP9P7L1" disconnecting.
+2023-09-04 14:36:40.663 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/api/v1/todoitems - - - 200 - application/json;+charset=utf-8 6180.9032ms
+2023-09-04 14:36:40.667 +01:00 [DBG] Connection id "0HMTD9FP9P7L1" stopped.
+2023-09-04 14:37:36.496 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-09-04 14:37:38.183 +01:00 [DBG] Hosting starting
+2023-09-04 14:37:38.763 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 24D7086D4A581986C9118C4ED8B11A8FCD9D0DE3)
+2023-09-04 14:37:38.841 +01:00 [INF] Now listening on: https://localhost:7180
+2023-09-04 14:37:38.845 +01:00 [INF] Now listening on: http://localhost:5097
+2023-09-04 14:37:38.847 +01:00 [DBG] Loaded hosting startup assembly ToDo.API
+2023-09-04 14:37:38.848 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-09-04 14:37:38.848 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-09-04 14:37:38.850 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-04 14:37:38.853 +01:00 [INF] Hosting environment: Development
+2023-09-04 14:37:38.855 +01:00 [INF] Content root path: C:\Users\t_war\Documents\projects\code\todo\src\Backend\ToDo.API\
+2023-09-04 14:37:38.856 +01:00 [DBG] Hosting started
+2023-09-04 14:37:39.033 +01:00 [DBG] Connection id "0HMTD9GDKSF1V" accepted.
+2023-09-04 14:37:39.033 +01:00 [DBG] Connection id "0HMTD9GDKSF20" accepted.
+2023-09-04 14:37:39.036 +01:00 [DBG] Connection id "0HMTD9GDKSF1V" started.
+2023-09-04 14:37:39.036 +01:00 [DBG] Connection id "0HMTD9GDKSF20" started.
+2023-09-04 14:37:39.050 +01:00 [DBG] Connection id "0HMTD9GDKSF1V" received FIN.
+2023-09-04 14:37:39.050 +01:00 [DBG] Connection id "0HMTD9GDKSF20" received FIN.
+2023-09-04 14:37:39.085 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-04 14:37:39.087 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-04 14:37:39.177 +01:00 [DBG] Connection id "0HMTD9GDKSF1V" stopped.
+2023-09-04 14:37:39.177 +01:00 [DBG] Connection id "0HMTD9GDKSF20" stopped.
+2023-09-04 14:37:39.185 +01:00 [DBG] Connection id "0HMTD9GDKSF20" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-04 14:37:39.185 +01:00 [DBG] Connection id "0HMTD9GDKSF1V" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-04 14:37:39.598 +01:00 [DBG] Connection id "0HMTD9GDKSF21" accepted.
+2023-09-04 14:37:39.635 +01:00 [DBG] Connection id "0HMTD9GDKSF21" started.
+2023-09-04 14:37:39.940 +01:00 [DBG] Connection 0HMTD9GDKSF21 established using the following protocol: "Tls13"
+2023-09-04 14:37:40.067 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/index.html - -
+2023-09-04 14:37:40.150 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-09-04 14:37:40.789 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-09-04 14:37:41.083 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-09-04 14:37:41.152 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - -
+2023-09-04 14:37:41.161 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_vs/browserLink - -
+2023-09-04 14:37:41.182 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 29.9103ms
+2023-09-04 14:37:41.169 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 1109.6364ms
+2023-09-04 14:37:41.278 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 116.2249ms
+2023-09-04 14:37:42.136 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-09-04 14:37:42.326 +01:00 [DBG] Connection id "0HMTD9GDKSF22" accepted.
+2023-09-04 14:37:42.330 +01:00 [DBG] Connection id "0HMTD9GDKSF22" started.
+2023-09-04 14:37:42.346 +01:00 [DBG] Connection 0HMTD9GDKSF22 established using the following protocol: "Tls13"
+2023-09-04 14:37:42.400 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/api/v1/todoitems - -
+2023-09-04 14:37:42.412 +01:00 [DBG] The request path  does not match the path filter
+2023-09-04 14:37:42.513 +01:00 [DBG] 1 candidate(s) found for the request path '/api/v1/todoitems'
+2023-09-04 14:37:42.549 +01:00 [DBG] Endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)' with route pattern 'api/v{version:apiVersion}/todoitems' is valid for the request path '/api/v1/todoitems'
+2023-09-04 14:37:42.574 +01:00 [DBG] Request matched endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)'
+2023-09-04 14:37:42.613 +01:00 [INF] Executing endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)'
+2023-09-04 14:37:42.692 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 555.9793ms
+2023-09-04 14:37:42.732 +01:00 [INF] Route matched with {action = "Get", controller = "ToDoItems"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ToDo.Shared.Dtos.ToDoItemDto]]] Get() on controller ToDo.API.Controllers.ToDoItemsController (ToDo.API).
+2023-09-04 14:37:42.740 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-09-04 14:37:42.742 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-09-04 14:37:42.744 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-09-04 14:37:42.747 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-09-04 14:37:42.750 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-09-04 14:37:42.760 +01:00 [DBG] Executing controller factory for controller ToDo.API.Controllers.ToDoItemsController (ToDo.API)
+2023-09-04 14:37:43.466 +01:00 [DBG] Executed controller factory for controller ToDo.API.Controllers.ToDoItemsController (ToDo.API)
+2023-09-04 14:37:45.790 +01:00 [DBG] Connection id "0HMTD9GDKSF21" received FIN.
+2023-09-04 14:37:45.829 +01:00 [DBG] Connection id "0HMTD9GDKSF21" is closed. The last processed stream ID was 7.
+2023-09-04 14:37:45.833 +01:00 [DBG] Connection id "0HMTD9GDKSF21" sending FIN because: "The client closed the connection."
+2023-09-04 14:37:45.854 +01:00 [DBG] Connection id "0HMTD9GDKSF21" stopped.
+2023-09-04 14:37:48.066 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-09-04 14:37:48.085 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-09-04 14:37:48.096 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-09-04 14:37:48.102 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDo.Shared.Dtos.ToDoItemDto, ToDo.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-04 14:37:48.289 +01:00 [INF] Executed action ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API) in 5521.9473ms
+2023-09-04 14:37:48.291 +01:00 [INF] Executed endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)'
+2023-09-04 14:37:48.291 +01:00 [DBG] Connection id "0HMTD9GDKSF22" completed keep alive response.
+2023-09-04 14:37:48.315 +01:00 [DBG] Connection id "0HMTD9GDKSF22" received FIN.
+2023-09-04 14:37:48.318 +01:00 [DBG] Connection id "0HMTD9GDKSF22" sending FIN because: "The client closed the connection."
+2023-09-04 14:37:48.323 +01:00 [DBG] Connection id "0HMTD9GDKSF22" disconnecting.
+2023-09-04 14:37:48.330 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/api/v1/todoitems - - - 200 - application/json;+charset=utf-8 5928.4609ms
+2023-09-04 14:37:48.336 +01:00 [DBG] Connection id "0HMTD9GDKSF22" stopped.
+2023-09-04 14:40:10.381 +01:00 [DBG] Connection id "0HMTD9GDKSF23" accepted.
+2023-09-04 14:40:10.384 +01:00 [DBG] Connection id "0HMTD9GDKSF23" started.
+2023-09-04 14:40:10.420 +01:00 [DBG] Connection 0HMTD9GDKSF23 established using the following protocol: "Tls13"
+2023-09-04 14:40:10.447 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/index.html - -
+2023-09-04 14:40:10.460 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-09-04 14:40:10.493 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-09-04 14:40:10.494 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 47.3343ms
+2023-09-04 14:40:10.616 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - -
+2023-09-04 14:40:10.616 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_vs/browserLink - -
+2023-09-04 14:40:10.617 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 1.4235ms
+2023-09-04 14:40:10.644 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.8635ms
+2023-09-04 14:40:11.296 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-09-04 14:40:11.332 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 35.8439ms
+2023-09-04 14:40:15.945 +01:00 [DBG] Connection id "0HMTD9GDKSF23" received FIN.
+2023-09-04 14:40:15.949 +01:00 [DBG] Connection id "0HMTD9GDKSF23" is closed. The last processed stream ID was 7.
+2023-09-04 14:40:15.952 +01:00 [DBG] Connection id "0HMTD9GDKSF23" sending FIN because: "The client closed the connection."
+2023-09-04 14:40:15.960 +01:00 [DBG] Connection id "0HMTD9GDKSF23" stopped.
+2023-09-04 14:40:23.266 +01:00 [DBG] Connection id "0HMTD9GDKSF24" accepted.
+2023-09-04 14:40:23.268 +01:00 [DBG] Connection id "0HMTD9GDKSF24" started.
+2023-09-04 14:40:23.295 +01:00 [DBG] Connection 0HMTD9GDKSF24 established using the following protocol: "Tls13"
+2023-09-04 14:40:23.299 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/index.html - -
+2023-09-04 14:40:23.321 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-09-04 14:40:23.355 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-09-04 14:40:23.361 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 62.2557ms
+2023-09-04 14:40:23.464 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_vs/browserLink - -
+2023-09-04 14:40:23.468 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - -
+2023-09-04 14:40:23.484 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 15.7314ms
+2023-09-04 14:40:23.536 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 71.9711ms
+2023-09-04 14:40:24.309 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-09-04 14:40:24.321 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 11.5434ms
+2023-09-04 14:40:33.996 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-09-04 14:40:35.202 +01:00 [DBG] Hosting starting
+2023-09-04 14:40:35.793 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 24D7086D4A581986C9118C4ED8B11A8FCD9D0DE3)
+2023-09-04 14:40:35.892 +01:00 [INF] Now listening on: https://localhost:7180
+2023-09-04 14:40:35.902 +01:00 [INF] Now listening on: http://localhost:5097
+2023-09-04 14:40:35.903 +01:00 [DBG] Loaded hosting startup assembly ToDo.API
+2023-09-04 14:40:35.903 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-09-04 14:40:35.906 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-09-04 14:40:35.908 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-04 14:40:35.910 +01:00 [INF] Hosting environment: Development
+2023-09-04 14:40:35.913 +01:00 [INF] Content root path: C:\Users\t_war\Documents\projects\code\todo\src\Backend\ToDo.API\
+2023-09-04 14:40:35.914 +01:00 [DBG] Hosting started
+2023-09-04 14:40:35.963 +01:00 [DBG] Connection id "0HMTD9I2C8KB9" received FIN.
+2023-09-04 14:40:35.980 +01:00 [DBG] Connection id "0HMTD9I2C8KB9" accepted.
+2023-09-04 14:40:35.983 +01:00 [DBG] Connection id "0HMTD9I2C8KB9" started.
+2023-09-04 14:40:36.019 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-04 14:40:36.154 +01:00 [DBG] Connection id "0HMTD9I2C8KB9" stopped.
+2023-09-04 14:40:36.169 +01:00 [DBG] Connection id "0HMTD9I2C8KB9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-04 14:40:36.512 +01:00 [DBG] Connection id "0HMTD9I2C8KBA" accepted.
+2023-09-04 14:40:36.552 +01:00 [DBG] Connection id "0HMTD9I2C8KBA" started.
+2023-09-04 14:40:36.947 +01:00 [DBG] Connection 0HMTD9I2C8KBA established using the following protocol: "Tls13"
+2023-09-04 14:40:37.083 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/index.html - -
+2023-09-04 14:40:37.168 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-09-04 14:40:37.804 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-09-04 14:40:38.104 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-09-04 14:40:38.201 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - -
+2023-09-04 14:40:38.201 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_vs/browserLink - -
+2023-09-04 14:40:38.210 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 1135.2582ms
+2023-09-04 14:40:38.212 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 11.0585ms
+2023-09-04 14:40:38.315 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 114.2191ms
+2023-09-04 14:40:38.634 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-09-04 14:40:39.346 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 712.6855ms
+2023-09-04 14:40:39.664 +01:00 [DBG] Connection id "0HMTD9I2C8KBB" accepted.
+2023-09-04 14:40:39.665 +01:00 [DBG] Connection id "0HMTD9I2C8KBB" started.
+2023-09-04 14:40:39.679 +01:00 [DBG] Connection 0HMTD9I2C8KBB established using the following protocol: "Tls13"
+2023-09-04 14:40:39.733 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/api/v1/todoitems - -
+2023-09-04 14:40:39.744 +01:00 [DBG] The request path  does not match the path filter
+2023-09-04 14:40:39.837 +01:00 [DBG] 1 candidate(s) found for the request path '/api/v1/todoitems'
+2023-09-04 14:40:39.912 +01:00 [DBG] Endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)' with route pattern 'api/v{version:apiVersion}/todoitems' is valid for the request path '/api/v1/todoitems'
+2023-09-04 14:40:39.977 +01:00 [DBG] Request matched endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)'
+2023-09-04 14:40:39.994 +01:00 [INF] Executing endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)'
+2023-09-04 14:40:40.062 +01:00 [INF] Route matched with {action = "Get", controller = "ToDoItems"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ToDo.Shared.Dtos.ToDoItemDto]]] Get() on controller ToDo.API.Controllers.ToDoItemsController (ToDo.API).
+2023-09-04 14:40:40.068 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-09-04 14:40:40.072 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-09-04 14:40:40.077 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-09-04 14:40:40.082 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-09-04 14:40:40.085 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-09-04 14:40:40.092 +01:00 [DBG] Executing controller factory for controller ToDo.API.Controllers.ToDoItemsController (ToDo.API)
+2023-09-04 14:40:40.779 +01:00 [DBG] Executed controller factory for controller ToDo.API.Controllers.ToDoItemsController (ToDo.API)
+2023-09-04 14:40:45.234 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-09-04 14:40:45.257 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-09-04 14:40:45.262 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-09-04 14:40:45.266 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDo.Shared.Dtos.ToDoItemDto, ToDo.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-04 14:40:45.459 +01:00 [INF] Executed action ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API) in 5362.7422ms
+2023-09-04 14:40:45.464 +01:00 [INF] Executed endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)'
+2023-09-04 14:40:45.467 +01:00 [DBG] Connection id "0HMTD9I2C8KBB" completed keep alive response.
+2023-09-04 14:40:45.474 +01:00 [DBG] Connection id "0HMTD9I2C8KBB" received FIN.
+2023-09-04 14:40:45.480 +01:00 [DBG] Connection id "0HMTD9I2C8KBB" sending FIN because: "The client closed the connection."
+2023-09-04 14:40:45.484 +01:00 [DBG] Connection id "0HMTD9I2C8KBB" disconnecting.
+2023-09-04 14:40:45.512 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/api/v1/todoitems - - - 200 - application/json;+charset=utf-8 5778.7227ms
+2023-09-04 14:40:45.521 +01:00 [DBG] Connection id "0HMTD9I2C8KBB" stopped.
+2023-09-04 14:40:45.958 +01:00 [DBG] Connection id "0HMTD9I2C8KBA" received FIN.
+2023-09-04 14:40:45.971 +01:00 [DBG] Connection id "0HMTD9I2C8KBA" is closed. The last processed stream ID was 7.
+2023-09-04 14:40:45.982 +01:00 [DBG] Connection id "0HMTD9I2C8KBA" sending FIN because: "The client closed the connection."
+2023-09-04 14:40:45.993 +01:00 [DBG] Connection id "0HMTD9I2C8KBA" stopped.
+2023-09-04 14:42:53.373 +01:00 [DBG] Connection id "0HMTD9I2C8KBC" accepted.
+2023-09-04 14:42:53.390 +01:00 [DBG] Connection id "0HMTD9I2C8KBC" started.
+2023-09-04 14:42:53.431 +01:00 [DBG] Connection 0HMTD9I2C8KBC established using the following protocol: "Tls13"
+2023-09-04 14:42:53.454 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/index.html - -
+2023-09-04 14:42:53.470 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-09-04 14:42:53.512 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-09-04 14:42:53.515 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 60.7867ms
+2023-09-04 14:42:53.590 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_vs/browserLink - -
+2023-09-04 14:42:53.668 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 77.7390ms
+2023-09-04 14:42:53.687 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - -
+2023-09-04 14:42:53.688 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 1.4460ms
+2023-09-04 14:43:16.237 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-09-04 14:43:16.561 +01:00 [DBG] Hosting starting
+2023-09-04 14:43:16.891 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 24D7086D4A581986C9118C4ED8B11A8FCD9D0DE3)
+2023-09-04 14:43:16.937 +01:00 [INF] Now listening on: https://localhost:7180
+2023-09-04 14:43:16.939 +01:00 [INF] Now listening on: http://localhost:5097
+2023-09-04 14:43:16.940 +01:00 [DBG] Loaded hosting startup assembly ToDo.API
+2023-09-04 14:43:16.941 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-09-04 14:43:16.943 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-09-04 14:43:16.945 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-04 14:43:16.951 +01:00 [INF] Hosting environment: Development
+2023-09-04 14:43:16.953 +01:00 [INF] Content root path: C:\Users\t_war\Documents\projects\code\todo\src\Backend\ToDo.API\
+2023-09-04 14:43:16.960 +01:00 [DBG] Hosting started
+2023-09-04 14:43:16.978 +01:00 [DBG] Connection id "0HMTD9JIBOM60" accepted.
+2023-09-04 14:43:16.979 +01:00 [DBG] Connection id "0HMTD9JIBOM61" accepted.
+2023-09-04 14:43:16.993 +01:00 [DBG] Connection id "0HMTD9JIBOM61" received FIN.
+2023-09-04 14:43:17.087 +01:00 [DBG] Connection id "0HMTD9JIBOM60" started.
+2023-09-04 14:43:16.990 +01:00 [DBG] Connection id "0HMTD9JIBOM60" received FIN.
+2023-09-04 14:43:17.088 +01:00 [DBG] Connection id "0HMTD9JIBOM61" started.
+2023-09-04 14:43:17.152 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-04 14:43:17.155 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-04 14:43:17.274 +01:00 [DBG] Connection id "0HMTD9JIBOM61" stopped.
+2023-09-04 14:43:17.275 +01:00 [DBG] Connection id "0HMTD9JIBOM60" stopped.
+2023-09-04 14:43:17.289 +01:00 [DBG] Connection id "0HMTD9JIBOM61" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-04 14:43:17.291 +01:00 [DBG] Connection id "0HMTD9JIBOM60" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-04 14:43:17.534 +01:00 [DBG] Connection id "0HMTD9JIBOM62" accepted.
+2023-09-04 14:43:17.838 +01:00 [DBG] Connection id "0HMTD9JIBOM62" started.
+2023-09-04 14:43:17.930 +01:00 [DBG] Connection 0HMTD9JIBOM62 established using the following protocol: "Tls13"
+2023-09-04 14:43:18.184 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/index.html - -
+2023-09-04 14:43:18.538 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-09-04 14:43:18.841 +01:00 [DBG] Connection id "0HMTD9JIBOM63" accepted.
+2023-09-04 14:43:18.846 +01:00 [DBG] Connection id "0HMTD9JIBOM63" started.
+2023-09-04 14:43:18.855 +01:00 [DBG] Connection 0HMTD9JIBOM63 established using the following protocol: "Tls13"
+2023-09-04 14:43:18.921 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/api/v1/todoitems - -
+2023-09-04 14:43:18.935 +01:00 [DBG] The request path  does not match the path filter
+2023-09-04 14:43:19.052 +01:00 [DBG] 1 candidate(s) found for the request path '/api/v1/todoitems'
+2023-09-04 14:43:19.093 +01:00 [DBG] Endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)' with route pattern 'api/v{version:apiVersion}/todoitems' is valid for the request path '/api/v1/todoitems'
+2023-09-04 14:43:19.115 +01:00 [DBG] Request matched endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)'
+2023-09-04 14:43:19.129 +01:00 [INF] Executing endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)'
+2023-09-04 14:43:19.236 +01:00 [INF] Route matched with {action = "Get", controller = "ToDoItems"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ToDo.Shared.Dtos.ToDoItemDto]]] Get() on controller ToDo.API.Controllers.ToDoItemsController (ToDo.API).
+2023-09-04 14:43:19.241 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-09-04 14:43:19.248 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-09-04 14:43:19.251 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-09-04 14:43:19.256 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-09-04 14:43:19.261 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-09-04 14:43:19.267 +01:00 [DBG] Executing controller factory for controller ToDo.API.Controllers.ToDoItemsController (ToDo.API)
+2023-09-04 14:43:19.319 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-09-04 14:43:19.720 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-09-04 14:43:19.732 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 1558.7336ms
+2023-09-04 14:43:19.751 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - -
+2023-09-04 14:43:19.770 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 18.8837ms
+2023-09-04 14:43:19.930 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_vs/browserLink - -
+2023-09-04 14:43:20.033 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 103.3540ms
+2023-09-04 14:43:20.049 +01:00 [DBG] Executed controller factory for controller ToDo.API.Controllers.ToDoItemsController (ToDo.API)
+2023-09-04 14:43:20.423 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-09-04 14:43:21.009 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 585.6071ms
+2023-09-04 14:43:24.421 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-09-04 14:43:24.439 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-09-04 14:43:24.447 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-09-04 14:43:24.450 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDo.Shared.Dtos.ToDoItemDto, ToDo.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-04 14:43:24.640 +01:00 [INF] Executed action ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API) in 5359.1258ms
+2023-09-04 14:43:24.646 +01:00 [INF] Executed endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)'
+2023-09-04 14:43:24.648 +01:00 [DBG] Connection id "0HMTD9JIBOM63" completed keep alive response.
+2023-09-04 14:43:24.654 +01:00 [DBG] Connection id "0HMTD9JIBOM63" received FIN.
+2023-09-04 14:43:24.660 +01:00 [DBG] Connection id "0HMTD9JIBOM63" sending FIN because: "The client closed the connection."
+2023-09-04 14:43:24.665 +01:00 [DBG] Connection id "0HMTD9JIBOM63" disconnecting.
+2023-09-04 14:43:24.702 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/api/v1/todoitems - - - 200 - application/json;+charset=utf-8 5780.2578ms
+2023-09-04 14:43:24.718 +01:00 [DBG] Connection id "0HMTD9JIBOM63" stopped.
+2023-09-04 14:43:26.190 +01:00 [DBG] Connection id "0HMTD9JIBOM62" received FIN.
+2023-09-04 14:43:26.215 +01:00 [DBG] Connection id "0HMTD9JIBOM62" is closed. The last processed stream ID was 7.
+2023-09-04 14:43:26.219 +01:00 [DBG] Connection id "0HMTD9JIBOM62" sending FIN because: "The client closed the connection."
+2023-09-04 14:43:26.223 +01:00 [DBG] Connection id "0HMTD9JIBOM62" stopped.
+2023-09-04 14:45:22.130 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-09-04 14:45:22.959 +01:00 [DBG] Hosting starting
+2023-09-04 14:45:23.361 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 24D7086D4A581986C9118C4ED8B11A8FCD9D0DE3)
+2023-09-04 14:45:23.426 +01:00 [INF] Now listening on: https://localhost:7180
+2023-09-04 14:45:23.430 +01:00 [INF] Now listening on: http://localhost:5097
+2023-09-04 14:45:23.432 +01:00 [DBG] Loaded hosting startup assembly ToDo.API
+2023-09-04 14:45:23.433 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-09-04 14:45:23.435 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-09-04 14:45:23.437 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-04 14:45:23.440 +01:00 [INF] Hosting environment: Development
+2023-09-04 14:45:23.441 +01:00 [INF] Content root path: C:\Users\t_war\Documents\projects\code\todo\src\Backend\ToDo.API\
+2023-09-04 14:45:23.444 +01:00 [DBG] Hosting started
+2023-09-04 14:45:23.855 +01:00 [DBG] Connection id "0HMTD9KO5QAOR" received FIN.
+2023-09-04 14:45:23.884 +01:00 [DBG] Connection id "0HMTD9KO5QAOR" accepted.
+2023-09-04 14:45:23.888 +01:00 [DBG] Connection id "0HMTD9KO5QAOR" started.
+2023-09-04 14:45:23.937 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-04 14:45:24.079 +01:00 [DBG] Connection id "0HMTD9KO5QAOR" stopped.
+2023-09-04 14:45:24.095 +01:00 [DBG] Connection id "0HMTD9KO5QAOR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-04 14:45:24.342 +01:00 [DBG] Connection id "0HMTD9KO5QAOS" accepted.
+2023-09-04 14:45:24.383 +01:00 [DBG] Connection id "0HMTD9KO5QAOS" started.
+2023-09-04 14:45:24.768 +01:00 [DBG] Connection 0HMTD9KO5QAOS established using the following protocol: "Tls13"
+2023-09-04 14:45:24.956 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/index.html - -
+2023-09-04 14:45:25.088 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-09-04 14:45:25.854 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-09-04 14:45:26.290 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-09-04 14:45:26.293 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - -
+2023-09-04 14:45:26.306 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 1366.1780ms
+2023-09-04 14:45:26.295 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_vs/browserLink - -
+2023-09-04 14:45:26.334 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 40.8175ms
+2023-09-04 14:45:27.020 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 725.3580ms
+2023-09-04 14:45:27.153 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-09-04 14:45:27.722 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 568.8778ms
+2023-09-04 14:45:27.852 +01:00 [DBG] Connection id "0HMTD9KO5QAOT" accepted.
+2023-09-04 14:45:27.854 +01:00 [DBG] Connection id "0HMTD9KO5QAOT" started.
+2023-09-04 14:45:27.870 +01:00 [DBG] Connection 0HMTD9KO5QAOT established using the following protocol: "Tls13"
+2023-09-04 14:45:27.950 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/api/v1/todoitems - -
+2023-09-04 14:45:27.955 +01:00 [DBG] The request path  does not match the path filter
+2023-09-04 14:45:28.051 +01:00 [DBG] 1 candidate(s) found for the request path '/api/v1/todoitems'
+2023-09-04 14:45:28.080 +01:00 [DBG] Endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)' with route pattern 'api/v{version:apiVersion}/todoitems' is valid for the request path '/api/v1/todoitems'
+2023-09-04 14:45:28.100 +01:00 [DBG] Request matched endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)'
+2023-09-04 14:45:28.107 +01:00 [INF] Executing endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)'
+2023-09-04 14:45:28.179 +01:00 [INF] Route matched with {action = "Get", controller = "ToDoItems"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ToDo.Shared.Dtos.ToDoItemDto]]] Get() on controller ToDo.API.Controllers.ToDoItemsController (ToDo.API).
+2023-09-04 14:45:28.190 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-09-04 14:45:28.192 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-09-04 14:45:28.195 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-09-04 14:45:28.198 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-09-04 14:45:28.205 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-09-04 14:45:28.208 +01:00 [DBG] Executing controller factory for controller ToDo.API.Controllers.ToDoItemsController (ToDo.API)
+2023-09-04 14:45:28.917 +01:00 [DBG] Executed controller factory for controller ToDo.API.Controllers.ToDoItemsController (ToDo.API)
+2023-09-04 14:45:33.651 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-09-04 14:45:33.687 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-09-04 14:45:33.698 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-09-04 14:45:33.705 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDo.Shared.Dtos.ToDoItemDto, ToDo.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-04 14:45:33.880 +01:00 [INF] Executed action ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API) in 5659.2873ms
+2023-09-04 14:45:33.883 +01:00 [INF] Executed endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)'
+2023-09-04 14:45:33.886 +01:00 [DBG] Connection id "0HMTD9KO5QAOT" completed keep alive response.
+2023-09-04 14:45:33.896 +01:00 [DBG] Connection id "0HMTD9KO5QAOT" received FIN.
+2023-09-04 14:45:33.906 +01:00 [DBG] Connection id "0HMTD9KO5QAOT" sending FIN because: "The client closed the connection."
+2023-09-04 14:45:33.932 +01:00 [DBG] Connection id "0HMTD9KO5QAOT" disconnecting.
+2023-09-04 14:45:33.941 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/api/v1/todoitems - - - 200 - application/json;+charset=utf-8 5991.5121ms
+2023-09-04 14:45:33.952 +01:00 [DBG] Connection id "0HMTD9KO5QAOT" stopped.
+2023-09-04 14:45:36.404 +01:00 [DBG] Connection id "0HMTD9KO5QAOS" received FIN.
+2023-09-04 14:45:36.428 +01:00 [DBG] Connection id "0HMTD9KO5QAOS" is closed. The last processed stream ID was 7.
+2023-09-04 14:45:36.431 +01:00 [DBG] Connection id "0HMTD9KO5QAOS" sending FIN because: "The client closed the connection."
+2023-09-04 14:45:36.444 +01:00 [DBG] Connection id "0HMTD9KO5QAOS" stopped.
+2023-09-04 14:48:04.554 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-09-04 14:48:05.136 +01:00 [DBG] Hosting starting
+2023-09-04 14:48:05.585 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 24D7086D4A581986C9118C4ED8B11A8FCD9D0DE3)
+2023-09-04 14:48:05.641 +01:00 [INF] Now listening on: https://localhost:7180
+2023-09-04 14:48:05.643 +01:00 [INF] Now listening on: http://localhost:5097
+2023-09-04 14:48:05.645 +01:00 [DBG] Loaded hosting startup assembly ToDo.API
+2023-09-04 14:48:05.646 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-09-04 14:48:05.648 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-09-04 14:48:05.651 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-04 14:48:05.653 +01:00 [INF] Hosting environment: Development
+2023-09-04 14:48:05.654 +01:00 [INF] Content root path: C:\Users\t_war\Documents\projects\code\todo\src\Backend\ToDo.API\
+2023-09-04 14:48:05.655 +01:00 [DBG] Hosting started
+2023-09-04 14:48:06.003 +01:00 [DBG] Connection id "0HMTD9M8G539C" received FIN.
+2023-09-04 14:48:06.005 +01:00 [DBG] Connection id "0HMTD9M8G539C" accepted.
+2023-09-04 14:48:06.008 +01:00 [DBG] Connection id "0HMTD9M8G539C" started.
+2023-09-04 14:48:06.050 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-04 14:48:06.237 +01:00 [DBG] Connection id "0HMTD9M8G539C" stopped.
+2023-09-04 14:48:06.271 +01:00 [DBG] Connection id "0HMTD9M8G539C" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-04 14:48:06.541 +01:00 [DBG] Connection id "0HMTD9M8G539D" accepted.
+2023-09-04 14:48:06.566 +01:00 [DBG] Connection id "0HMTD9M8G539D" started.
+2023-09-04 14:48:06.794 +01:00 [DBG] Connection 0HMTD9M8G539D established using the following protocol: "Tls13"
+2023-09-04 14:48:07.036 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/index.html - -
+2023-09-04 14:48:07.120 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-09-04 14:48:07.582 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-09-04 14:48:07.878 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-09-04 14:48:07.908 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - -
+2023-09-04 14:48:07.914 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/index.html - - - 200 - text/html;charset=utf-8 887.0002ms
+2023-09-04 14:48:07.919 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/_vs/browserLink - -
+2023-09-04 14:48:07.961 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 52.5546ms
+2023-09-04 14:48:08.044 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 125.1086ms
+2023-09-04 14:48:08.645 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - -
+2023-09-04 14:48:09.205 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7180/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 560.2838ms
+2023-09-04 14:48:09.241 +01:00 [DBG] Connection id "0HMTD9M8G539E" accepted.
+2023-09-04 14:48:09.254 +01:00 [DBG] Connection id "0HMTD9M8G539E" started.
+2023-09-04 14:48:09.270 +01:00 [DBG] Connection 0HMTD9M8G539E established using the following protocol: "Tls13"
+2023-09-04 14:48:09.357 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7180/api/v1/todoitems - -
+2023-09-04 14:48:09.367 +01:00 [DBG] The request path  does not match the path filter
+2023-09-04 14:48:09.466 +01:00 [DBG] 1 candidate(s) found for the request path '/api/v1/todoitems'
+2023-09-04 14:48:09.497 +01:00 [DBG] Endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)' with route pattern 'api/v{version:apiVersion}/todoitems' is valid for the request path '/api/v1/todoitems'
+2023-09-04 14:48:09.521 +01:00 [DBG] Request matched endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)'
+2023-09-04 14:48:09.537 +01:00 [INF] Executing endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)'
+2023-09-04 14:48:09.648 +01:00 [INF] Route matched with {action = "Get", controller = "ToDoItems"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ToDo.Shared.Dtos.ToDoItemDto]]] Get() on controller ToDo.API.Controllers.ToDoItemsController (ToDo.API).
+2023-09-04 14:48:09.656 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-09-04 14:48:09.661 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-09-04 14:48:09.668 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-09-04 14:48:09.676 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-09-04 14:48:09.683 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+2023-09-04 14:48:09.691 +01:00 [DBG] Executing controller factory for controller ToDo.API.Controllers.ToDoItemsController (ToDo.API)
+2023-09-04 14:48:10.450 +01:00 [DBG] Executed controller factory for controller ToDo.API.Controllers.ToDoItemsController (ToDo.API)
+2023-09-04 14:48:11.645 +01:00 [DBG] Connection id "0HMTD9M8G539D" received FIN.
+2023-09-04 14:48:11.665 +01:00 [DBG] Connection id "0HMTD9M8G539D" is closed. The last processed stream ID was 7.
+2023-09-04 14:48:11.668 +01:00 [DBG] Connection id "0HMTD9M8G539D" sending FIN because: "The client closed the connection."
+2023-09-04 14:48:11.678 +01:00 [DBG] Connection id "0HMTD9M8G539D" stopped.
+2023-09-04 14:48:15.363 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-09-04 14:48:15.402 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-09-04 14:48:15.413 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-09-04 14:48:15.420 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDo.Shared.Dtos.ToDoItemDto, ToDo.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-09-04 14:48:15.615 +01:00 [INF] Executed action ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API) in 5916.0793ms
+2023-09-04 14:48:15.621 +01:00 [INF] Executed endpoint 'ToDo.API.Controllers.ToDoItemsController.Get (ToDo.API)'
+2023-09-04 14:48:15.624 +01:00 [DBG] Connection id "0HMTD9M8G539E" completed keep alive response.
+2023-09-04 14:48:15.637 +01:00 [DBG] Connection id "0HMTD9M8G539E" received FIN.
+2023-09-04 14:48:15.642 +01:00 [DBG] Connection id "0HMTD9M8G539E" sending FIN because: "The client closed the connection."
+2023-09-04 14:48:15.650 +01:00 [DBG] Connection id "0HMTD9M8G539E" disconnecting.
+2023-09-04 14:48:15.686 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7180/api/v1/todoitems - - - 200 - application/json;+charset=utf-8 6329.5017ms
+2023-09-04 14:48:15.690 +01:00 [DBG] Connection id "0HMTD9M8G539E" stopped.
