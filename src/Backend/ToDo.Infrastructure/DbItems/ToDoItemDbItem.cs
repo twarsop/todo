@@ -15,6 +15,10 @@ public class ToDoItemDbItem
     [MaxLength(2000)]
     public string Description { get; set; }
 
+    public bool Completed { get; set; }
+
+    public DateTime? CompletedAt { get; set; }
+
     public ToDoItemDbItem(string description)
     {
         CreatedAt = DateTime.Now;

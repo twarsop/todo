@@ -17,7 +17,9 @@ namespace ToDo.Infrastructure.Migrations
                 {
                     Id = table.Column<Guid>(type: "TEXT", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    Description = table.Column<string>(type: "TEXT", maxLength: 2000, nullable: false)
+                    Description = table.Column<string>(type: "TEXT", maxLength: 2000, nullable: false),
+                    Completed = table.Column<bool>(type: "INTEGER", nullable: false),
+                    CompletedAt = table.Column<DateTime>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {
