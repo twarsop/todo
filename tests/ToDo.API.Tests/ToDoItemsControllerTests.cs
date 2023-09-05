@@ -160,4 +160,56 @@ public class ToDoItemsControllerTests
 
         await _service.Received().Delete(id);
     }
+
+    [Test]
+    [AutoData]
+    public async Task CompleteToDoItem_ToDoItemNotFound_ReturnsNotFoundResult(Guid id)
+    {
+        _service.Complete(id).Returns(Task.FromResult(false));
+
+        var response = await _controller.CompleteToDoItem(id);
+
+        response.Should().BeOfType<NotFoundResult>();
+
+        await _service.Received().Complete(id);
+    }
+
+    [Test]
+    [AutoData]
+    public async Task CompleteToDoItem_ToDoItemFoundAndDeleted_ReturnsNoContentResult(Guid id)
+    {
+        _service.Complete(id).Returns(Task.FromResult(true));
+
+        var response = await _controller.CompleteToDoItem(id);
+
+        response.Should().BeOfType<NoContentResult>();
+
+        await _service.Received().Complete(id);
+    }
+
+    [Test]
+    [AutoData]
+    public async Task UnCompleteToDoItem_ToDoItemNotFound_ReturnsNotFoundResult(Guid id)
+    {
+        _service.UnComplete(id).Returns(Task.FromResult(false));
+
+        var response = await _controller.UnCompleteToDoItem(id);
+
+        response.Should().BeOfType<NotFoundResult>();
+
+        await _service.Received().UnComplete(id);
+    }
+
+    [Test]
+    [AutoData]
+    public async Task UnCompleteToDoItem_ToDoItemFoundAndDeleted_ReturnsNoContentResult(Guid id)
+    {
+        _service.UnComplete(id).Returns(Task.FromResult(true));
+
+        var response = await _controller.UnCompleteToDoItem(id);
+
+        response.Should().BeOfType<NoContentResult>();
+
+        await _service.Received().UnComplete(id);
+    }
 }

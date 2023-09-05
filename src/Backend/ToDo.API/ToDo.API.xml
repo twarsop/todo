@@ -39,5 +39,19 @@
             <param name="id">The id of the to do item to delete</param>
             <returns>NotFound if the to do item doesn't exist (by id), or NoContent if successful.</returns>
         </member>
+        <member name="M:ToDo.API.Controllers.ToDoItemsController.CompleteToDoItem(System.Guid)">
+            <summary>
+            Completes an existing to do item.
+            </summary>
+            <param name="id">The id of the to do item to complete</param>
+            <returns>NotFound if the to do item doesn't exist (by id), or NoContent if successful.</returns>
+        </member>
+        <member name="M:ToDo.API.Controllers.ToDoItemsController.UnCompleteToDoItem(System.Guid)">
+            <summary>
+            Uncompletes an existing to do item.
+            </summary>
+            <param name="id">The id of the to do item to uncomplete</param>
+            <returns>NotFound if the to do item doesn't exist (by id), or NoContent if successful.</returns>
+        </member>
     </members>
 </doc>
