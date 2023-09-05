@@ -44,4 +44,28 @@ public class Tests
         var toDoItemUpdateDescription = () => toDoItem.UpdateDescription("");
         toDoItemUpdateDescription.Should().Throw<ArgumentException>();
     }
+
+    [Test]
+    [AutoData]
+    public void Complete_SetsCompletedToTrue_CompletedAtToNotBeNull(Guid id, string desciption)
+    {
+        var toDoItem = new ToDoItem(id, desciption);
+
+        toDoItem.Complete();
+
+        toDoItem.Completed.Should().BeTrue();
+        toDoItem.CompletedAt.Should().NotBeNull();
+    }
+
+    [Test]
+    [AutoData]
+    public void UnComplete_SetsCompletedToFalse_CompletedAtToNull(Guid id, string desciption)
+    {
+        var toDoItem = new ToDoItem(id, desciption);
+
+        toDoItem.UnComplete();
+
+        toDoItem.Completed.Should().BeFalse();
+        toDoItem.CompletedAt.Should().BeNull();
+    }
 }
