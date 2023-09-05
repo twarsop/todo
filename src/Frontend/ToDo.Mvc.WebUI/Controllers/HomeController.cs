@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Diagnostics;
 using System.Text;
@@ -12,10 +13,12 @@ public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
     private const string BaseApiUrl = "https://localhost:7180/api/v1/todoitems";
+    private readonly IMapper _mapper;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, IMapper mapper)
     {
         _logger = logger;
+        _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
     }
 
     private async Task<HttpResponseMessage> RetryApiEndpoint(HttpMethodEnum httpMethodEnum, string url, string jsonString = null)
@@ -68,7 +71,7 @@ public class HomeController : Controller
 
         return View(toDoItemsDtos?
             .OrderBy(x => x.CreatedAt)
-            .Select(x => new ToDoItemViewModel { Id = x.Id, CreatedAt = x.CreatedAt, Description = x.Description }).ToList());
+            .Select(x => _mapper.Map<ToDoItemViewModel>(x)).ToList());
     }
 
     public IActionResult AddToDoItem()
@@ -95,12 +98,7 @@ public class HomeController : Controller
         {
             var data = await getResponse.Content.ReadAsStringAsync();
             ToDoItemDto toDoItemDto = JsonConvert.DeserializeObject<ToDoItemDto>(data);
-            return View("EditToDoItem", new ToDoItemViewModel
-            {
-                Id = toDoItemDto.Id,
-                Description = toDoItemDto.Description,
-                CreatedAt = toDoItemDto.CreatedAt
-            });
+            return View("EditToDoItem", _mapper.Map<ToDoItemViewModel>(toDoItemDto));
         }
 
         return View("EditToDoItem", new ToDoItemViewModel());

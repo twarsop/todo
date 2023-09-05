@@ -1,7 +1,12 @@
+using AutoMapper;
+using ToDo.Mvc.WebUI;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<IMapper>(provider => new Mapper(AutoMapperConfig.Configure()));
 
 var app = builder.Build();
 
