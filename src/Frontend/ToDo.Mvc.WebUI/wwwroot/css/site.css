@@ -14,5 +14,11 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+.w-200 {
+    width: 200px;
 }
