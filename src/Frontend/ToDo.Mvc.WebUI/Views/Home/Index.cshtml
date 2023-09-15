@@ -1,4 +1,6 @@
-﻿<div class="row mt-3">
+﻿@model List<ToDo.Mvc.WebUI.Models.ToDoItemViewModel>
+
+<div class="row mt-3">
     <div class="col text-center">
         <button type="button" onclick="location.href='@Url.Action("AddToDoItem")'" class="btn btn-primary w-200">Add</button>
     </div>
@@ -6,6 +8,8 @@
 
 <table class="table"style="color: #fff;">
     <tr>
+        <th>Completed</th>
+        <th>Completed At</th>
         <th>Created At</th>
         <th>Decsription</th>
         <th class="text-center">Edit</th>
@@ -16,6 +20,12 @@
         @foreach (var toDoItem in Model)
         {
             <tr>
+                <td>@Html.CheckBoxFor(m => toDoItem.Completed, new { onclick="toggleToDoItemCompletion(this, '" + toDoItem.Id + "')" })</td>
+                <td>@if (toDoItem.Completed)
+                    {
+                        @toDoItem.CompletedAt
+                    }
+                </td>
                 <td>@toDoItem.CreatedAt</td>
                 <td>@toDoItem.Description</td>
                 <td class="text-center">
@@ -32,3 +42,21 @@
         }
     }
 </table>
+
+<script>
+    function toggleToDoItemCompletion(checkbox, id) {
+        console.log(checkbox.checked);
+        console.log(id);
+
+        let url = checkbox.checked ? '@Url.Action("CompleteToDoItem", "Home")' : '@Url.Action("UnCompleteToDoItem", "Home")';
+
+        console.log(url);
+
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: { id: id },
+            success: function () { alert('Success'); }
+        });
+    }
+</script>
