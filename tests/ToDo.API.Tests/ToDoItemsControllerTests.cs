@@ -165,7 +165,7 @@ public class ToDoItemsControllerTests
     [AutoData]
     public async Task CompleteToDoItem_ToDoItemNotFound_ReturnsNotFoundResult(Guid id)
     {
-        _service.Complete(id).Returns(Task.FromResult(false));
+        _service.Complete(id).Returns(Task.FromResult((DateTime?)null));
 
         var response = await _controller.CompleteToDoItem(id);
 
@@ -176,13 +176,13 @@ public class ToDoItemsControllerTests
 
     [Test]
     [AutoData]
-    public async Task CompleteToDoItem_ToDoItemFoundAndDeleted_ReturnsNoContentResult(Guid id)
+    public async Task CompleteToDoItem_ToDoItemFound_ReturnsOkObjectResult(Guid id)
     {
-        _service.Complete(id).Returns(Task.FromResult(true));
+        _service.Complete(id).Returns(Task.FromResult((DateTime?)new DateTime()));
 
         var response = await _controller.CompleteToDoItem(id);
 
-        response.Should().BeOfType<NoContentResult>();
+        response.Should().BeOfType<OkObjectResult>();
 
         await _service.Received().Complete(id);
     }

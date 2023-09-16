@@ -140,12 +140,14 @@ public class ToDoItemsController : ControllerBase
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult> CompleteToDoItem(Guid id)
     {
-        if (!await _toDoItemService.Complete(id))
+        var completedAt = await _toDoItemService.Complete(id);
+
+        if (completedAt == null)
         {
             return NotFound();
         }
 
-        return NoContent();
+        return Ok(new ToDoItemCompletedDto(completedAt.Value));
     }
 
     /// <summary>

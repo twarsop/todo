@@ -75,26 +75,27 @@ public class ToDoItemServiceTests
 
     [Test]
     [AutoData]
-    public async Task Complete_ToDoItemDoesNotExist_ReturnsFalse(Guid id)
+    public async Task Complete_ToDoItemDoesNotExist_ReturnsNull(Guid id)
     {
         _toDoItemRepository.Read(Arg.Any<Guid>()).Returns(Task.FromResult<ToDoItem?>(null));
 
-        var completeSuccessful = await _toDoItemService.Complete(id);
+        var completeResponse = await _toDoItemService.Complete(id);
 
-        completeSuccessful.Should().BeFalse();
+        completeResponse.Should().BeNull();
 
         await _toDoItemRepository.Received().Read(id);
     }
 
     [Test]
     [AutoData]
-    public async Task Complete_ToDoItemDoesExist_ReturnsTrue(ToDoItem toDoItem)
+    public async Task Complete_ToDoItemDoesExist_ReturnsADateTime(ToDoItem toDoItem)
     {
         _toDoItemRepository.Read(Arg.Any<Guid>()).Returns(Task.FromResult<ToDoItem?>(toDoItem));
 
-        var completeSuccessful = await _toDoItemService.Complete(toDoItem.Id);
+        var completeResponse = await _toDoItemService.Complete(toDoItem.Id);
 
-        completeSuccessful.Should().BeTrue();
+        completeResponse.Should().NotBeNull();
+        completeResponse.Should().BeBefore(DateTime.Now);
 
         await _toDoItemRepository.Received().Read(toDoItem.Id);
         await _toDoItemRepository.Received().Update(toDoItem);
