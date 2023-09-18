@@ -129,4 +129,42 @@ public class ToDoItemsController : ControllerBase
 
         return NoContent();
     }
+
+    /// <summary>
+    /// Completes an existing to do item.
+    /// </summary>
+    /// <param name="id">The id of the to do item to complete</param>
+    /// <returns>NotFound if the to do item doesn't exist (by id), or NoContent if successful.</returns>
+    [HttpPut("complete/{id}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<ActionResult> CompleteToDoItem(Guid id)
+    {
+        var completedAt = await _toDoItemService.Complete(id);
+
+        if (completedAt == null)
+        {
+            return NotFound();
+        }
+
+        return Ok(new ToDoItemCompletedDto(completedAt.Value));
+    }
+
+    /// <summary>
+    /// Uncompletes an existing to do item.
+    /// </summary>
+    /// <param name="id">The id of the to do item to uncomplete</param>
+    /// <returns>NotFound if the to do item doesn't exist (by id), or NoContent if successful.</returns>
+    [HttpPut("uncomplete/{id}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<ActionResult> UnCompleteToDoItem(Guid id)
+    {
+        if (!await _toDoItemService.UnComplete(id))
+        {
+            return NotFound();
+        }
+
+        return NoContent();
+    }
 }

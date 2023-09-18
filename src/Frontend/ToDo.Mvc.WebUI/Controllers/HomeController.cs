@@ -33,16 +33,18 @@ public class HomeController : Controller
                     client.DefaultRequestHeaders.Accept.Clear();
                     client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
 
+                    var content = jsonString == null
+                        ? null
+                        : new StringContent(jsonString, Encoding.UTF8, "application/json");
+
                     switch (httpMethodEnum)
                     {
                         case HttpMethodEnum.Get:
                             return await client.GetAsync(url);
                         case HttpMethodEnum.Post:
-                            var postContent = new StringContent(jsonString, Encoding.UTF8, "application/json");
-                            return await client.PostAsync(url, postContent);
+                            return await client.PostAsync(url, content);
                         case HttpMethodEnum.Put:
-                            var putContent = new StringContent(jsonString, Encoding.UTF8, "application/json");
-                            return await client.PutAsync(url, putContent);
+                            return await client.PutAsync(url, content);
                         case HttpMethodEnum.Delete:
                             return await client.DeleteAsync(url);
                     }
@@ -120,6 +122,28 @@ public class HomeController : Controller
         var deleteResponse = await RetryApiEndpoint(HttpMethodEnum.Delete, $"{BaseApiUrl}/{id}");
 
         return RedirectToAction("Index", "Home");
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> CompleteToDoItem(string id)
+    {
+        var completeResponse = await RetryApiEndpoint(HttpMethodEnum.Put, $"{BaseApiUrl}/complete/{id}");
+
+        if (completeResponse != null && completeResponse.IsSuccessStatusCode)
+        {
+            var data = await completeResponse.Content.ReadAsStringAsync();
+            var toDoItemCompletedDto = JsonConvert.DeserializeObject<ToDoItemCompletedDto>(data);
+
+            return Json(new { completedAt = toDoItemCompletedDto.CompletedAt.ToString("dd/MM/yyyy HH:mm:ss") });
+        }
+
+        return Json(new { });
+    }
+
+    [HttpPost]
+    public async void UnCompleteToDoItem(string id)
+    {
+        await RetryApiEndpoint(HttpMethodEnum.Put, $"{BaseApiUrl}/uncomplete/{id}");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

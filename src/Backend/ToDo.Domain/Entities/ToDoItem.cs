@@ -5,6 +5,8 @@ public class ToDoItem
     public Guid Id { get; set; }
     public DateTime CreatedAt { get; private set; }
     public string Description { get; private set; }
+    public bool Completed { get; private set; }
+    public DateTime? CompletedAt { get; private set; }
 
     public ToDoItem(string description)
     {
@@ -22,6 +24,18 @@ public class ToDoItem
     {
         Validate(description);
         Description = description;
+    }
+
+    public void Complete()
+    {
+        Completed = true;
+        CompletedAt = DateTime.Now;
+    }
+
+    public void UnComplete()
+    {
+        Completed = false;
+        CompletedAt = null;
     }
 
     private void Validate(string description)

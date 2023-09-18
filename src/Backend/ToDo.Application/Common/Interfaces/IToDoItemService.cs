@@ -10,4 +10,6 @@ public interface IToDoItemService
     Task<bool> Update(Guid id, string description);
     Task<bool> Delete(Guid id);
     Task<int> Count();
+    Task<DateTime?> Complete(Guid id);
+    Task<bool> UnComplete(Guid id);
 }

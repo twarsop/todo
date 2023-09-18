@@ -60,4 +60,34 @@ public class ToDoItemService : IToDoItemService
     {
         return await _toDoItemRepository.Count();
     }
+
+    public async Task<DateTime?> Complete(Guid id)
+    {
+        var toDoItem = await Read(id);
+
+        if (toDoItem == null)
+        {
+            return null;
+        }
+
+        toDoItem.Complete();
+        await _toDoItemRepository.Update(toDoItem);
+
+        return toDoItem.CompletedAt;
+    }
+
+    public async Task<bool> UnComplete(Guid id)
+    {
+        var toDoItem = await Read(id);
+
+        if (toDoItem == null)
+        {
+            return false;
+        }
+
+        toDoItem.UnComplete();
+        await _toDoItemRepository.Update(toDoItem);
+
+        return true;
+    }
 }

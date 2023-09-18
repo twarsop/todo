@@ -43,6 +43,7 @@ public class ToDoItemServiceTests
         updateSuccessful.Should().BeTrue();
 
         await _toDoItemRepository.Received().Read(toDoItem.Id);
+        await _toDoItemRepository.Received().Update(toDoItem);
     }
 
     [Test]
@@ -69,5 +70,61 @@ public class ToDoItemServiceTests
         deleteSuccessful.Should().BeTrue();
 
         await _toDoItemRepository.Received().Read(toDoItem.Id);
+        _toDoItemRepository.Received().Delete(toDoItem.Id);
+    }
+
+    [Test]
+    [AutoData]
+    public async Task Complete_ToDoItemDoesNotExist_ReturnsNull(Guid id)
+    {
+        _toDoItemRepository.Read(Arg.Any<Guid>()).Returns(Task.FromResult<ToDoItem?>(null));
+
+        var completeResponse = await _toDoItemService.Complete(id);
+
+        completeResponse.Should().BeNull();
+
+        await _toDoItemRepository.Received().Read(id);
+    }
+
+    [Test]
+    [AutoData]
+    public async Task Complete_ToDoItemDoesExist_ReturnsADateTime(ToDoItem toDoItem)
+    {
+        _toDoItemRepository.Read(Arg.Any<Guid>()).Returns(Task.FromResult<ToDoItem?>(toDoItem));
+
+        var completeResponse = await _toDoItemService.Complete(toDoItem.Id);
+
+        completeResponse.Should().NotBeNull();
+        completeResponse.Should().BeBefore(DateTime.Now);
+
+        await _toDoItemRepository.Received().Read(toDoItem.Id);
+        await _toDoItemRepository.Received().Update(toDoItem);
+    }
+
+    [Test]
+    [AutoData]
+    public async Task UnComplete_ToDoItemDoesNotExist_ReturnsFalse(Guid id)
+    {
+        _toDoItemRepository.Read(Arg.Any<Guid>()).Returns(Task.FromResult<ToDoItem?>(null));
+
+        var completeSuccessful = await _toDoItemService.UnComplete(id);
+
+        completeSuccessful.Should().BeFalse();
+
+        await _toDoItemRepository.Received().Read(id);
+    }
+
+    [Test]
+    [AutoData]
+    public async Task UnComplete_ToDoItemDoesExist_ReturnsTrue(ToDoItem toDoItem)
+    {
+        _toDoItemRepository.Read(Arg.Any<Guid>()).Returns(Task.FromResult<ToDoItem?>(toDoItem));
+
+        var completeSuccessful = await _toDoItemService.UnComplete(toDoItem.Id);
+
+        completeSuccessful.Should().BeTrue();
+
+        await _toDoItemRepository.Received().Read(toDoItem.Id);
+        await _toDoItemRepository.Received().Update(toDoItem);
     }
 }
