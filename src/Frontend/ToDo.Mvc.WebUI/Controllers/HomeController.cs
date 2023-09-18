@@ -125,9 +125,19 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public async void CompleteToDoItem(string id)
+    public async Task<IActionResult> CompleteToDoItem(string id)
     {
-        await RetryApiEndpoint(HttpMethodEnum.Put, $"{BaseApiUrl}/complete/{id}");
+        var completeResponse = await RetryApiEndpoint(HttpMethodEnum.Put, $"{BaseApiUrl}/complete/{id}");
+
+        if (completeResponse != null && completeResponse.IsSuccessStatusCode)
+        {
+            var data = await completeResponse.Content.ReadAsStringAsync();
+            var toDoItemCompletedDto = JsonConvert.DeserializeObject<ToDoItemCompletedDto>(data);
+
+            return Json(new { completedAt = toDoItemCompletedDto.CompletedAt.ToString("dd/MM/yyyy HH:mm:ss") });
+        }
+
+        return Json(new { });
     }
 
     [HttpPost]

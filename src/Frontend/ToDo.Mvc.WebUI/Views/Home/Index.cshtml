@@ -21,10 +21,13 @@
         {
             <tr>
                 <td>@Html.CheckBoxFor(m => toDoItem.Completed, new { onclick="toggleToDoItemCompletion(this, '" + toDoItem.Id + "')" })</td>
-                <td>@if (toDoItem.Completed)
-                    {
-                        @toDoItem.CompletedAt
-                    }
+                <td>
+                    <label id="completedAt-@toDoItem.Id">
+                        @if (toDoItem.Completed)
+                        {
+                            @toDoItem.CompletedAt
+                        }
+                    </label>
                 </td>
                 <td>@toDoItem.CreatedAt</td>
                 <td>@toDoItem.Description</td>
@@ -45,18 +48,21 @@
 
 <script>
     function toggleToDoItemCompletion(checkbox, id) {
-        console.log(checkbox.checked);
-        console.log(id);
-
-        let url = checkbox.checked ? '@Url.Action("CompleteToDoItem", "Home")' : '@Url.Action("UnCompleteToDoItem", "Home")';
-
-        console.log(url);
-
-        $.ajax({
-            type: "POST",
-            url: url,
-            data: { id: id },
-            success: function () { alert('Success'); }
-        });
+        if (checkbox.checked) {
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("CompleteToDoItem", "Home")',
+                data: { id: id },
+                success: function (data) { $("#completedAt-" + id).text(data["completedAt"]); }
+            });
+        }
+        else{
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("UnCompleteToDoItem", "Home")',
+                data: { id: id },
+                success: function (data) { $("#completedAt-" + id).text(""); }
+            });
+        }
     }
 </script>
