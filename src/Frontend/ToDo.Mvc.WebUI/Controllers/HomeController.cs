@@ -12,7 +12,7 @@ namespace ToDo.Mvc.WebUI.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
-    private const string BaseApiUrl = "https://localhost:7180/api/v1/todoitems";
+    private const string BaseApiUrl = "https://localhost:7180/api/todoitems";
     private readonly IMapper _mapper;
 
     public HomeController(ILogger<HomeController> logger, IMapper mapper)

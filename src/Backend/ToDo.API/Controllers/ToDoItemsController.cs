@@ -6,8 +6,7 @@ using ToDo.Shared.Dtos;
 namespace ToDo.API.Controllers;
 
 [ApiController]
-[ApiVersion("1.0")]
-[Route("api/v{version:apiVersion}/todoitems")]
+[Route("api/todoitems")]
 public class ToDoItemsController : ControllerBase
 {
     private readonly ILogger<ToDoItemsController> _logger;
